@@ -154,7 +154,7 @@ public class ConversationUI : MonoBehaviour
         if (node.isDetectiveTalking)
         {
             _detectivePortrait.color = Color.white;
-            _otherSpeaker.color = Color.gray;
+           _otherSpeaker.color = Color.gray;
         } else
         {
             _detectivePortrait.color = Color.gray;
