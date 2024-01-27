@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using RedBlueGames.Tools.TextTyper;
 
 public class ConversationOverlord : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class ConversationOverlord : MonoBehaviour
     [SerializeField] TextMeshProUGUI convoText;
     public bool convoStarted;
     public int lineNumber;
+    TextTyper typer;
+
+
+
 
     [Header("DialogueResponses")]
     [SerializeField] GameObject[] answerButtons;
@@ -20,6 +25,7 @@ public class ConversationOverlord : MonoBehaviour
         GameObject tempObject;
         tempObject = GameObject.Find("ConvoCanvas");
         canvas = tempObject.GetComponent<Canvas>();
+        typer = FindObjectOfType<TextTyper>();
         canvas.gameObject.SetActive(false);
     }
 
@@ -27,7 +33,8 @@ public class ConversationOverlord : MonoBehaviour
     public void StartConversation(ConversationNode node)
     {
         ShowConversationCanvas(true);
-        convoText.text = node.DialogueLines[lineNumber].LineText;
+        typer.TypeText(node.DialogueLines[lineNumber].LineText);
+        //convoText.text = node.DialogueLines[lineNumber].LineText;
         Debug.Log(node.DialogueLines[lineNumber].LineText);
         convoStarted = true;
     }
@@ -49,7 +56,8 @@ public class ConversationOverlord : MonoBehaviour
         if (lineNumber < (TestNode.DialogueLines.Count-1))
         {
             lineNumber++;
-            convoText.text = node.DialogueLines[lineNumber].LineText;
+            typer.TypeText(node.DialogueLines[lineNumber].LineText);
+            //convoText.text = node.DialogueLines[lineNumber].LineText;
             Debug.Log(node.DialogueLines[lineNumber].LineText);
         }
         else
@@ -75,7 +83,14 @@ public class ConversationOverlord : MonoBehaviour
             } 
             else
             {
-                ContinueConversation(TestNode);
+                if (typer.IsSkippable())
+                {
+                    typer.Skip();
+                } else
+                {
+                    ContinueConversation(TestNode);
+                }
+ 
             }
             
         }
