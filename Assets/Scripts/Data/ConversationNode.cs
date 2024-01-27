@@ -8,6 +8,8 @@ public class ConversationNode : ScriptableObject
     public List<ConversationLine> DialogueLines;
     public List<ConversationChoice> Choices;
     public ItemData unlockedEvidence;
+    public bool isDetectiveTalking;
+    public Sprite PersonIcon;
 }
 
 [System.Serializable]
@@ -17,6 +19,7 @@ public class ConversationLine
     public string PersonName;
     public Sprite PersonIcon;
     public AudioClip TalkSound;
+    
 }
 
 [System.Serializable]

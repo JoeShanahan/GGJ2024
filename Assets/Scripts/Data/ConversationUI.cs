@@ -18,11 +18,18 @@ public class ConversationUI : MonoBehaviour
     private List<Button> _choiceButtons;
 
     [SerializeField]
+    private Image _detectivePortrait;
+
+    [SerializeField]
+    private Image _otherSpeaker;
+
+    [SerializeField]
     private TextTyper _typer;
 
     [SerializeField]
     private ConversationOverlord _overlord;
 
+    
     private int _lineNumber;
     private ConversationNode _currentNode;
 
@@ -46,6 +53,13 @@ public class ConversationUI : MonoBehaviour
         _lineNumber = -1;
         HideAllButtons();
         ContinueConversation(node);
+    }
+
+    public void SetTalkerPortrait()
+    {
+        
+        _otherSpeaker.GetComponent<Image>();
+
     }
 
     private void HideAllButtons()
@@ -128,6 +142,24 @@ public class ConversationUI : MonoBehaviour
 
         Debug.Log($"You pressed {buttonIndex}");
         _overlord.EndConversation();
+    }
+
+
+    public void getOtherTalker()
+    {
+        _otherSpeaker.sprite = _currentNode.PersonIcon;
+    }
+    public void LightUpTalker(ConversationNode node)
+    {
+        if (node.isDetectiveTalking)
+        {
+            _detectivePortrait.color = Color.white;
+            _otherSpeaker.color = Color.gray;
+        } else
+        {
+            _detectivePortrait.color = Color.gray;
+            _otherSpeaker.color = Color.white;
+        }
     }
 }
 
