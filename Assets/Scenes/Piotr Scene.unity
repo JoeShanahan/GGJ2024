@@ -519,6 +519,8 @@ MonoBehaviour:
   - {fileID: 1019275109}
   - {fileID: 2137559493}
   - {fileID: 1763761527}
+  _detectivePortrait: {fileID: 1716245349}
+  _otherSpeaker: {fileID: 561181367}
   _typer: {fileID: 947705928}
   _overlord: {fileID: 898041846}
 --- !u!225 &538952318
@@ -1348,7 +1350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3886792, g: 0.3886792, b: 0.3886792, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

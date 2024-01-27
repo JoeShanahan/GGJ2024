@@ -47,3 +47,5 @@ MonoBehaviour:
     EndingPoints: 0
     endingType: 0
   unlockedEvidence: {fileID: 0}
+  isDetectiveTalking: 0
+  PersonIcon: {fileID: 0}
