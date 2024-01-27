@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RoomCover3
+  m_Name: RoomOccluder
   m_Shader: {fileID: -6465566751694194690, guid: c053eccf994b3454fa1dcbd706dd4127, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
