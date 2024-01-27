@@ -7,6 +7,9 @@ public class EvidenceManager : MonoBehaviour
     [SerializeField]
     private List<ItemData> _foundEvidence;
 
+    [SerializeField]
+    private ClueToast _clueToast;
+
     public int EvidenceCount => _foundEvidence.Count;
 
     public bool HasFoundItem(ItemData data)
@@ -19,7 +22,7 @@ public class EvidenceManager : MonoBehaviour
         if (_foundEvidence.Contains(data) == false)
         {
             _foundEvidence.Add(data);
-            Debug.Log($"Found evidence: {data.name}");
+            _clueToast.ShowFoundClue(data);
         }
     }
 }
