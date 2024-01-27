@@ -33,7 +33,7 @@ MonoBehaviour:
   Choices:
   - ChoiceText: This will go to another conversation node
     RequiredItem: {fileID: 0}
-    NextNode: {fileID: 0}
+    NextNode: {fileID: 11400000, guid: 57c4dd66c0c01244b8efba5a8bc6b6a1, type: 2}
   - ChoiceText: This will only appear if you have an item
     RequiredItem: {fileID: 11400000, guid: 50a87941a8768e44eb33e9ee40e2ecf2, type: 2}
     NextNode: {fileID: 0}

@@ -17,6 +17,10 @@ MonoBehaviour:
     PersonName: Mr Man
     PersonIcon: {fileID: 0}
     TalkSound: {fileID: 0}
+  - LineText: the man man
+    PersonName: Mr Man
+    PersonIcon: {fileID: 0}
+    TalkSound: {fileID: 0}
   Choices:
   - ChoiceText: I don't want to talk to the man
     RequiredItem: {fileID: 0}

@@ -1,18 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
-public class InteractGuideText : MonoBehaviour
+public class InteractGuideText : W2C
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]
+    private TMP_Text _text;
+
+    private void Start()
     {
-        
+        Initialize(FindAnyObjectByType<Canvas>(), Camera.main);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetInteractable(Interactable item)
     {
+        gameObject.SetActive(item != null);
         
+        if (item != null)
+        {
+            _text.text = item.InteractText;
+            SetPosition(item.transform, Vector3.up);
+        }
     }
 }

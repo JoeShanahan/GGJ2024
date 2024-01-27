@@ -16,6 +16,10 @@ public class ExplodingDoor : Interactable
     [SerializeField]
     private float _explodeRadius;
 
+    public override bool IsInteractable => _isInteractable;
+
+    private bool _isInteractable = true;
+
     public override void Interact(Vector3 fromPos)
     {
         _wholeDoor.gameObject.SetActive(false);
@@ -28,5 +32,6 @@ public class ExplodingDoor : Interactable
 
         Destroy(this);
         Destroy(GetComponent<Collider>());
+        _isInteractable = false;
     }
 }

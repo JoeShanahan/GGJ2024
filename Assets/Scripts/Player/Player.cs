@@ -19,6 +19,10 @@ public class Player : MonoBehaviour
     [SerializeField]
     private CharacterData _character;
 
+    [SerializeField]
+    private InteractGuideText _interactUI;
+
+
     private PlayerDetectionSphere _detector;
     private Interactable _currentInteractable;
 
@@ -33,11 +37,13 @@ public class Player : MonoBehaviour
         _input.Movement.Jump.performed += JumpPressed;
         _input.Movement.Item.performed += ItemPressed;
         _detector.OnFocusChange += OnInteractChange;
+        _interactUI.SetInteractable(null);
     }
 
     void OnInteractChange(Interactable item)
     {
         _currentInteractable = item;
+        _interactUI.SetInteractable(item);
     }
 
     void Update()
@@ -55,6 +61,7 @@ public class Player : MonoBehaviour
     void ItemPressed(InputAction.CallbackContext ctx)
     {
         _currentInteractable?.Interact(transform.position);
+        _detector.RefreshCurrentFocus();
     }
 
     void HandlePlayerInput()
