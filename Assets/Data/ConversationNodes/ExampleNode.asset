@@ -25,6 +25,11 @@ MonoBehaviour:
     PersonName: Mr Man
     PersonIcon: {fileID: 0}
     TalkSound: {fileID: 0}
+  - LineText: This line is very very very very very very long to text the skip function
+      on textyper
+    PersonName: Mr Man
+    PersonIcon: {fileID: 0}
+    TalkSound: {fileID: 0}
   Choices:
   - ChoiceText: This will go to another conversation node
     RequiredItem: {fileID: 0}
