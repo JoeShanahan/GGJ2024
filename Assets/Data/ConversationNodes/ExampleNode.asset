@@ -34,9 +34,16 @@ MonoBehaviour:
   - ChoiceText: This will go to another conversation node
     RequiredItem: {fileID: 0}
     NextNode: {fileID: 0}
+    EndingPoints: 0
+    endingType: 2
   - ChoiceText: This will only appear if you have an item
     RequiredItem: {fileID: 11400000, guid: 50a87941a8768e44eb33e9ee40e2ecf2, type: 2}
     NextNode: {fileID: 0}
+    EndingPoints: 0
+    endingType: 0
   - ChoiceText: This will end the conversation
     RequiredItem: {fileID: 0}
     NextNode: {fileID: 0}
+    EndingPoints: 0
+    endingType: 0
+  unlockedEvidence: {fileID: 0}

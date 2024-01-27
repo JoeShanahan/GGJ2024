@@ -26,6 +26,10 @@ public class ConversationUI : MonoBehaviour
     private int _lineNumber;
     private ConversationNode _currentNode;
 
+    private bool HasGotItem(ItemData data) 
+    {
+        return false;
+    }
     public void ShowUI()
     {
         gameObject.SetActive(true);
@@ -54,20 +58,29 @@ public class ConversationUI : MonoBehaviour
 
     public void CreateDialogueResponses(ConversationNode node) 
     {
+        
         for (int i = 0; i < _choiceButtons.Count; i++)
         {
             TextMeshProUGUI buttonText = _choiceButtons[i].GetComponentInChildren<TextMeshProUGUI>();
+            
             if (i < node.Choices.Count)
-            {
-                buttonText.text = node.Choices[i].ChoiceText;
-                _choiceButtons[i].gameObject.SetActive(true);
+             {
+                ConversationChoice currentChoice = node.Choices[i];
+                if (currentChoice.RequiredItem != null && HasGotItem (currentChoice.RequiredItem) == false)
+                {
+                    _choiceButtons[i].gameObject.SetActive(false);
 
+                } else
+                {
+                    buttonText.text = node.Choices[i].ChoiceText;
+                    _choiceButtons[i].gameObject.SetActive(true);
+                }
+                
             }
             else
             {
                 _choiceButtons[i].gameObject.SetActive(false);
-            }
-            
+            }           
         }
     }
 
@@ -93,7 +106,7 @@ public class ConversationUI : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.T))
         {
             if (_typer.IsSkippable())
             {
