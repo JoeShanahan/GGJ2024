@@ -1,19 +1,22 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class ConversationOverlord : MonoBehaviour
 {
     [SerializeField] public ConversationNode TestNode;
     Canvas canvas;
+
+    [Header("ConversationBox")]
+    [SerializeField] TextMeshProUGUI convoText;
     public bool convoStarted;
-    ConversationController conversationController;
     public int lineNumber;
 
-
-
+    [Header("DialogueResponses")]
+    [SerializeField] GameObject[] answerButtons;
 
     public void Start()
     {
-        conversationController = FindObjectOfType<ConversationController>();
         GameObject tempObject;
         tempObject = GameObject.Find("ConvoCanvas");
         canvas = tempObject.GetComponent<Canvas>();
@@ -24,6 +27,7 @@ public class ConversationOverlord : MonoBehaviour
     public void StartConversation(ConversationNode node)
     {
         ShowConversationCanvas(true);
+        convoText.text = node.DialogueLines[lineNumber].LineText;
         Debug.Log(node.DialogueLines[lineNumber].LineText);
         convoStarted = true;
     }
@@ -45,6 +49,7 @@ public class ConversationOverlord : MonoBehaviour
         if (lineNumber < (TestNode.DialogueLines.Count-1))
         {
             lineNumber++;
+            convoText.text = node.DialogueLines[lineNumber].LineText;
             Debug.Log(node.DialogueLines[lineNumber].LineText);
         }
         else
@@ -52,6 +57,11 @@ public class ConversationOverlord : MonoBehaviour
             EndConversation();
         }
 
+    }
+
+    public void ShowText()
+    {
+        
     }
 
     public void Update()
