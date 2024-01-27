@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25dc17d2e25f5fd42be02f3d6852308e, type: 3}
+  m_Name: EDA - CLO First convo Scene 4
+  m_EditorClassIdentifier: 
+  DialogueLines:
+  - LineText: We have gathered all the suspects here.
+    PersonName: Inspector Edartsel
+    PersonIcon: {fileID: 0}
+    TalkSound: {fileID: 0}
+    isDetectiveTalking: 0
+  Choices:
+  - ChoiceText: Do Nothing
+    RequiredItem: {fileID: 0}
+    NextNode: {fileID: 0}
+    EndingPoints: 0
+    endingType: 0
+  - ChoiceText: Proceed with investigation
+    RequiredItem: {fileID: 0}
+    NextNode: {fileID: 0}
+    EndingPoints: 0
+    endingType: 0
+  unlockedEvidence: {fileID: 0}
+  PersonIcon: {fileID: 0}

@@ -10,34 +10,35 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25dc17d2e25f5fd42be02f3d6852308e, type: 3}
-  m_Name: Many options test node
+  m_Name: Cl Arrives
   m_EditorClassIdentifier: 
   DialogueLines:
-  - LineText: First line
-    PersonName: Manyman
+  - LineText: Madam, thank you for lending your superior intellect to the police
+      once again. There is no way we can figure out who committed this heinous murder.
+    PersonName: Inspector Edartsel
     PersonIcon: {fileID: 0}
     TalkSound: {fileID: 0}
-  - LineText: Second line
-    PersonName: Manyman
+    isDetectiveTalking: 0
+  - LineText: Has anyone inspected the body?
+    PersonName: Clownumbo
     PersonIcon: {fileID: 0}
     TalkSound: {fileID: 0}
-  - LineText: Third line
-    PersonName: Manyman
+    isDetectiveTalking: 1
+  - LineText: Not yet, we have left everything untouched for you.
+    PersonName: Inspector Edartsel
     PersonIcon: {fileID: 0}
     TalkSound: {fileID: 0}
-  - LineText: fourth line
-    PersonName: Manyman
+    isDetectiveTalking: 0
+  - LineText: Thanks inspector.
+    PersonName: Clownumbo
     PersonIcon: {fileID: 0}
     TalkSound: {fileID: 0}
-  - LineText: fifth line
-    PersonName: Manyman
-    PersonIcon: {fileID: 0}
-    TalkSound: {fileID: 0}
-  - LineText: sixth line
-    PersonName: Manyman
-    PersonIcon: {fileID: 0}
-    TalkSound: {fileID: 0}
+    isDetectiveTalking: 1
   Choices:
-  - ChoiceText: Fourth choice
+  - ChoiceText: Do Nothing
     RequiredItem: {fileID: 0}
     NextNode: {fileID: 0}
+    EndingPoints: 0
+    endingType: 0
+  unlockedEvidence: {fileID: 0}
+  PersonIcon: {fileID: 0}

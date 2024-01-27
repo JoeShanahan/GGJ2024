@@ -113,6 +113,9 @@ public class ConversationUI : MonoBehaviour
         }
         else
         {
+            SetTalkerPortrait();
+            GetOtherTalker();
+            LightUpTalker(node);
             _lineNumber ++;
             _typer.TypeText(node.DialogueLines[_lineNumber].LineText);
         }
@@ -145,13 +148,13 @@ public class ConversationUI : MonoBehaviour
     }
 
 
-    public void getOtherTalker()
+    public void GetOtherTalker()
     {
         _otherSpeaker.sprite = _currentNode.PersonIcon;
     }
     public void LightUpTalker(ConversationNode node)
     {
-        if (node.isDetectiveTalking)
+        if (node.DialogueLines[_lineNumber].isPersonOnLeftTalking)
         {
             _detectivePortrait.color = Color.white;
            _otherSpeaker.color = Color.gray;
