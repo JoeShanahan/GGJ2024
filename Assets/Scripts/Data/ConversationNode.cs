@@ -16,6 +16,11 @@ public class ConversationLine
     public string PersonName;
     public Sprite PersonIcon;
     public AudioClip TalkSound;
+
+    public string GetNextLine()
+    {
+        return LineText;
+    }
 }
 
 [System.Serializable]
