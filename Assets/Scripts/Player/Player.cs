@@ -19,8 +19,12 @@ public class Player : MonoBehaviour
     [SerializeField]
     private CharacterData _character;
 
+    private PlayerDetectionSphere _detector;
+    private Interactable _currentInteractable;
+
     void Start()
     {
+        _detector = GetComponentInChildren<PlayerDetectionSphere>();
         _movement = GetComponent<PersonMovement>();
         _input = new();
         _input.Enable();
@@ -28,6 +32,12 @@ public class Player : MonoBehaviour
 
         _input.Movement.Jump.performed += JumpPressed;
         _input.Movement.Item.performed += ItemPressed;
+        _detector.OnFocusChange += OnInteractChange;
+    }
+
+    void OnInteractChange(Interactable item)
+    {
+        _currentInteractable = item;
     }
 
     void Update()
@@ -44,7 +54,7 @@ public class Player : MonoBehaviour
     // Input Event
     void ItemPressed(InputAction.CallbackContext ctx)
     {
-
+        _currentInteractable?.Interact(transform.position);
     }
 
     void HandlePlayerInput()
