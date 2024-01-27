@@ -519,8 +519,8 @@ MonoBehaviour:
   - {fileID: 1019275109}
   - {fileID: 2137559493}
   - {fileID: 1763761527}
-  _detectivePortrait: {fileID: 1716245349}
-  _otherSpeaker: {fileID: 561181367}
+  _leftPersonPortrait: {fileID: 0}
+  _rightPersonPortrait: {fileID: 0}
   _typer: {fileID: 947705928}
   _overlord: {fileID: 898041846}
 --- !u!225 &538952318
@@ -547,7 +547,7 @@ GameObject:
   - component: {fileID: 561181368}
   - component: {fileID: 561181367}
   m_Layer: 5
-  m_Name: OtherPersonSprite
+  m_Name: RightPersonSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -640,7 +640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b6b89cb2e0087c4aa75d3c73c5a7cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TestNode: {fileID: 11400000, guid: a334e3bf48c8f294aace70e5c995e13e, type: 2}
+  TestNode: {fileID: 11400000, guid: a230ed65acd7ae847ae33a0e3c8ebdf0, type: 2}
   convoText: {fileID: 947705926}
   isConvoActive: 0
   lineNumber: 0
@@ -1312,7 +1312,7 @@ GameObject:
   - component: {fileID: 1716245350}
   - component: {fileID: 1716245349}
   m_Layer: 5
-  m_Name: PlayerCharacterSprite
+  m_Name: LeftPersonSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

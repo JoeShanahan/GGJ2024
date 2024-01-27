@@ -18,10 +18,10 @@ public class ConversationUI : MonoBehaviour
     private List<Button> _choiceButtons;
 
     [SerializeField]
-    private Image _detectivePortrait;
+    private Image _leftPersonPortrait;
 
     [SerializeField]
-    private Image _otherSpeaker;
+    private Image _rightPersonPortrait;
 
     [SerializeField]
     private TextTyper _typer;
@@ -55,12 +55,13 @@ public class ConversationUI : MonoBehaviour
         ContinueConversation(node);
     }
 
-    public void SetTalkerPortrait()
-    {
+    //public void SetPersonPortraits()
+    //{
         
-        _otherSpeaker.GetComponent<Image>();
+      //  _rightPersonPortrait.GetComponent<Image>();
+    //    _leftPersonPortrait.GetComponent<Image>();
 
-    }
+   // }
 
     private void HideAllButtons()
     {
@@ -102,6 +103,9 @@ public class ConversationUI : MonoBehaviour
     {
         bool isFinalLine = _lineNumber >= node.DialogueLines.Count - 1;
         bool doHaveChoices = node.Choices.Count > 0;
+        //SetPersonPortraits();
+        //GetOtherTalker();
+        //LightUpTalker(node);
 
         if (isFinalLine && doHaveChoices)
         {
@@ -113,9 +117,6 @@ public class ConversationUI : MonoBehaviour
         }
         else
         {
-            SetTalkerPortrait();
-            GetOtherTalker();
-            LightUpTalker(node);
             _lineNumber ++;
             _typer.TypeText(node.DialogueLines[_lineNumber].LineText);
         }
@@ -148,22 +149,22 @@ public class ConversationUI : MonoBehaviour
     }
 
 
-    public void GetOtherTalker()
-    {
-        _otherSpeaker.sprite = _currentNode.PersonIcon;
-    }
-    public void LightUpTalker(ConversationNode node)
-    {
-        if (node.DialogueLines[_lineNumber].isPersonOnLeftTalking)
-        {
-            _detectivePortrait.color = Color.white;
-           _otherSpeaker.color = Color.gray;
-        } else
-        {
-            _detectivePortrait.color = Color.gray;
-            _otherSpeaker.color = Color.white;
-        }
-    }
+   // public void GetOtherTalker()
+   // {
+    //    _rightPersonPortrait.sprite = _currentNode.PersonIcon;
+    //}
+    //public void LightUpTalker(ConversationNode node)
+    //{
+     //   if (node.DialogueLines[_lineNumber].isPersonOnLeftTalking)
+     //   {
+      //      _leftPersonPortrait.color = Color.white;
+      //     _rightPersonPortrait.color = Color.gray;
+     //   } else
+      //  {
+     //       _leftPersonPortrait.color = Color.gray;
+      //      _rightPersonPortrait.color = Color.white;
+      //  }
+    //}
 }
 
     
