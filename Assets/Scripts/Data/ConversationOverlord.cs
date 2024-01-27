@@ -18,6 +18,8 @@ public class ConversationOverlord : MonoBehaviour
 
 
     [Header("DialogueResponses")]
+    GameObject dialogueResponseBox;
+    public int choiceNumber;
     [SerializeField] GameObject[] answerButtons;
 
     public void Start()
@@ -46,7 +48,8 @@ public class ConversationOverlord : MonoBehaviour
 
     public void EndConversation()
     {
-        ShowConversationCanvas(false);
+        CreateDialogueResponses(TestNode);
+        //ShowConversationCanvas(false);
         lineNumber = 0;
         convoStarted = false;
     }
@@ -59,6 +62,7 @@ public class ConversationOverlord : MonoBehaviour
             typer.TypeText(node.DialogueLines[lineNumber].LineText);
             //convoText.text = node.DialogueLines[lineNumber].LineText;
             Debug.Log(node.DialogueLines[lineNumber].LineText);
+
         }
         else
         {
@@ -67,10 +71,27 @@ public class ConversationOverlord : MonoBehaviour
 
     }
 
-    public void ShowText()
+    public void CreateDialogueResponses(ConversationNode node) 
     {
-        
+
+        for (int i = 0; i < answerButtons.Length; i++)
+        {
+            TextMeshProUGUI buttonText = answerButtons[i].GetComponentInChildren<TextMeshProUGUI>();
+            if (i < node.Choices.Count)
+            {
+                buttonText.text = node.Choices[i].ChoiceText;
+                answerButtons[i].gameObject.SetActive(true);
+
+            }
+            else
+            {
+                answerButtons[i].gameObject.SetActive(false);
+            }
+            
+        }
     }
+
+  
 
     public void Update()
     {

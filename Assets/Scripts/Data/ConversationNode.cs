@@ -6,7 +6,7 @@ using UnityEngine;
 public class ConversationNode : ScriptableObject
 {
     public List<ConversationLine> DialogueLines;
-    public List<ConverstaionChoice> Choices;
+    public List<ConversationChoice> Choices;
 }
 
 [System.Serializable]
@@ -24,7 +24,7 @@ public class ConversationLine
 }
 
 [System.Serializable]
-public class ConverstaionChoice
+public class ConversationChoice
 {
     public string ChoiceText;
     public ItemData RequiredItem;
