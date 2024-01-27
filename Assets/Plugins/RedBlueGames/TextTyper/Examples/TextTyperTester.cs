@@ -31,7 +31,13 @@
 
         [SerializeField]
         [Tooltip("The text typer element to test typing with")]
+        
         private TextTyper testTextTyper;
+
+
+
+
+
 
 #pragma warning restore 0649
         public void Start()

@@ -1,22 +1,31 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using RedBlueGames.Tools.TextTyper;
 
 public class ConversationOverlord : MonoBehaviour
 {
     [SerializeField] public ConversationNode TestNode;
     Canvas canvas;
+
+    [Header("ConversationBox")]
+    [SerializeField] TextMeshProUGUI convoText;
     public bool convoStarted;
-    ConversationController conversationController;
     public int lineNumber;
+    TextTyper typer;
 
 
 
+
+    [Header("DialogueResponses")]
+    [SerializeField] GameObject[] answerButtons;
 
     public void Start()
     {
-        conversationController = FindObjectOfType<ConversationController>();
         GameObject tempObject;
         tempObject = GameObject.Find("ConvoCanvas");
         canvas = tempObject.GetComponent<Canvas>();
+        typer = FindObjectOfType<TextTyper>();
         canvas.gameObject.SetActive(false);
     }
 
@@ -24,6 +33,8 @@ public class ConversationOverlord : MonoBehaviour
     public void StartConversation(ConversationNode node)
     {
         ShowConversationCanvas(true);
+        typer.TypeText(node.DialogueLines[lineNumber].LineText);
+        //convoText.text = node.DialogueLines[lineNumber].LineText;
         Debug.Log(node.DialogueLines[lineNumber].LineText);
         convoStarted = true;
     }
@@ -45,6 +56,8 @@ public class ConversationOverlord : MonoBehaviour
         if (lineNumber < (TestNode.DialogueLines.Count-1))
         {
             lineNumber++;
+            typer.TypeText(node.DialogueLines[lineNumber].LineText);
+            //convoText.text = node.DialogueLines[lineNumber].LineText;
             Debug.Log(node.DialogueLines[lineNumber].LineText);
         }
         else
@@ -52,6 +65,11 @@ public class ConversationOverlord : MonoBehaviour
             EndConversation();
         }
 
+    }
+
+    public void ShowText()
+    {
+        
     }
 
     public void Update()
@@ -65,7 +83,14 @@ public class ConversationOverlord : MonoBehaviour
             } 
             else
             {
-                ContinueConversation(TestNode);
+                if (typer.IsSkippable())
+                {
+                    typer.Skip();
+                } else
+                {
+                    ContinueConversation(TestNode);
+                }
+ 
             }
             
         }
