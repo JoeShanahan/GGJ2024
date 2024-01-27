@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -512,9 +512,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39155171e2e36734393bdad4f2544b89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TestNode: {fileID: 11400000, guid: a334e3bf48c8f294aace70e5c995e13e, type: 2}
   LineNumber: 0
   ConvoStarted: 0
+  _choiceButtons:
+  - {fileID: 1924639418}
+  - {fileID: 1019275109}
+  - {fileID: 2137559493}
+  - {fileID: 1763761527}
+  _typer: {fileID: 947705928}
+  _overlord: {fileID: 898041846}
 --- !u!225 &538952318
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -634,8 +640,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TestNode: {fileID: 11400000, guid: a334e3bf48c8f294aace70e5c995e13e, type: 2}
   convoText: {fileID: 947705926}
-  convoStarted: 0
+  isConvoActive: 0
   lineNumber: 0
+  _ui: {fileID: 538952317}
   choiceNumber: 0
   answerButtons:
   - {fileID: 1924639416}
@@ -941,7 +948,7 @@ GameObject:
   - component: {fileID: 1019275109}
   - component: {fileID: 1019275112}
   m_Layer: 5
-  m_Name: Button 2
+  m_Name: Choice1Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1010,7 +1017,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1019275110}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 538952317}
+        m_TargetAssemblyTypeName: ConversationUI, Assembly-CSharp
+        m_MethodName: ButtonPress
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1019275110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1368,7 +1387,7 @@ GameObject:
   - component: {fileID: 1763761527}
   - component: {fileID: 1763761531}
   m_Layer: 5
-  m_Name: Button 4
+  m_Name: Choice3Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1417,7 +1436,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1763761528}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 538952317}
+        m_TargetAssemblyTypeName: ConversationUI, Assembly-CSharp
+        m_MethodName: ButtonPress
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1763761528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1830,7 +1861,7 @@ GameObject:
   - component: {fileID: 1924639418}
   - component: {fileID: 1924639421}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Choice0Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1899,7 +1930,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1924639419}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 538952317}
+        m_TargetAssemblyTypeName: ConversationUI, Assembly-CSharp
+        m_MethodName: ButtonPress
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1924639419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2047,7 +2090,7 @@ GameObject:
   - component: {fileID: 2137559493}
   - component: {fileID: 2137559496}
   m_Layer: 5
-  m_Name: Button 3
+  m_Name: Choice2Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2116,7 +2159,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2137559494}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 538952317}
+        m_TargetAssemblyTypeName: ConversationUI, Assembly-CSharp
+        m_MethodName: ButtonPress
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2137559494
 MonoBehaviour:
   m_ObjectHideFlags: 0

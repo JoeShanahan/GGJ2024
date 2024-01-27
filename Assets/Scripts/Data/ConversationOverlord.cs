@@ -3,117 +3,57 @@ using UnityEngine.UI;
 using TMPro;
 using RedBlueGames.Tools.TextTyper;
 
+/// <summary>
+/// This class handles the logic of starting and ending conversations
+/// This gameobject will always be active
+/// </summary>
 public class ConversationOverlord : MonoBehaviour
 {
-    [SerializeField] public ConversationNode TestNode;
-    Canvas canvas;
+    [SerializeField] 
+    public ConversationNode TestNode;
 
     [Header("ConversationBox")]
     [SerializeField] TextMeshProUGUI convoText;
-    public bool convoStarted;
+    public bool isConvoActive;
     public int lineNumber;
-    TextTyper typer;
 
-
-
+    [SerializeField]
+    private ConversationUI _ui;
 
     [Header("DialogueResponses")]
-    GameObject dialogueResponseBox;
     public int choiceNumber;
     [SerializeField] GameObject[] answerButtons;
 
     public void Start()
     {
-        GameObject tempObject;
-        tempObject = GameObject.Find("ConvoCanvas");
-        canvas = tempObject.GetComponent<Canvas>();
-        typer = FindObjectOfType<TextTyper>();
-        canvas.gameObject.SetActive(false);
+        _ui.gameObject.SetActive(false);
     }
-
 
     public void StartConversation(ConversationNode node)
     {
-        ShowConversationCanvas(true);
-        typer.TypeText(node.DialogueLines[lineNumber].LineText);
-        //convoText.text = node.DialogueLines[lineNumber].LineText;
-        Debug.Log(node.DialogueLines[lineNumber].LineText);
-        convoStarted = true;
-    }
-
-    public void ShowConversationCanvas(bool Talking)
-    {
-        canvas.gameObject.SetActive(Talking);
+        _ui.ShowUI();
+        _ui.SetNewNode(node);
+        
+        isConvoActive = true;
+        // TODO disable player controls
     }
 
     public void EndConversation()
     {
-        CreateDialogueResponses(TestNode);
+        _ui.HideUI();
         //ShowConversationCanvas(false);
-        lineNumber = 0;
-        convoStarted = false;
+        isConvoActive = false;
+        // TODO enable the player controls
     }
 
-    public void ContinueConversation(ConversationNode node)
+    private void Update()
     {
-        if (lineNumber < (TestNode.DialogueLines.Count-1))
+        if (Input.GetKeyDown(KeyCode.T))
         {
-            lineNumber++;
-            typer.TypeText(node.DialogueLines[lineNumber].LineText);
-            //convoText.text = node.DialogueLines[lineNumber].LineText;
-            Debug.Log(node.DialogueLines[lineNumber].LineText);
-
-        }
-        else
-        {
-            EndConversation();
-        }
-
-    }
-
-    public void CreateDialogueResponses(ConversationNode node) 
-    {
-
-        for (int i = 0; i < answerButtons.Length; i++)
-        {
-            TextMeshProUGUI buttonText = answerButtons[i].GetComponentInChildren<TextMeshProUGUI>();
-            if (i < node.Choices.Count)
-            {
-                buttonText.text = node.Choices[i].ChoiceText;
-                answerButtons[i].gameObject.SetActive(true);
-
-            }
-            else
-            {
-                answerButtons[i].gameObject.SetActive(false);
-            }
-            
-        }
-    }
-
-  
-
-    public void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (!convoStarted)
+            if (!isConvoActive)
             {
                 StartConversation(TestNode);
-
             } 
-            else
-            {
-                if (typer.IsSkippable())
-                {
-                    typer.Skip();
-                } else
-                {
-                    ContinueConversation(TestNode);
-                }
- 
-            }
-            
         }
     }
 
