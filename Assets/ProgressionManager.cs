@@ -2,11 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using TMPro;
 
 public class ProgressionManager : MonoBehaviour
 {
     [SerializeField]
     private List<PhaseInfo> _phases;
+
+    [SerializeField]
+    private TMP_Text _instructionText;
+
+    [SerializeField]
+    private RectTransform _instructionBox;
+
+    private int _numCluesRemain;
     
     private Dictionary<EndingType, int> _endingPoints = new()
     {
@@ -35,10 +44,7 @@ public class ProgressionManager : MonoBehaviour
 
     private void Start()
     {
-        foreach (PhaseInfo phase in _phases)
-        {
-            phase.RoomCoverMat?.DOFade(1, 0.1f);
-        }
+        _instructionText.text = "Talk to the inspector";
     }
 
     public void AdvanceToNextPhase()
@@ -51,17 +57,24 @@ public class ProgressionManager : MonoBehaviour
             return;
         }
 
-        foreach (Transform t in _phases[_currentPhase].RoomsToUnlock)
-        {
-            t.gameObject.SetActive(true);
-        }
-
         foreach (Transform t in _phases[_currentPhase].BlockersToHide)
         {
             t.gameObject.SetActive(false);
         }
 
-        _phases[_currentPhase].RoomCoverMat.DOFade(0, 1f);
+        _numCluesRemain = _phases[_currentPhase].MinimumRequiredEvidence;
+        RefreshInstructions();
+    }
+    
+    private void RefreshInstructions()
+    {
+        if (_numCluesRemain > 1)
+            _instructionText.text = $"Find at least {_numCluesRemain} more clues";
+        else if (_numCluesRemain == 1)
+            _instructionText.text = $"Find at least 1 more clue";
+        else
+            _instructionText.text = $"Keep searching or talk to the inspector";
+            
     }
 
     private void GoToConclusion()
@@ -77,4 +90,5 @@ public class PhaseInfo
     public Transform RoomsToUnlock;
     public Material RoomCoverMat;
     public Transform BlockersToHide;
+    public List<EvidenceItem> Evidence;
 }

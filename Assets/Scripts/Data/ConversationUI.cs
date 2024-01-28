@@ -105,7 +105,7 @@ public class ConversationUI : MonoBehaviour
 
     private bool DoHaveChoices(ConversationNode node)
     {
-        if (node.Choices.Count > 0)
+        if (node.Choices.Count == 0)
             return false;
 
         foreach (ConversationChoice choice in node.Choices)
