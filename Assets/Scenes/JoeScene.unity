@@ -34543,8 +34543,8 @@ MonoBehaviour:
   - {fileID: 382248747}
   - {fileID: 1085946136}
   - {fileID: 937978675}
-  _detectivePortrait: {fileID: 376191293}
-  _otherSpeaker: {fileID: 855820477}
+  _leftPersonPortrait: {fileID: 376191293}
+  _rightPersonPortrait: {fileID: 855820477}
   _typer: {fileID: 1049306762}
   _overlord: {fileID: 1967224388}
   _evidence: {fileID: 237325396}
