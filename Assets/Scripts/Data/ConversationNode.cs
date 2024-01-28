@@ -8,8 +8,8 @@ public class ConversationNode : ScriptableObject
     public List<ConversationLine> DialogueLines;
     public List<ConversationChoice> Choices;
     public ItemData unlockedEvidence; // TODO implement this on conversation end
-    
-    public Sprite PersonIcon;
+    public Sprite InitialLeftPersonIcon;
+    public Sprite InitialRightPersonIcon;
 }
 
 [System.Serializable]
