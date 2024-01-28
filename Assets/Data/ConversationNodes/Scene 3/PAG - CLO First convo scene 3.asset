@@ -15,26 +15,27 @@ MonoBehaviour:
   DialogueLines:
   - LineText: Am I the murderer? No! I was the one who called the police.
     PersonName: Paggy
-    PersonIcon: {fileID: 0}
+    PersonIcon: {fileID: 21300000, guid: 02f1b743478a106438d321071306f6cf, type: 3}
     TalkSound: {fileID: 0}
-    isDetectiveTalking: 0
+    isPersonOnLeftTalking: 0
   - LineText: What do you think of Cory?
     PersonName: Clownumbo
-    PersonIcon: {fileID: 0}
+    PersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
     TalkSound: {fileID: 0}
-    isDetectiveTalking: 1
+    isPersonOnLeftTalking: 1
   - LineText: "He is the director\u2019s nephew, right? I only joined the museum
       last month, so I don\u2019t know much about him, and I definitely don\u2019t
       have a reason to murder him."
     PersonName: Paggy
-    PersonIcon: {fileID: 0}
+    PersonIcon: {fileID: 21300000, guid: 02f1b743478a106438d321071306f6cf, type: 3}
     TalkSound: {fileID: 0}
-    isDetectiveTalking: 0
+    isPersonOnLeftTalking: 0
   - LineText: Thank you.
     PersonName: Clownumbo
-    PersonIcon: {fileID: 0}
+    PersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
     TalkSound: {fileID: 0}
-    isDetectiveTalking: 1
+    isPersonOnLeftTalking: 1
   Choices: []
   unlockedEvidence: {fileID: 0}
-  PersonIcon: {fileID: 0}
+  InitialLeftPersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
+  InitialRightPersonIcon: {fileID: 21300000, guid: 02f1b743478a106438d321071306f6cf, type: 3}

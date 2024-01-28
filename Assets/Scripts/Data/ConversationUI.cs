@@ -19,10 +19,10 @@ public class ConversationUI : MonoBehaviour
     private List<Button> _choiceButtons;
 
     [SerializeField]
-    private Image _detectivePortrait;
+    private Image _leftPersonPortrait;
 
     [SerializeField]
-    private Image _otherSpeaker;
+    private Image _rightPersonPortrait;
 
     [SerializeField]
     private TextTyper _typer;
@@ -57,12 +57,7 @@ public class ConversationUI : MonoBehaviour
         ContinueConversation(node);
     }
 
-    public void SetTalkerPortrait()
-    {
-        
-        _otherSpeaker.GetComponent<Image>();
-
-    }
+   
 
     private void HideAllButtons()
     {
@@ -101,33 +96,11 @@ public class ConversationUI : MonoBehaviour
         }
     }
 
-    public void ContinueConversation(ConversationNode node)
-    {
-        bool isFinalLine = _lineNumber >= node.DialogueLines.Count - 1;
-        bool doHaveChoices = node.Choices.Count > 0;
-
-        if (isFinalLine && doHaveChoices)
-        {
-            CreateDialogueResponses(node);
-        }
-        else if (isFinalLine)
-        {
-            _overlord.EndConversation();
-        }
-        else
-        {
-            _lineNumber ++;
-
-            SetTalkerPortrait();
-            GetOtherTalker();
-            LightUpTalker(node);
-            _typer.TypeText(node.DialogueLines[_lineNumber].LineText);
-        }
-    }
+   
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             if (_typer.IsSkippable())
             {
@@ -156,20 +129,59 @@ public class ConversationUI : MonoBehaviour
     }
 
 
-    public void GetOtherTalker()
+    public void ContinueConversation(ConversationNode node)
     {
-        _otherSpeaker.sprite = _currentNode.PersonIcon;
+        bool isFinalLine = _lineNumber >= node.DialogueLines.Count - 1;
+        bool doHaveChoices = node.Choices.Count > 0;
+
+        if (isFinalLine && doHaveChoices)
+        {
+            CreateDialogueResponses(node);
+        }
+        else if (isFinalLine)
+        {
+            _overlord.EndConversation();
+        }
+        else
+        {
+            _lineNumber++;
+            SetTalkerPortraits();
+            LightUpTalker(node);
+            _typer.TypeText(node.DialogueLines[_lineNumber].LineText);
+        }
     }
+    public void SetTalkerPortraits()
+    {
+        if (_lineNumber == 0)
+        {
+            _leftPersonPortrait.sprite = _currentNode.InitialLeftPersonIcon;
+            _rightPersonPortrait.sprite = _currentNode.InitialRightPersonIcon;
+        } 
+        else
+        { 
+        if (_currentNode.DialogueLines[_lineNumber].isPersonOnLeftTalking)
+            {
+                _leftPersonPortrait.sprite = _currentNode.DialogueLines[_lineNumber].PersonIcon;
+            } 
+            else
+            {
+                _rightPersonPortrait.sprite = _currentNode.DialogueLines[_lineNumber].PersonIcon;
+            }
+        }
+        
+    }
+
+    
     public void LightUpTalker(ConversationNode node)
     {
         if (node.DialogueLines[_lineNumber].isPersonOnLeftTalking)
         {
-            _detectivePortrait.color = Color.white;
-           _otherSpeaker.color = Color.gray;
+            _leftPersonPortrait.color = Color.white;
+           _rightPersonPortrait.color = Color.gray;
         } else
         {
-            _detectivePortrait.color = Color.gray;
-            _otherSpeaker.color = Color.white;
+            _leftPersonPortrait.color = Color.gray;
+            _rightPersonPortrait.color = Color.white;
         }
     }
 }
