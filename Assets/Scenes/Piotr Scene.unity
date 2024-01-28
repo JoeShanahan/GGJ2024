@@ -840,6 +840,7 @@ MonoBehaviour:
   _wholeDoor: {fileID: 644937441}
   _explodeForce: 1200
   _explodeRadius: 15
+  _room: {fileID: 0}
 --- !u!1 &147816867
 GameObject:
   m_ObjectHideFlags: 0
@@ -1088,6 +1089,7 @@ MonoBehaviour:
   _wholeDoor: {fileID: 1326789380}
   _explodeForce: 1200
   _explodeRadius: 15
+  _room: {fileID: 0}
 --- !u!4 &179770389 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5977612597083828282, guid: c4a4928e887ae574eb1a614239bd1030, type: 3}
@@ -1618,6 +1620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0106d07b8a306e4480424d32dcd14eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _startsVisible: 0
 --- !u!1 &198367971
 GameObject:
   m_ObjectHideFlags: 0
@@ -3598,6 +3601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0106d07b8a306e4480424d32dcd14eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _startsVisible: 0
 --- !u!1 &376191291
 GameObject:
   m_ObjectHideFlags: 0
@@ -9375,6 +9379,7 @@ MonoBehaviour:
   _wholeDoor: {fileID: 1851655414}
   _explodeForce: 1200
   _explodeRadius: 15
+  _room: {fileID: 0}
 --- !u!4 &468158295 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3615053052769937909, guid: dc2cbdccdeeff154bb078ce3548b5155, type: 3}
@@ -10592,6 +10597,7 @@ MonoBehaviour:
   _wholeDoor: {fileID: 1151369013}
   _explodeForce: 1200
   _explodeRadius: 15
+  _room: {fileID: 0}
 --- !u!1 &518124769
 GameObject:
   m_ObjectHideFlags: 0
@@ -12788,6 +12794,7 @@ MonoBehaviour:
   _wholeDoor: {fileID: 775570966}
   _explodeForce: 1200
   _explodeRadius: 15
+  _room: {fileID: 0}
 --- !u!1 &704014108
 GameObject:
   m_ObjectHideFlags: 0
@@ -15400,6 +15407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0106d07b8a306e4480424d32dcd14eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _startsVisible: 0
 --- !u!1 &806653462
 GameObject:
   m_ObjectHideFlags: 0
@@ -27976,7 +27984,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: -0.000007687462}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -30021,6 +30029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0106d07b8a306e4480424d32dcd14eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _startsVisible: 0
 --- !u!4 &1185209324 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5104066368356191442, guid: dfef589d9c8921248afaa1566670bbd2, type: 3}
@@ -33047,6 +33056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0106d07b8a306e4480424d32dcd14eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _startsVisible: 0
 --- !u!1 &1229876074
 GameObject:
   m_ObjectHideFlags: 0
@@ -45420,6 +45430,7 @@ MonoBehaviour:
   _wholeDoor: {fileID: 1236468061}
   _explodeForce: 1200
   _explodeRadius: 15
+  _room: {fileID: 0}
 --- !u!1 &1326789379
 GameObject:
   m_ObjectHideFlags: 0
@@ -46314,6 +46325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0106d07b8a306e4480424d32dcd14eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _startsVisible: 0
 --- !u!1 &1401646714
 GameObject:
   m_ObjectHideFlags: 0
@@ -46916,6 +46928,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0106d07b8a306e4480424d32dcd14eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _startsVisible: 0
 --- !u!1 &1451379933
 GameObject:
   m_ObjectHideFlags: 3
@@ -47642,6 +47655,7 @@ MonoBehaviour:
   _wholeDoor: {fileID: 1294662060}
   _explodeForce: 1200
   _explodeRadius: 15
+  _room: {fileID: 0}
 --- !u!1 &1540738174
 GameObject:
   m_ObjectHideFlags: 0
@@ -47833,6 +47847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0106d07b8a306e4480424d32dcd14eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _startsVisible: 0
 --- !u!4 &1574725051 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5977612597083828282, guid: c4a4928e887ae574eb1a614239bd1030, type: 3}
@@ -48050,6 +48065,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0106d07b8a306e4480424d32dcd14eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _startsVisible: 0
 --- !u!1 &1646303613
 GameObject:
   m_ObjectHideFlags: 0
@@ -51610,6 +51626,7 @@ MonoBehaviour:
   _wholeDoor: {fileID: 1086640892}
   _explodeForce: 1200
   _explodeRadius: 15
+  _room: {fileID: 0}
 --- !u!1 &1899295256
 GameObject:
   m_ObjectHideFlags: 0
@@ -52111,6 +52128,7 @@ MonoBehaviour:
   TestNode: {fileID: 11400000, guid: a230ed65acd7ae847ae33a0e3c8ebdf0, type: 2}
   isConvoActive: 0
   _ui: {fileID: 1030464350}
+  _player: {fileID: 0}
 --- !u!1 &1971644130
 GameObject:
   m_ObjectHideFlags: 0
@@ -56830,6 +56848,7 @@ MonoBehaviour:
   _wholeDoor: {fileID: 3526349496636686779}
   _explodeForce: 1200
   _explodeRadius: 15
+  _room: {fileID: 0}
 --- !u!65 &4479204025584225889
 BoxCollider:
   m_ObjectHideFlags: 0
