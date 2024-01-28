@@ -9,6 +9,8 @@ public class Interactable : MonoBehaviour
 
     public string InteractText => _interactText;
 
+    public virtual bool IsInteractable => true;
+
     public virtual void Interact(Vector3 fromPos)
     {
         

@@ -5,10 +5,13 @@ using UnityEngine;
 public class TalkingPerson : Interactable
 {
     [SerializeField]
-    private ConversationNode _convoStart;
+    private ConversationNode _myConversationNode;
+
+    [SerializeField]
+    ConversationOverlord _convoOverlord;
     
     public override void Interact(Vector3 fromPos)
     {
-
+        _convoOverlord.StartConversation(_myConversationNode);
     }
 }

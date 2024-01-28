@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7931398933137289536}
+  - component: {fileID: 352897624081195993}
   m_Layer: 0
   m_Name: WallCorner
   m_TagString: Untagged
@@ -32,6 +33,27 @@ Transform:
   - {fileID: 7767452865150413333}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &352897624081195993
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7211586184134679482}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 40, z: 2}
+  m_Center: {x: 0, y: 10, z: 0}
 --- !u!1001 &7800569112599203326
 PrefabInstance:
   m_ObjectHideFlags: 0

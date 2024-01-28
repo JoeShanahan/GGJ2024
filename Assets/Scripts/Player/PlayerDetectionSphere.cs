@@ -32,7 +32,7 @@ public class PlayerDetectionSphere : MonoBehaviour
         }
     }
 
-    private void RefreshCurrentFocus()
+    public void RefreshCurrentFocus()
     {
         if (_inRange.Count == 0)
         {
@@ -40,7 +40,7 @@ public class PlayerDetectionSphere : MonoBehaviour
         }
         else
         {
-            if (_inRange.Last() == null)
+            if (_inRange.Last() == null || _inRange.Last().IsInteractable == false)
             {
                 _inRange.RemoveAt(_inRange.Count - 1);
                 RefreshCurrentFocus();
