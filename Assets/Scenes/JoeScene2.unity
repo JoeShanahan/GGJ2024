@@ -1708,7 +1708,7 @@ MonoBehaviour:
   _interactText: Open Door
   _shardParent: {fileID: 1401646715}
   _wholeDoor: {fileID: 644937441}
-  _explodeForce: 240
+  _explodeForce: 20
   _explodeRadius: 15
   _room: {fileID: 1394406639}
 --- !u!1001 &89529356

@@ -76,3 +76,4 @@ crashlytics-build.properties
 Executable/*
 .vscode/*
 .vsconfig
+exe/*
