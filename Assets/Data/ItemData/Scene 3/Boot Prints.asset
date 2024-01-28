@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94791cbbbfa37664a84e0b930cbc732e, type: 3}
   m_Name: Boot Prints
   m_EditorClassIdentifier: 
-  ItemName: Boot Prints
-  Description: 
+  ItemName: Giant Boot Prints
+  Description: Found near the keys locker of the security station. Who wears big
+    boots?
   Icon: {fileID: 21300000, guid: 85160bd8fb722234a97172ec63057278, type: 3}

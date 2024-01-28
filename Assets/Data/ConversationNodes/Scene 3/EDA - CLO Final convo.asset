@@ -23,23 +23,35 @@ MonoBehaviour:
       an alibi, and he has the motive "
     RequiredItem: {fileID: 0}
     NextNode: {fileID: 11400000, guid: 0a792301f7610fe4ea2807d474b9e019, type: 2}
-    RequiredItemList: []
+    RequiredItemList:
+    - {fileID: 11400000, guid: a4b8639b16404c64fba90b0871914aee, type: 2}
+    needAll: 0
+    unlockedEvidence: {fileID: 0}
     EndingPoints: 0
     endingType: 0
   - ChoiceText: The mummy broke out of their sarcophagus and drained the life force
       out of Cory. A great evil is unleashed and we are all doomed!
     RequiredItem: {fileID: 0}
     NextNode: {fileID: 11400000, guid: dfc96ccaf6b903148b044053b46de7bc, type: 2}
-    RequiredItemList: []
+    RequiredItemList:
+    - {fileID: 11400000, guid: 88f4cc00cec4be8478c4b214e579facc, type: 2}
+    needAll: 0
+    unlockedEvidence: {fileID: 0}
     EndingPoints: 0
     endingType: 0
   - ChoiceText: "There was no murder. The \u201Cbody\u201D lying in the painting
       room is that of a mummy."
     RequiredItem: {fileID: 0}
     NextNode: {fileID: 11400000, guid: 148ba6d4cbd4cc64d9ba467731793218, type: 2}
-    RequiredItemList: []
+    RequiredItemList:
+    - {fileID: 11400000, guid: c774fee82effabd44a6bb8f2092cdfaf, type: 2}
+    - {fileID: 11400000, guid: 318f177719fd7934ab228234dfe08e60, type: 2}
+    - {fileID: 11400000, guid: ab2c182634e26914692148a847d0e57e, type: 2}
+    - {fileID: 11400000, guid: 7a75145be462a9d48acba74c13d134d5, type: 2}
+    - {fileID: 11400000, guid: 6545330b3368f1c428807e04dc593af3, type: 2}
+    needAll: 1
+    unlockedEvidence: {fileID: 0}
     EndingPoints: 0
     endingType: 0
-  unlockedEvidence: {fileID: 0}
   InitialLeftPersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
   InitialRightPersonIcon: {fileID: 21300000, guid: 11cb7cba3bf899a429427f53e042d221, type: 3}
