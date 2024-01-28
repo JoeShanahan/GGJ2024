@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25dc17d2e25f5fd42be02f3d6852308e, type: 3}
+  m_Name: Ending C
+  m_EditorClassIdentifier: 
+  DialogueLines:
+  - LineText: That is impossible!
+    PersonName: Inspector Horatio
+    PersonIcon: {fileID: 0}
+    TalkSound: {fileID: 0}
+    isDetectiveTalking: 0
+  - LineText: Who has the most to gain from a fake murder? Why would someone want
+      the general public to believe a random act of violence has happened? Perhaps
+      it is to justify the overly bloated police funding?
+    PersonName: Clownumbo
+    PersonIcon: {fileID: 0}
+    TalkSound: {fileID: 0}
+    isDetectiveTalking: 1
+  - LineText: "That\u2019s some accusation you are making here."
+    PersonName: Inspector Horatio
+    PersonIcon: {fileID: 0}
+    TalkSound: {fileID: 0}
+    isDetectiveTalking: 0
+  - LineText: Inspector Edartsel?
+    PersonName: Clownumbo
+    PersonIcon: {fileID: 0}
+    TalkSound: {fileID: 0}
+    isDetectiveTalking: 1
+  - LineText: Your logic is impeccable, but we have to protect our own.
+    PersonName: Inspector Edartsel
+    PersonIcon: {fileID: 0}
+    TalkSound: {fileID: 0}
+    isDetectiveTalking: 0
+  - LineText: 'That is as expected. I was merely throwing out conjectures. I will
+      just take my leave. '
+    PersonName: 'Clownumbo '
+    PersonIcon: {fileID: 0}
+    TalkSound: {fileID: 0}
+    isDetectiveTalking: 1
+  - LineText: You think you can just leave? (Points gun at Clownumbo)
+    PersonName: Inspector Horatio
+    PersonIcon: {fileID: 0}
+    TalkSound: {fileID: 0}
+    isDetectiveTalking: 0
+  - LineText: (Giant ball falls on the cops)
+    PersonName: Clownumbo
+    PersonIcon: {fileID: 0}
+    TalkSound: {fileID: 0}
+    isDetectiveTalking: 0
+  Choices: []
+  unlockedEvidence: {fileID: 0}
+  PersonIcon: {fileID: 0}

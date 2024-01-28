@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25dc17d2e25f5fd42be02f3d6852308e, type: 3}
+  m_Name: PAG - CLO First convo scene 3
+  m_EditorClassIdentifier: 
+  DialogueLines:
+  - LineText: Am I the murderer? No! I was the one who called the police.
+    PersonName: Paggy
+    PersonIcon: {fileID: 0}
+    TalkSound: {fileID: 0}
+    isDetectiveTalking: 0
+  - LineText: What do you think of Cory?
+    PersonName: Clownumbo
+    PersonIcon: {fileID: 0}
+    TalkSound: {fileID: 0}
+    isDetectiveTalking: 1
+  - LineText: "He is the director\u2019s nephew, right? I only joined the museum
+      last month, so I don\u2019t know much about him, and I definitely don\u2019t
+      have a reason to murder him."
+    PersonName: Paggy
+    PersonIcon: {fileID: 0}
+    TalkSound: {fileID: 0}
+    isDetectiveTalking: 0
+  - LineText: Thank you.
+    PersonName: Clownumbo
+    PersonIcon: {fileID: 0}
+    TalkSound: {fileID: 0}
+    isDetectiveTalking: 1
+  Choices: []
+  unlockedEvidence: {fileID: 0}
+  PersonIcon: {fileID: 0}
