@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25dc17d2e25f5fd42be02f3d6852308e, type: 3}
-  m_Name: PAG - CLO Subsequent convo
+  m_Name: PAG - CLO subsequent convo
   m_EditorClassIdentifier: 
   DialogueLines:
   - LineText: Do I know the victim? I have no idea who they are, sorry.
@@ -18,13 +18,6 @@ MonoBehaviour:
     PersonIcon: {fileID: 21300000, guid: 02f1b743478a106438d321071306f6cf, type: 3}
     TalkSound: {fileID: 0}
     isPersonOnLeftTalking: 0
-  Choices:
-  - ChoiceText: Do nothing
-    RequiredItem: {fileID: 0}
-    NextNode: {fileID: 0}
-    RequiredItemList: []
-    EndingPoints: 0
-    endingType: 0
-  unlockedEvidence: {fileID: 0}
+  Choices: []
   InitialLeftPersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
   InitialRightPersonIcon: {fileID: 21300000, guid: 02f1b743478a106438d321071306f6cf, type: 3}

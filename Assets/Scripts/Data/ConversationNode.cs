@@ -31,6 +31,9 @@ public class ConversationChoice
 
     [Header("You need at least one of these")]
     public ItemData[] RequiredItemList;
+    public bool needAll;
+
+
 
     [Header("Only for deductions")]
     public ItemData unlockedEvidence;
