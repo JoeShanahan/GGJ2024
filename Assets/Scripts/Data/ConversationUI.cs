@@ -87,16 +87,14 @@ public class ConversationUI : MonoBehaviour
                
                 if (_evidence.CanShowThisChoice(currentChoice))
                 {
-                    Debug.Log("creating responses1");
-                    _choiceButtons[i].gameObject.SetActive(false);
-
-                } else
-                {
-                    Debug.Log("creatingresponses2");
                     buttonText.text = node.Choices[i].ChoiceText;
                     _choiceButtons[i].gameObject.SetActive(true);
+
                 }
-                
+                else
+                {
+                    _choiceButtons[i].gameObject.SetActive(false);
+                }
             }
             else
             {
