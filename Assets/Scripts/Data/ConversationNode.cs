@@ -7,7 +7,7 @@ public class ConversationNode : ScriptableObject
 {
     public List<ConversationLine> DialogueLines;
     public List<ConversationChoice> Choices;
-    public ItemData unlockedEvidence;
+    public ItemData unlockedEvidence; // TODO implement this on conversation end
     
     public Sprite PersonIcon;
 }

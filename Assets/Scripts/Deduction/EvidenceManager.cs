@@ -20,7 +20,7 @@ public class EvidenceManager : MonoBehaviour
     public bool CanShowThisChoice(ConversationChoice choice)
     {
         // If we don't need an item, then we're good to show
-        if (choice.RequiredItem == null)
+        if (choice.RequiredItemList.Length == 0)
             return true;
 
         foreach (ItemData evidence in choice.RequiredItemList)

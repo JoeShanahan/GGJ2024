@@ -116,10 +116,11 @@ public class ConversationUI : MonoBehaviour
         }
         else
         {
+            _lineNumber ++;
+
             SetTalkerPortrait();
             GetOtherTalker();
             LightUpTalker(node);
-            _lineNumber ++;
             _typer.TypeText(node.DialogueLines[_lineNumber].LineText);
         }
     }

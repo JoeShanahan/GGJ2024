@@ -84,7 +84,7 @@ public class Player : MonoBehaviour
         Vector3 yComponent = playerInput.y * camForward;
 
         _movement.SetDesiredDirection(xComponent + yComponent);
-        _movement.SetJumpRequested(_jumpPressed);
+        // _movement.SetJumpRequested(_jumpPressed);
 
         _jumpPressed = false;
     }
