@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4293842604751632185}
-  - component: {fileID: 2009035839466549639}
+  - component: {fileID: 5626106088033523091}
   m_Layer: 0
   m_Name: Dinosaur
   m_TagString: Untagged
@@ -32,6 +32,7 @@ Transform:
   m_Children:
   - {fileID: 1372992263094176773}
   - {fileID: 758737130499329622}
+  - {fileID: 3753153810307829163}
   - {fileID: 4186897022379996992}
   - {fileID: 7984240626688862126}
   - {fileID: 8521437583747567586}
@@ -56,7 +57,7 @@ Transform:
   - {fileID: 846360289947110883}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2009035839466549639
+--- !u!114 &5626106088033523091
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -68,6 +69,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89d4c94be41abf743932040ba938b0fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bones:
+  - {fileID: 4883004023635121243}
+  - {fileID: 9030166604671981478}
+  - {fileID: 8313259563881426253}
+  - {fileID: 4865893532714089700}
+  - {fileID: 6559671778718569640}
+  - {fileID: 6215534308081115439}
+  - {fileID: 5182004920660474276}
+  - {fileID: 8649790895680356496}
+  - {fileID: 5620134349283407472}
+  - {fileID: 8660231049923018318}
+  - {fileID: 2887472191881908147}
+  - {fileID: 7511237864951596859}
+  - {fileID: 5240743217308260121}
+  - {fileID: 5306703338321769115}
+  - {fileID: 3177791123020523274}
+  - {fileID: 8934524520159208966}
+  - {fileID: 3417658286198160814}
+  - {fileID: 6117248257460881754}
+  - {fileID: 7492525333884439677}
+  - {fileID: 7510067290559500397}
+  - {fileID: 7940137646717879359}
+  - {fileID: 2368553371555445615}
+  - {fileID: 2799281930123970002}
+  - {fileID: 2807001354265450153}
 --- !u!1001 &512715643995761423
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76,6 +102,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4293842604751632185}
     m_Modifications:
+    - target: {fileID: 1982941632993550040, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+      propertyPath: dinoYeet
+      value: 
+      objectReference: {fileID: 5626106088033523091}
     - target: {fileID: 5597372759755209784, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10
@@ -116,6 +146,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 5658338369250972887, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 6982624726450120562, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
       propertyPath: m_Name
       value: Bone1 (2)
@@ -130,6 +164,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5597372759755209784, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
   m_PrefabInstance: {fileID: 512715643995761423}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7492525333884439677 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6982624726450120562, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+  m_PrefabInstance: {fileID: 512715643995761423}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &637825852520554569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -138,6 +177,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4293842604751632185}
     m_Modifications:
+    - target: {fileID: 1982941632993550040, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+      propertyPath: dinoYeet
+      value: 
+      objectReference: {fileID: 5626106088033523091}
     - target: {fileID: 5597372759755209784, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.8
@@ -190,6 +233,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 45
       objectReference: {fileID: 0}
+    - target: {fileID: 5658338369250972887, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 6982624726450120562, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
       propertyPath: m_Name
       value: Bone1 (7)
@@ -204,6 +251,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5597372759755209784, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
   m_PrefabInstance: {fileID: 637825852520554569}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7511237864951596859 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6982624726450120562, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+  m_PrefabInstance: {fileID: 637825852520554569}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &639047532596393759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -212,6 +264,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4293842604751632185}
     m_Modifications:
+    - target: {fileID: -6023326921968273568, guid: 24a7a983b34aeee43a2f2978361ce9f2, type: 3}
+      propertyPath: dinoYeet
+      value: 
+      objectReference: {fileID: 5626106088033523091}
     - target: {fileID: 5597372759755209784, guid: 24a7a983b34aeee43a2f2978361ce9f2, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -264,6 +320,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5768137568248425612, guid: 24a7a983b34aeee43a2f2978361ce9f2, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 6982624726450120562, guid: 24a7a983b34aeee43a2f2978361ce9f2, type: 3}
       propertyPath: m_Name
       value: Bone4
@@ -278,6 +338,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5597372759755209784, guid: 24a7a983b34aeee43a2f2978361ce9f2, type: 3}
   m_PrefabInstance: {fileID: 639047532596393759}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7510067290559500397 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6982624726450120562, guid: 24a7a983b34aeee43a2f2978361ce9f2, type: 3}
+  m_PrefabInstance: {fileID: 639047532596393759}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1069126828217099085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -286,6 +351,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4293842604751632185}
     m_Modifications:
+    - target: {fileID: 1090721965443646922, guid: d6663bba8d8b063489e3af670450d3c1, type: 3}
+      propertyPath: dinoYeet
+      value: 
+      objectReference: {fileID: 5626106088033523091}
     - target: {fileID: 5597372759755209784, guid: d6663bba8d8b063489e3af670450d3c1, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -338,6 +407,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6967608376075184287, guid: d6663bba8d8b063489e3af670450d3c1, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 6982624726450120562, guid: d6663bba8d8b063489e3af670450d3c1, type: 3}
       propertyPath: m_Name
       value: Bone2
@@ -352,6 +425,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5597372759755209784, guid: d6663bba8d8b063489e3af670450d3c1, type: 3}
   m_PrefabInstance: {fileID: 1069126828217099085}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7940137646717879359 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6982624726450120562, guid: d6663bba8d8b063489e3af670450d3c1, type: 3}
+  m_PrefabInstance: {fileID: 1069126828217099085}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1785701926714939708
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -360,6 +438,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4293842604751632185}
     m_Modifications:
+    - target: {fileID: 1982941632993550040, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+      propertyPath: dinoYeet
+      value: 
+      objectReference: {fileID: 5626106088033523091}
     - target: {fileID: 5597372759755209784, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -400,6 +482,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 5658338369250972887, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 6982624726450120562, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
       propertyPath: m_Name
       value: Bone1
@@ -414,6 +500,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5597372759755209784, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
   m_PrefabInstance: {fileID: 1785701926714939708}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8660231049923018318 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6982624726450120562, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+  m_PrefabInstance: {fileID: 1785701926714939708}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1796231244342929378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -422,6 +513,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4293842604751632185}
     m_Modifications:
+    - target: {fileID: 4743526313954019781, guid: 853953724cc58c8459dedac468a8634d, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 5597372759755209784, guid: 853953724cc58c8459dedac468a8634d, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -478,6 +573,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bone3 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8645337868445694730, guid: 853953724cc58c8459dedac468a8634d, type: 3}
+      propertyPath: dinoYeet
+      value: 
+      objectReference: {fileID: 5626106088033523091}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -488,6 +587,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5597372759755209784, guid: 853953724cc58c8459dedac468a8634d, type: 3}
   m_PrefabInstance: {fileID: 1796231244342929378}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8649790895680356496 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6982624726450120562, guid: 853953724cc58c8459dedac468a8634d, type: 3}
+  m_PrefabInstance: {fileID: 1796231244342929378}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1953025703912948084
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -496,6 +600,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4293842604751632185}
     m_Modifications:
+    - target: {fileID: 1982941632993550040, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+      propertyPath: dinoYeet
+      value: 
+      objectReference: {fileID: 5626106088033523091}
     - target: {fileID: 5597372759755209784, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -548,6 +656,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 140
       objectReference: {fileID: 0}
+    - target: {fileID: 5658338369250972887, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 6982624726450120562, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
       propertyPath: m_Name
       value: Bone1 (5)
@@ -562,6 +674,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5597372759755209784, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
   m_PrefabInstance: {fileID: 1953025703912948084}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8934524520159208966 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6982624726450120562, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+  m_PrefabInstance: {fileID: 1953025703912948084}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2549147694046124950
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -570,6 +687,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4293842604751632185}
     m_Modifications:
+    - target: {fileID: 4743526313954019781, guid: 853953724cc58c8459dedac468a8634d, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 5597372759755209784, guid: 853953724cc58c8459dedac468a8634d, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -626,11 +747,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bone3
       objectReference: {fileID: 0}
+    - target: {fileID: 8645337868445694730, guid: 853953724cc58c8459dedac468a8634d, type: 3}
+      propertyPath: dinoYeet
+      value: 
+      objectReference: {fileID: 5626106088033523091}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 853953724cc58c8459dedac468a8634d, type: 3}
+--- !u!1 &4865893532714089700 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6982624726450120562, guid: 853953724cc58c8459dedac468a8634d, type: 3}
+  m_PrefabInstance: {fileID: 2549147694046124950}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7984240626688862126 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5597372759755209784, guid: 853953724cc58c8459dedac468a8634d, type: 3}
@@ -644,6 +774,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4293842604751632185}
     m_Modifications:
+    - target: {fileID: 4743526313954019781, guid: 853953724cc58c8459dedac468a8634d, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 5597372759755209784, guid: 853953724cc58c8459dedac468a8634d, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -700,11 +834,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bone3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8645337868445694730, guid: 853953724cc58c8459dedac468a8634d, type: 3}
+      propertyPath: dinoYeet
+      value: 
+      objectReference: {fileID: 5626106088033523091}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 853953724cc58c8459dedac468a8634d, type: 3}
+--- !u!1 &5182004920660474276 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6982624726450120562, guid: 853953724cc58c8459dedac468a8634d, type: 3}
+  m_PrefabInstance: {fileID: 2814022115552927446}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7683342080550642414 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5597372759755209784, guid: 853953724cc58c8459dedac468a8634d, type: 3}
@@ -718,6 +861,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4293842604751632185}
     m_Modifications:
+    - target: {fileID: 1982941632993550040, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+      propertyPath: dinoYeet
+      value: 
+      objectReference: {fileID: 5626106088033523091}
     - target: {fileID: 5597372759755209784, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.8
@@ -770,6 +917,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -45
       objectReference: {fileID: 0}
+    - target: {fileID: 5658338369250972887, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 6982624726450120562, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
       propertyPath: m_Name
       value: Bone1 (8)
@@ -779,6 +930,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+--- !u!1 &5240743217308260121 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6982624726450120562, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+  m_PrefabInstance: {fileID: 2908648068462768235}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7345446719459511379 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5597372759755209784, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
@@ -792,6 +948,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4293842604751632185}
     m_Modifications:
+    - target: {fileID: 1982941632993550040, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+      propertyPath: dinoYeet
+      value: 
+      objectReference: {fileID: 5626106088033523091}
     - target: {fileID: 5597372759755209784, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.8
@@ -844,6 +1004,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -41
       objectReference: {fileID: 0}
+    - target: {fileID: 5658338369250972887, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 6982624726450120562, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
       propertyPath: m_Name
       value: Bone1 (9)
@@ -853,6 +1017,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+--- !u!1 &5306703338321769115 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6982624726450120562, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+  m_PrefabInstance: {fileID: 2973069135780992489}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7273219385367423441 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5597372759755209784, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
@@ -866,6 +1035,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4293842604751632185}
     m_Modifications:
+    - target: {fileID: 4743526313954019781, guid: 853953724cc58c8459dedac468a8634d, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 5597372759755209784, guid: 853953724cc58c8459dedac468a8634d, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -922,11 +1095,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bone3 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8645337868445694730, guid: 853953724cc58c8459dedac468a8634d, type: 3}
+      propertyPath: dinoYeet
+      value: 
+      objectReference: {fileID: 5626106088033523091}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 853953724cc58c8459dedac468a8634d, type: 3}
+--- !u!1 &5620134349283407472 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6982624726450120562, guid: 853953724cc58c8459dedac468a8634d, type: 3}
+  m_PrefabInstance: {fileID: 3249908262264967426}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6968232486266547514 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5597372759755209784, guid: 853953724cc58c8459dedac468a8634d, type: 3}
@@ -940,6 +1122,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4293842604751632185}
     m_Modifications:
+    - target: {fileID: 1982941632993550040, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+      propertyPath: dinoYeet
+      value: 
+      objectReference: {fileID: 5626106088033523091}
     - target: {fileID: 5597372759755209784, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -980,6 +1166,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 75
       objectReference: {fileID: 0}
+    - target: {fileID: 5658338369250972887, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 6982624726450120562, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
       propertyPath: m_Name
       value: Bone1 (1)
@@ -989,6 +1179,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+--- !u!1 &6117248257460881754 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6982624726450120562, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+  m_PrefabInstance: {fileID: 3747998539527908904}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8768029148415676944 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5597372759755209784, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
@@ -1002,6 +1197,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4293842604751632185}
     m_Modifications:
+    - target: {fileID: 4743526313954019781, guid: 853953724cc58c8459dedac468a8634d, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 5597372759755209784, guid: 853953724cc58c8459dedac468a8634d, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -1058,11 +1257,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bone3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8645337868445694730, guid: 853953724cc58c8459dedac468a8634d, type: 3}
+      propertyPath: dinoYeet
+      value: 
+      objectReference: {fileID: 5626106088033523091}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 853953724cc58c8459dedac468a8634d, type: 3}
+--- !u!1 &6215534308081115439 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6982624726450120562, guid: 853953724cc58c8459dedac468a8634d, type: 3}
+  m_PrefabInstance: {fileID: 3937632291542959709}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8865506748282092133 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5597372759755209784, guid: 853953724cc58c8459dedac468a8634d, type: 3}
@@ -1076,6 +1284,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4293842604751632185}
     m_Modifications:
+    - target: {fileID: 4743526313954019781, guid: 853953724cc58c8459dedac468a8634d, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 5597372759755209784, guid: 853953724cc58c8459dedac468a8634d, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -1132,11 +1344,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bone3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8645337868445694730, guid: 853953724cc58c8459dedac468a8634d, type: 3}
+      propertyPath: dinoYeet
+      value: 
+      objectReference: {fileID: 5626106088033523091}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 853953724cc58c8459dedac468a8634d, type: 3}
+--- !u!1 &6559671778718569640 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6982624726450120562, guid: 853953724cc58c8459dedac468a8634d, type: 3}
+  m_PrefabInstance: {fileID: 4318924052720251866}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8521437583747567586 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5597372759755209784, guid: 853953724cc58c8459dedac468a8634d, type: 3}
@@ -1150,6 +1371,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4293842604751632185}
     m_Modifications:
+    - target: {fileID: 1090721965443646922, guid: d6663bba8d8b063489e3af670450d3c1, type: 3}
+      propertyPath: dinoYeet
+      value: 
+      objectReference: {fileID: 5626106088033523091}
     - target: {fileID: 5597372759755209784, guid: d6663bba8d8b063489e3af670450d3c1, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -1202,6 +1427,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6967608376075184287, guid: d6663bba8d8b063489e3af670450d3c1, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 6982624726450120562, guid: d6663bba8d8b063489e3af670450d3c1, type: 3}
       propertyPath: m_Name
       value: Bone2 (1)
@@ -1216,6 +1445,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5597372759755209784, guid: d6663bba8d8b063489e3af670450d3c1, type: 3}
   m_PrefabInstance: {fileID: 4627886838893681693}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2368553371555445615 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6982624726450120562, guid: d6663bba8d8b063489e3af670450d3c1, type: 3}
+  m_PrefabInstance: {fileID: 4627886838893681693}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5049446597946208731
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1224,6 +1458,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4293842604751632185}
     m_Modifications:
+    - target: {fileID: 1090721965443646922, guid: d6663bba8d8b063489e3af670450d3c1, type: 3}
+      propertyPath: dinoYeet
+      value: 
+      objectReference: {fileID: 5626106088033523091}
     - target: {fileID: 5597372759755209784, guid: d6663bba8d8b063489e3af670450d3c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5
@@ -1264,6 +1502,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6967608376075184287, guid: d6663bba8d8b063489e3af670450d3c1, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 6982624726450120562, guid: d6663bba8d8b063489e3af670450d3c1, type: 3}
       propertyPath: m_Name
       value: Bone2 (3)
@@ -1278,6 +1520,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5597372759755209784, guid: d6663bba8d8b063489e3af670450d3c1, type: 3}
   m_PrefabInstance: {fileID: 5049446597946208731}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2807001354265450153 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6982624726450120562, guid: d6663bba8d8b063489e3af670450d3c1, type: 3}
+  m_PrefabInstance: {fileID: 5049446597946208731}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5061562354909487776
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1286,6 +1533,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4293842604751632185}
     m_Modifications:
+    - target: {fileID: 1090721965443646922, guid: d6663bba8d8b063489e3af670450d3c1, type: 3}
+      propertyPath: dinoYeet
+      value: 
+      objectReference: {fileID: 5626106088033523091}
     - target: {fileID: 5597372759755209784, guid: d6663bba8d8b063489e3af670450d3c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5
@@ -1326,6 +1577,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6967608376075184287, guid: d6663bba8d8b063489e3af670450d3c1, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 6982624726450120562, guid: d6663bba8d8b063489e3af670450d3c1, type: 3}
       propertyPath: m_Name
       value: Bone2 (2)
@@ -1340,6 +1595,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5597372759755209784, guid: d6663bba8d8b063489e3af670450d3c1, type: 3}
   m_PrefabInstance: {fileID: 5061562354909487776}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2799281930123970002 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6982624726450120562, guid: d6663bba8d8b063489e3af670450d3c1, type: 3}
+  m_PrefabInstance: {fileID: 5061562354909487776}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5257135187650390209
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1348,6 +1608,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4293842604751632185}
     m_Modifications:
+    - target: {fileID: 1982941632993550040, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+      propertyPath: dinoYeet
+      value: 
+      objectReference: {fileID: 5626106088033523091}
     - target: {fileID: 5597372759755209784, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.8
@@ -1400,6 +1664,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 45
       objectReference: {fileID: 0}
+    - target: {fileID: 5658338369250972887, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 6982624726450120562, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
       propertyPath: m_Name
       value: Bone1 (6)
@@ -1414,6 +1682,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5597372759755209784, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
   m_PrefabInstance: {fileID: 5257135187650390209}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2887472191881908147 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6982624726450120562, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+  m_PrefabInstance: {fileID: 5257135187650390209}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5548025730680225912
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1422,6 +1695,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4293842604751632185}
     m_Modifications:
+    - target: {fileID: 1982941632993550040, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+      propertyPath: dinoYeet
+      value: 
+      objectReference: {fileID: 5626106088033523091}
     - target: {fileID: 5597372759755209784, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -1474,6 +1751,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 140
       objectReference: {fileID: 0}
+    - target: {fileID: 5658338369250972887, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 6982624726450120562, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
       propertyPath: m_Name
       value: Bone1 (4)
@@ -1488,6 +1769,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5597372759755209784, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
   m_PrefabInstance: {fileID: 5548025730680225912}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3177791123020523274 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6982624726450120562, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+  m_PrefabInstance: {fileID: 5548025730680225912}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5731589377351080668
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1496,6 +1782,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4293842604751632185}
     m_Modifications:
+    - target: {fileID: 1982941632993550040, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+      propertyPath: dinoYeet
+      value: 
+      objectReference: {fileID: 5626106088033523091}
     - target: {fileID: 5597372759755209784, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1536,6 +1826,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 75
       objectReference: {fileID: 0}
+    - target: {fileID: 5658338369250972887, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 6982624726450120562, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
       propertyPath: m_Name
       value: Bone1 (3)
@@ -1550,6 +1844,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5597372759755209784, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
   m_PrefabInstance: {fileID: 5731589377351080668}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3417658286198160814 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6982624726450120562, guid: a336e35e05be8a24884dadd59b7bc598, type: 3}
+  m_PrefabInstance: {fileID: 5731589377351080668}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6251914327239143423
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1562,6 +1861,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pole (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6824030931336152468, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 6895156066625190220, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
+      propertyPath: dinoYeet
+      value: 
+      objectReference: {fileID: 5626106088033523091}
     - target: {fileID: 7843469947100076223, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1612,6 +1919,98 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7843469947100076223, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
   m_PrefabInstance: {fileID: 6251914327239143423}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8313259563881426253 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2710572638094672562, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
+  m_PrefabInstance: {fileID: 6251914327239143423}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6398625360268186900
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4293842604751632185}
+    m_Modifications:
+    - target: {fileID: 2710572638094672562, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
+      propertyPath: m_Name
+      value: Pole (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6824030931336152468, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 6895156066625190220, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
+      propertyPath: dinoYeet
+      value: 
+      objectReference: {fileID: 5626106088033523091}
+    - target: {fileID: 7843469947100076223, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843469947100076223, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843469947100076223, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843469947100076223, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843469947100076223, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843469947100076223, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843469947100076223, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843469947100076223, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843469947100076223, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843469947100076223, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843469947100076223, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843469947100076223, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843469947100076223, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
+--- !u!4 &3753153810307829163 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7843469947100076223, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
+  m_PrefabInstance: {fileID: 6398625360268186900}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9030166604671981478 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2710572638094672562, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
+  m_PrefabInstance: {fileID: 6398625360268186900}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7376343385299605225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1624,6 +2023,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pole
       objectReference: {fileID: 0}
+    - target: {fileID: 6824030931336152468, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 6895156066625190220, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
+      propertyPath: dinoYeet
+      value: 
+      objectReference: {fileID: 5626106088033523091}
     - target: {fileID: 7843469947100076223, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1674,6 +2081,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7843469947100076223, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
   m_PrefabInstance: {fileID: 7376343385299605225}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4883004023635121243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2710572638094672562, guid: 21beb75dd716e0a4697ee68530d326d5, type: 3}
+  m_PrefabInstance: {fileID: 7376343385299605225}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8021470566449399811
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1682,6 +2094,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4293842604751632185}
     m_Modifications:
+    - target: {fileID: 381556771758959427, guid: 4b0061cdb458b1a48b682683a711ab73, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 8602497755499194082, guid: 4b0061cdb458b1a48b682683a711ab73, type: 3}
       propertyPath: m_Name
       value: Base

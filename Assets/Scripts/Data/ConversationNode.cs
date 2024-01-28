@@ -7,9 +7,9 @@ public class ConversationNode : ScriptableObject
 {
     public List<ConversationLine> DialogueLines;
     public List<ConversationChoice> Choices;
-    public ItemData unlockedEvidence; // TODO implement this on conversation end
-    
-    public Sprite PersonIcon;
+     // TODO implement this on conversation end
+    public Sprite InitialLeftPersonIcon;
+    public Sprite InitialRightPersonIcon;
 }
 
 [System.Serializable]
@@ -33,6 +33,7 @@ public class ConversationChoice
     public ItemData[] RequiredItemList;
 
     [Header("Only for deductions")]
+    public ItemData unlockedEvidence;
     public int EndingPoints;
     public EndingType endingType;
 }

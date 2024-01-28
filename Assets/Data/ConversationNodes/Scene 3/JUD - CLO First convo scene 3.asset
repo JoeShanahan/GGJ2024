@@ -16,14 +16,15 @@ MonoBehaviour:
   - LineText: "Am I the murderer? Is it because I told you that Cory is unpopular?
       I wouldn\u2019t have told you that if I was the murderer, would I?"
     PersonName: Judith
-    PersonIcon: {fileID: 0}
+    PersonIcon: {fileID: 21300000, guid: aed146b7529f3594ba02314d2188bded, type: 3}
     TalkSound: {fileID: 0}
-    isDetectiveTalking: 0
+    isPersonOnLeftTalking: 0
   - LineText: I guess not.
     PersonName: Clownumbo
-    PersonIcon: {fileID: 0}
+    PersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
     TalkSound: {fileID: 0}
-    isDetectiveTalking: 1
+    isPersonOnLeftTalking: 1
   Choices: []
   unlockedEvidence: {fileID: 0}
-  PersonIcon: {fileID: 0}
+  InitialLeftPersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
+  InitialRightPersonIcon: {fileID: 21300000, guid: aed146b7529f3594ba02314d2188bded, type: 3}

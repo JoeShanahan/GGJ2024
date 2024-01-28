@@ -15,19 +15,22 @@ MonoBehaviour:
   DialogueLines:
   - LineText: We have gathered all the suspects here.
     PersonName: Inspector Edartsel
-    PersonIcon: {fileID: 0}
+    PersonIcon: {fileID: 21300000, guid: 11cb7cba3bf899a429427f53e042d221, type: 3}
     TalkSound: {fileID: 0}
-    isDetectiveTalking: 0
+    isPersonOnLeftTalking: 0
   Choices:
   - ChoiceText: Do Nothing
     RequiredItem: {fileID: 0}
     NextNode: {fileID: 0}
+    RequiredItemList: []
     EndingPoints: 0
     endingType: 0
   - ChoiceText: Proceed with investigation
     RequiredItem: {fileID: 0}
     NextNode: {fileID: 0}
+    RequiredItemList: []
     EndingPoints: 0
     endingType: 0
   unlockedEvidence: {fileID: 0}
-  PersonIcon: {fileID: 0}
+  InitialLeftPersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
+  InitialRightPersonIcon: {fileID: 21300000, guid: 11cb7cba3bf899a429427f53e042d221, type: 3}
