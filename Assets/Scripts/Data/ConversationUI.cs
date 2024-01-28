@@ -177,7 +177,7 @@ public class ConversationUI : MonoBehaviour
 
     public void GetOtherTalker()
     {
-        _otherSpeaker.sprite = _currentNode.PersonIcon;
+        // _otherSpeaker.sprite = _currentNode.PersonIcon;
     }
     public void LightUpTalker(ConversationNode node)
     {
