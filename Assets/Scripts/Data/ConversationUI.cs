@@ -18,14 +18,25 @@ public class ConversationUI : MonoBehaviour
     private List<Button> _choiceButtons;
 
     [SerializeField]
+    private Image _detectivePortrait;
+
+    [SerializeField]
+    private Image _otherSpeaker;
+
+    [SerializeField]
     private TextTyper _typer;
 
     [SerializeField]
     private ConversationOverlord _overlord;
 
+    
     private int _lineNumber;
     private ConversationNode _currentNode;
 
+    private bool HasGotItem(ItemData data) 
+    {
+        return false;
+    }
     public void ShowUI()
     {
         gameObject.SetActive(true);
@@ -44,6 +55,13 @@ public class ConversationUI : MonoBehaviour
         ContinueConversation(node);
     }
 
+    public void SetTalkerPortrait()
+    {
+        
+        _otherSpeaker.GetComponent<Image>();
+
+    }
+
     private void HideAllButtons()
     {
         foreach (Button btn in _choiceButtons)
@@ -54,20 +72,29 @@ public class ConversationUI : MonoBehaviour
 
     public void CreateDialogueResponses(ConversationNode node) 
     {
+        
         for (int i = 0; i < _choiceButtons.Count; i++)
         {
             TextMeshProUGUI buttonText = _choiceButtons[i].GetComponentInChildren<TextMeshProUGUI>();
+            
             if (i < node.Choices.Count)
-            {
-                buttonText.text = node.Choices[i].ChoiceText;
-                _choiceButtons[i].gameObject.SetActive(true);
+             {
+                ConversationChoice currentChoice = node.Choices[i];
+                if (currentChoice.RequiredItem != null && HasGotItem (currentChoice.RequiredItem) == false)
+                {
+                    _choiceButtons[i].gameObject.SetActive(false);
 
+                } else
+                {
+                    buttonText.text = node.Choices[i].ChoiceText;
+                    _choiceButtons[i].gameObject.SetActive(true);
+                }
+                
             }
             else
             {
                 _choiceButtons[i].gameObject.SetActive(false);
-            }
-            
+            }           
         }
     }
 
@@ -86,6 +113,9 @@ public class ConversationUI : MonoBehaviour
         }
         else
         {
+            SetTalkerPortrait();
+            GetOtherTalker();
+            LightUpTalker(node);
             _lineNumber ++;
             _typer.TypeText(node.DialogueLines[_lineNumber].LineText);
         }
@@ -93,7 +123,7 @@ public class ConversationUI : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.T))
         {
             if (_typer.IsSkippable())
             {
@@ -115,6 +145,24 @@ public class ConversationUI : MonoBehaviour
 
         Debug.Log($"You pressed {buttonIndex}");
         _overlord.EndConversation();
+    }
+
+
+    public void GetOtherTalker()
+    {
+        _otherSpeaker.sprite = _currentNode.PersonIcon;
+    }
+    public void LightUpTalker(ConversationNode node)
+    {
+        if (node.DialogueLines[_lineNumber].isPersonOnLeftTalking)
+        {
+            _detectivePortrait.color = Color.white;
+           _otherSpeaker.color = Color.gray;
+        } else
+        {
+            _detectivePortrait.color = Color.gray;
+            _otherSpeaker.color = Color.white;
+        }
     }
 }
 
