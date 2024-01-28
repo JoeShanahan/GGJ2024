@@ -37,8 +37,12 @@ public class PlayerAnimations : MonoBehaviour
 
         //_anim.speed = AnimationPlaybackSpeed;
         _anim.SetFloat("moveSpeed", Mathf.Max(vel * _runSpeedMultiplier, 0.1f));
-        _anim.SetBool("isRunning", _playerMove.IsGrounded && vel > 0.1f);
-        _anim.SetBool("isGrounded", _playerMove.IsGrounded);
+
+        if (_playerMove != null)
+        {
+            _anim.SetBool("isRunning", _playerMove.IsGrounded && vel > 0.1f);
+            _anim.SetBool("isGrounded", _playerMove.IsGrounded);
+        }
         _anim.SetFloat("runAnimation", _runMapping.Evaluate(_rigidBody.velocity.magnitude));
 
         if (_stopped == false)

@@ -32,17 +32,22 @@ public class PlayerDetectionSphere : MonoBehaviour
         }
     }
 
-    private void RefreshCurrentFocus()
+    public void RefreshCurrentFocus()
     {
         if (_inRange.Count == 0)
         {
             OnFocusChange?.Invoke(null);
-            Debug.Log("nada");
         }
         else
         {
+            if (_inRange.Last() == null || _inRange.Last().IsInteractable == false)
+            {
+                _inRange.RemoveAt(_inRange.Count - 1);
+                RefreshCurrentFocus();
+                return;
+            }
+
             OnFocusChange?.Invoke(_inRange.Last());
-            Debug.Log("Set " + _inRange.Last().gameObject.name);
         }
     }
 }

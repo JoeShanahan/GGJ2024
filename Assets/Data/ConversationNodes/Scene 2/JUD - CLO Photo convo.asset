@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25dc17d2e25f5fd42be02f3d6852308e, type: 3}
+  m_Name: JUD - CLO Photo convo
+  m_EditorClassIdentifier: 
+  DialogueLines:
+  - LineText: "I meant the photo of the victim. Wait, I haven\u2019t seen Cory the
+      whole day. Perhaps he was the murdered victim? "
+    PersonName: Judith
+    PersonIcon: {fileID: 0}
+    TalkSound: {fileID: 0}
+    isDetectiveTalking: 0
+  - LineText: What was he like?
+    PersonName: Clownumbo
+    PersonIcon: {fileID: 0}
+    TalkSound: {fileID: 0}
+    isDetectiveTalking: 1
+  - LineText: He is a gym bro, always talking about exercise, eating healthy and
+      keeping his body in tip-top shape.
+    PersonName: Judith
+    PersonIcon: {fileID: 0}
+    TalkSound: {fileID: 0}
+    isDetectiveTalking: 0
+  - LineText: Does anyone have a grudge against him?
+    PersonName: Clownumbo
+    PersonIcon: {fileID: 0}
+    TalkSound: {fileID: 0}
+    isDetectiveTalking: 1
+  - LineText: "To be honest, he is not very popular among the staff members. He\u2019s
+      the nephew of the director, and the nepotism is plain to see. I don\u2019t
+      think any of the staff would hate him enough to murder him though. "
+    PersonName: Judith
+    PersonIcon: {fileID: 0}
+    TalkSound: {fileID: 0}
+    isDetectiveTalking: 0
+  Choices:
+  - ChoiceText: Do nothing
+    RequiredItem: {fileID: 0}
+    NextNode: {fileID: 0}
+    EndingPoints: 0
+    endingType: 0
+  unlockedEvidence: {fileID: 0}
+  PersonIcon: {fileID: 0}

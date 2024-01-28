@@ -25,13 +25,27 @@ MonoBehaviour:
     PersonName: Mr Man
     PersonIcon: {fileID: 0}
     TalkSound: {fileID: 0}
+  - LineText: This line is very very very very very very long to text the skip function
+      on textyper
+    PersonName: Mr Man
+    PersonIcon: {fileID: 0}
+    TalkSound: {fileID: 0}
   Choices:
   - ChoiceText: This will go to another conversation node
     RequiredItem: {fileID: 0}
     NextNode: {fileID: 0}
+    EndingPoints: 0
+    endingType: 2
   - ChoiceText: This will only appear if you have an item
     RequiredItem: {fileID: 11400000, guid: 50a87941a8768e44eb33e9ee40e2ecf2, type: 2}
     NextNode: {fileID: 0}
+    EndingPoints: 0
+    endingType: 0
   - ChoiceText: This will end the conversation
     RequiredItem: {fileID: 0}
     NextNode: {fileID: 0}
+    EndingPoints: 0
+    endingType: 0
+  unlockedEvidence: {fileID: 0}
+  isDetectiveTalking: 0
+  PersonIcon: {fileID: 0}
