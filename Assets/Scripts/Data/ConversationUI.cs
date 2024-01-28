@@ -33,20 +33,29 @@ public class ConversationUI : MonoBehaviour
     [SerializeField]
     private EvidenceManager _evidence;
 
-    
+    PlayerInputActions _input;
+
     private int _lineNumber;
     private ConversationNode _currentNode;
 
     public void ShowUI()
     {
+        if (_input == null)
+        {
+            _input = new();
+            _input.Movement.Item.performed += (ctx) => AdvanceText();
+        }
+
         // TODO Animation
         gameObject.SetActive(true);
+        _input.Enable();
     }
 
     public void HideUI()
     {
         // TODO Animation
         gameObject.SetActive(false);
+        _input.Disable();
     }
 
     public void SetNewNode(ConversationNode node)
@@ -101,12 +110,25 @@ public class ConversationUI : MonoBehaviour
         }
     }
 
+    private bool DoHaveChoices(ConversationNode node)
+    {
+        if (node.Choices.Count > 0)
+            return false;
+
+        foreach (ConversationChoice choice in node.Choices)
+        {
+            if (_evidence.CanShowThisChoice(choice))
+                return true;
+        }
+
+        return false;
+    }
+
     public void ContinueConversation(ConversationNode node)
     {
         bool isFinalLine = _lineNumber >= node.DialogueLines.Count - 1;
-        bool doHaveChoices = node.Choices.Count > 0;
 
-        if (isFinalLine && doHaveChoices)
+        if (isFinalLine && DoHaveChoices(node))
         {
             CreateDialogueResponses(node);
         }
@@ -125,18 +147,15 @@ public class ConversationUI : MonoBehaviour
         }
     }
 
-    private void Update()
+    public void AdvanceText()
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        if (_typer.IsSkippable())
         {
-            if (_typer.IsSkippable())
-            {
-                _typer.Skip();
-            } 
-            else
-            {
-                ContinueConversation(_currentNode);
-            }
+            _typer.Skip();
+        } 
+        else
+        {
+            ContinueConversation(_currentNode);
         }
     }
 

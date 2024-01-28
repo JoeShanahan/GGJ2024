@@ -17,6 +17,9 @@ public class ConversationOverlord : MonoBehaviour
     [SerializeField]
     private ConversationUI _ui;
 
+    [SerializeField]
+    private Player _player;
+
     public void Start()
     {
         _ui.gameObject.SetActive(false);
@@ -26,6 +29,7 @@ public class ConversationOverlord : MonoBehaviour
     {
         _ui.ShowUI();
         _ui.SetNewNode(node);
+        _player.DeactivateControls();
         
         isConvoActive = true;
         // TODO disable player controls
@@ -34,6 +38,8 @@ public class ConversationOverlord : MonoBehaviour
     public void EndConversation()
     {
         _ui.HideUI();
+        _player.ReactivateControls();
+    
         //ShowConversationCanvas(false);
         isConvoActive = false;
         // TODO enable the player controls
