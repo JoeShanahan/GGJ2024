@@ -15,14 +15,16 @@ MonoBehaviour:
   DialogueLines:
   - LineText: Do I know the victim? I have no idea who they are, sorry.
     PersonName: Paggy
-    PersonIcon: {fileID: 0}
+    PersonIcon: {fileID: 21300000, guid: 02f1b743478a106438d321071306f6cf, type: 3}
     TalkSound: {fileID: 0}
-    isDetectiveTalking: 0
+    isPersonOnLeftTalking: 0
   Choices:
   - ChoiceText: Do nothing
     RequiredItem: {fileID: 0}
     NextNode: {fileID: 0}
+    RequiredItemList: []
     EndingPoints: 0
     endingType: 0
   unlockedEvidence: {fileID: 0}
-  PersonIcon: {fileID: 0}
+  InitialLeftPersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
+  InitialRightPersonIcon: {fileID: 21300000, guid: 02f1b743478a106438d321071306f6cf, type: 3}

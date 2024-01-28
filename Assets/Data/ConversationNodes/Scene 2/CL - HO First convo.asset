@@ -16,19 +16,21 @@ MonoBehaviour:
   - LineText: So you are the hotshot consultant huh? If it is up to me, a murder
       investigation should be left to the real police and not an amateur.
     PersonName: Inspector Horatio
-    PersonIcon: {fileID: 0}
+    PersonIcon: {fileID: 21300000, guid: 9801f3646e6e2034c8714d10afc8e674, type: 3}
     TalkSound: {fileID: 0}
-    isDetectiveTalking: 0
+    isPersonOnLeftTalking: 0
   - LineText: "Don\u2019t mind Inspector Horatio. He is a bit grumpy today."
     PersonName: Inspector Edartsel
-    PersonIcon: {fileID: 0}
+    PersonIcon: {fileID: 21300000, guid: 11cb7cba3bf899a429427f53e042d221, type: 3}
     TalkSound: {fileID: 0}
-    isDetectiveTalking: 0
+    isPersonOnLeftTalking: 1
   Choices:
   - ChoiceText: Do nothing
     RequiredItem: {fileID: 0}
     NextNode: {fileID: 0}
+    RequiredItemList: []
     EndingPoints: 0
     endingType: 0
   unlockedEvidence: {fileID: 0}
-  PersonIcon: {fileID: 0}
+  InitialLeftPersonIcon: {fileID: 21300000, guid: 11cb7cba3bf899a429427f53e042d221, type: 3}
+  InitialRightPersonIcon: {fileID: 21300000, guid: 9801f3646e6e2034c8714d10afc8e674, type: 3}

@@ -15,19 +15,21 @@ MonoBehaviour:
   DialogueLines:
   - LineText: Madam, what do you think?
     PersonName: Inspector Edartsel
-    PersonIcon: {fileID: 0}
+    PersonIcon: {fileID: 21300000, guid: 11cb7cba3bf899a429427f53e042d221, type: 3}
     TalkSound: {fileID: 0}
-    isDetectiveTalking: 0
+    isPersonOnLeftTalking: 0
   - LineText: 'How was the murder committed? '
     PersonName: Inspector Edartsel
-    PersonIcon: {fileID: 0}
+    PersonIcon: {fileID: 21300000, guid: 11cb7cba3bf899a429427f53e042d221, type: 3}
     TalkSound: {fileID: 0}
-    isDetectiveTalking: 0
+    isPersonOnLeftTalking: 0
   Choices:
   - ChoiceText: "It was a stabbing. The dagger is the murder weapon. Let\u2019s visit
       more of the museum and see if we can find more clues to who this murderer is."
     RequiredItem: {fileID: 0}
     NextNode: {fileID: 11400000, guid: 79e74010f3625d149adc77a083638864, type: 2}
+    RequiredItemList:
+    - {fileID: 11400000, guid: 009bd559bdbf8a64993bd1cef591a43a, type: 2}
     EndingPoints: 0
     endingType: 0
   - ChoiceText: "The victim died of natural causes. The thunder from last night must
@@ -35,6 +37,8 @@ MonoBehaviour:
       if they know of the victim\u2019s medical history."
     RequiredItem: {fileID: 0}
     NextNode: {fileID: 11400000, guid: 79e74010f3625d149adc77a083638864, type: 2}
+    RequiredItemList:
+    - {fileID: 11400000, guid: 10b27569d1ee8864ab18160df806eb87, type: 2}
     EndingPoints: 0
     endingType: 0
   - ChoiceText: "he victim was poisoned with the cyanide-laced almond cake. The dagger
@@ -42,7 +46,10 @@ MonoBehaviour:
       see if we can find more clues to who this murderer is. "
     RequiredItem: {fileID: 0}
     NextNode: {fileID: 11400000, guid: 79e74010f3625d149adc77a083638864, type: 2}
+    RequiredItemList:
+    - {fileID: 11400000, guid: 5e3cf2675ada3fc42a996f1134bc4e4a, type: 2}
     EndingPoints: 0
     endingType: 0
   unlockedEvidence: {fileID: 0}
-  PersonIcon: {fileID: 0}
+  InitialLeftPersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
+  InitialRightPersonIcon: {fileID: 21300000, guid: 11cb7cba3bf899a429427f53e042d221, type: 3}

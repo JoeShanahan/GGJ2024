@@ -15,21 +15,23 @@ MonoBehaviour:
   DialogueLines:
   - LineText: Have you found out more about the motives of the murderer?
     PersonName: Inspector Edartsel
-    PersonIcon: {fileID: 0}
+    PersonIcon: {fileID: 21300000, guid: 11cb7cba3bf899a429427f53e042d221, type: 3}
     TalkSound: {fileID: 0}
-    isDetectiveTalking: 0
+    isPersonOnLeftTalking: 0
   Choices:
   - ChoiceText: "The victim is Cory, the \u201Cemployee of the month\u201D. He was
       murdered by another staff member because they are jealous. I will investigate
       the rest of the museum and then confront the suspects."
     RequiredItem: {fileID: 0}
     NextNode: {fileID: 11400000, guid: 79040759a9babd74595a94731925cb70, type: 2}
+    RequiredItemList: []
     EndingPoints: 0
     endingType: 0
   - ChoiceText: A mummy murdered Cory, one of the museum staff. I will need to ask
       the staff about the curse.
     RequiredItem: {fileID: 0}
     NextNode: {fileID: 11400000, guid: 79040759a9babd74595a94731925cb70, type: 2}
+    RequiredItemList: []
     EndingPoints: 0
     endingType: 0
   - ChoiceText: "All evidence points to the murder being an act of jealousy committed
@@ -37,7 +39,9 @@ MonoBehaviour:
       rest of the museum and then confront the suspects. "
     RequiredItem: {fileID: 0}
     NextNode: {fileID: 11400000, guid: 79040759a9babd74595a94731925cb70, type: 2}
+    RequiredItemList: []
     EndingPoints: 0
     endingType: 0
   unlockedEvidence: {fileID: 0}
-  PersonIcon: {fileID: 0}
+  InitialLeftPersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
+  InitialRightPersonIcon: {fileID: 21300000, guid: 11cb7cba3bf899a429427f53e042d221, type: 3}

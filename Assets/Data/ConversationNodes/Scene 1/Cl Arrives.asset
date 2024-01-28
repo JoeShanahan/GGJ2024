@@ -16,22 +16,22 @@ MonoBehaviour:
   - LineText: Madam, thank you for lending your superior intellect to the police
       once again. There is no way we can figure out who committed this heinous murder.
     PersonName: Inspector Edartsel
-    PersonIcon: {fileID: 21300084, guid: 1eaee135ce037439d925cee5e41ce026, type: 3}
+    PersonIcon: {fileID: 21300000, guid: 11cb7cba3bf899a429427f53e042d221, type: 3}
     TalkSound: {fileID: 0}
     isPersonOnLeftTalking: 0
   - LineText: Has anyone inspected the body?
     PersonName: Clownumbo
-    PersonIcon: {fileID: 21300048, guid: 1eaee135ce037439d925cee5e41ce026, type: 3}
+    PersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
     TalkSound: {fileID: 0}
     isPersonOnLeftTalking: 1
   - LineText: Not yet, we have left everything untouched for you.
     PersonName: Inspector Edartsel
-    PersonIcon: {fileID: 21300084, guid: 1eaee135ce037439d925cee5e41ce026, type: 3}
+    PersonIcon: {fileID: 21300000, guid: 11cb7cba3bf899a429427f53e042d221, type: 3}
     TalkSound: {fileID: 0}
     isPersonOnLeftTalking: 0
   - LineText: Thanks inspector.
     PersonName: Clownumbo
-    PersonIcon: {fileID: 21300048, guid: 1eaee135ce037439d925cee5e41ce026, type: 3}
+    PersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
     TalkSound: {fileID: 0}
     isPersonOnLeftTalking: 1
   Choices:
@@ -42,5 +42,5 @@ MonoBehaviour:
     EndingPoints: 0
     endingType: 0
   unlockedEvidence: {fileID: 0}
-  InitialLeftPersonIcon: {fileID: 21300040, guid: 1eaee135ce037439d925cee5e41ce026, type: 3}
-  InitialRightPersonIcon: {fileID: 21300052, guid: 1eaee135ce037439d925cee5e41ce026, type: 3}
+  InitialLeftPersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
+  InitialRightPersonIcon: {fileID: 21300000, guid: 11cb7cba3bf899a429427f53e042d221, type: 3}

@@ -15,19 +15,20 @@ MonoBehaviour:
   DialogueLines:
   - LineText: 'Do you know anything about the murder? '
     PersonName: Clownumbo
-    PersonIcon: {fileID: 0}
+    PersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
     TalkSound: {fileID: 0}
-    isDetectiveTalking: 1
+    isPersonOnLeftTalking: 0
   - LineText: Why? Do you want to be next?
     PersonName: Guy
-    PersonIcon: {fileID: 0}
+    PersonIcon: {fileID: 21300000, guid: 3b1ea7aeec196ac4f853e95b13f9089d, type: 3}
     TalkSound: {fileID: 0}
-    isDetectiveTalking: 0
+    isPersonOnLeftTalking: 0
   - LineText: '*I get an unsettled feeling about this guy.*'
     PersonName: Clownumbo
-    PersonIcon: {fileID: 0}
+    PersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
     TalkSound: {fileID: 0}
-    isDetectiveTalking: 1
+    isPersonOnLeftTalking: 0
   Choices: []
   unlockedEvidence: {fileID: 0}
-  PersonIcon: {fileID: 0}
+  InitialLeftPersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
+  InitialRightPersonIcon: {fileID: 21300000, guid: 3b1ea7aeec196ac4f853e95b13f9089d, type: 3}
