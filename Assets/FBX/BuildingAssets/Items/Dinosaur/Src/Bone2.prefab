@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5939761870840865413}
   - component: {fileID: 6702370382334475477}
   - component: {fileID: 6967608376075184287}
+  - component: {fileID: 1090721965443646922}
   m_Layer: 0
   m_Name: Bone2
   m_TagString: Untagged
@@ -104,6 +105,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1090721965443646922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6982624726450120562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ff04ec358cc5b3459428c454c2b6159, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dinoYeet: {fileID: 0}
 --- !u!1001 &4586421681077259272
 PrefabInstance:
   m_ObjectHideFlags: 0
