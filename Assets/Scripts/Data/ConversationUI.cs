@@ -84,13 +84,15 @@ public class ConversationUI : MonoBehaviour
             if (i < node.Choices.Count)
              {
                 ConversationChoice currentChoice = node.Choices[i];
-
+               
                 if (_evidence.CanShowThisChoice(currentChoice))
                 {
+                    Debug.Log("creating responses1");
                     _choiceButtons[i].gameObject.SetActive(false);
 
                 } else
                 {
+                    Debug.Log("creatingresponses2");
                     buttonText.text = node.Choices[i].ChoiceText;
                     _choiceButtons[i].gameObject.SetActive(true);
                 }
@@ -107,7 +109,8 @@ public class ConversationUI : MonoBehaviour
     {
         if (node.Choices.Count == 0)
             return false;
-
+        
+        
         foreach (ConversationChoice choice in node.Choices)
         {
             if (_evidence.CanShowThisChoice(choice))
@@ -120,13 +123,15 @@ public class ConversationUI : MonoBehaviour
     public void ContinueConversation(ConversationNode node)
     {
         bool isFinalLine = _lineNumber >= node.DialogueLines.Count - 1;
-
+        Debug.Log(isFinalLine);
         if (isFinalLine && DoHaveChoices(node))
         {
+            Debug.Log("failure");
             CreateDialogueResponses(node);
         }
         else if (isFinalLine)
         {
+            Debug.Log("whatever");
             _overlord.EndConversation();
         }
         else
