@@ -10,16 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25dc17d2e25f5fd42be02f3d6852308e, type: 3}
-  m_Name: EDA - Response to deduction Scene 1
+  m_Name: EDA - CLO Intro to deduction
   m_EditorClassIdentifier: 
   DialogueLines:
-  - LineText: "I wouldn\u2019t have come to that conclusion myself! Great detective
-      work Clownumbo!"
+  - LineText: 'Madam, what do you think? '
     PersonName: Inspector Edartsel
     PersonIcon: {fileID: 21300000, guid: 11cb7cba3bf899a429427f53e042d221, type: 3}
     TalkSound: {fileID: 0}
-    isPersonOnLeftTalking: 0
-  Choices: []
-  unlockedEvidence: {fileID: 0}
+    isPersonOnLeftTalking: 1
+  Choices:
+  - ChoiceText: Proceed with investigation
+    RequiredItem: {fileID: 0}
+    NextNode: {fileID: 11400000, guid: 72d622abe474d1542b31783d14574643, type: 2}
+    RequiredItemList:
+    - {fileID: 11400000, guid: 009bd559bdbf8a64993bd1cef591a43a, type: 2}
+    - {fileID: 11400000, guid: 5e3cf2675ada3fc42a996f1134bc4e4a, type: 2}
+    - {fileID: 11400000, guid: 10b27569d1ee8864ab18160df806eb87, type: 2}
+    needAll: 0
+    unlockedEvidence: {fileID: 0}
+    EndingPoints: 0
+    endingType: 0
   InitialLeftPersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
   InitialRightPersonIcon: {fileID: 21300000, guid: 11cb7cba3bf899a429427f53e042d221, type: 3}

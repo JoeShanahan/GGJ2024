@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94791cbbbfa37664a84e0b930cbc732e, type: 3}
   m_Name: Missing Donut
   m_EditorClassIdentifier: 
-  ItemName: Missing Donut
-  Description: 
+  ItemName: Missing donut
+  Description: There is a box of donuts with one missing. Perhaps the perpetrator
+    grabbed a donut on their way out?
   Icon: {fileID: 21300000, guid: 42f3ffc4de7c4ee4ea29f189dfa08e52, type: 3}

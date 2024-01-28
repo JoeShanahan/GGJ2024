@@ -33,20 +33,29 @@ public class ConversationUI : MonoBehaviour
     [SerializeField]
     private EvidenceManager _evidence;
 
-    
+    PlayerInputActions _input;
+
     private int _lineNumber;
     private ConversationNode _currentNode;
 
     public void ShowUI()
     {
+        if (_input == null)
+        {
+            _input = new();
+            _input.Movement.Item.performed += (ctx) => AdvanceText();
+        }
+
         // TODO Animation
         gameObject.SetActive(true);
+        _input.Enable();
     }
 
     public void HideUI()
     {
         // TODO Animation
         gameObject.SetActive(false);
+        _input.Disable();
     }
 
     public void SetNewNode(ConversationNode node)
@@ -56,8 +65,6 @@ public class ConversationUI : MonoBehaviour
         HideAllButtons();
         ContinueConversation(node);
     }
-
-   
 
     private void HideAllButtons()
     {
@@ -96,45 +103,25 @@ public class ConversationUI : MonoBehaviour
         }
     }
 
-   
-
-    private void Update()
+    private bool DoHaveChoices(ConversationNode node)
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (node.Choices.Count > 0)
+            return false;
+
+        foreach (ConversationChoice choice in node.Choices)
         {
-            if (_typer.IsSkippable())
-            {
-                _typer.Skip();
-            } 
-            else
-            {
-                ContinueConversation(_currentNode);
-            }
+            if (_evidence.CanShowThisChoice(choice))
+                return true;
         }
+
+        return false;
     }
-
-    public void ButtonPress(int buttonIndex)
-    {
-        ConversationChoice playerSelection = _currentNode.Choices[buttonIndex];
-        FindObjectOfType<ProgressionManager>().MakeChoice(playerSelection);
-
-        if (playerSelection.NextNode != null)
-        {
-            SetNewNode(playerSelection.NextNode);
-        }
-        else
-        {
-            _overlord.EndConversation();
-        }
-    }
-
 
     public void ContinueConversation(ConversationNode node)
     {
         bool isFinalLine = _lineNumber >= node.DialogueLines.Count - 1;
-        bool doHaveChoices = node.Choices.Count > 0;
 
-        if (isFinalLine && doHaveChoices)
+        if (isFinalLine && DoHaveChoices(node))
         {
             CreateDialogueResponses(node);
         }
@@ -150,6 +137,7 @@ public class ConversationUI : MonoBehaviour
             _typer.TypeText(node.DialogueLines[_lineNumber].LineText);
         }
     }
+    
     public void SetTalkerPortraits()
     {
         if (_lineNumber == 0)
@@ -171,7 +159,33 @@ public class ConversationUI : MonoBehaviour
         
     }
 
-    
+    public void AdvanceText()
+    {
+        if (_typer.IsSkippable())
+        {
+            _typer.Skip();
+        } 
+        else
+        {
+            ContinueConversation(_currentNode);
+        }
+    }
+
+    public void ButtonPress(int buttonIndex)
+    {
+        ConversationChoice playerSelection = _currentNode.Choices[buttonIndex];
+        FindObjectOfType<ProgressionManager>().MakeChoice(playerSelection);
+
+        if (playerSelection.NextNode != null)
+        {
+            SetNewNode(playerSelection.NextNode);
+        }
+        else
+        {
+            _overlord.EndConversation();
+        }
+    }
+
     public void LightUpTalker(ConversationNode node)
     {
         if (node.DialogueLines[_lineNumber].isPersonOnLeftTalking)

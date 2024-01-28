@@ -22,13 +22,27 @@ public class EvidenceManager : MonoBehaviour
         // If we don't need an item, then we're good to show
         if (choice.RequiredItemList.Length == 0)
             return true;
-
-        foreach (ItemData evidence in choice.RequiredItemList)
+        if (choice.needAll)
         {
-            // If we have any one of those items, then we can show the option
-            if (_foundEvidence.Contains(evidence))
-                return true;
+            foreach (ItemData evidence in choice.RequiredItemList)
+            {
+                // If we have any one of those items, then we can show the option
+                if (!_foundEvidence.Contains(evidence))
+                    return false;
+            }
+
+            return true;
         }
+        else
+        {
+            foreach (ItemData evidence in choice.RequiredItemList)
+            {
+                // If we have any one of those items, then we can show the option
+                if (_foundEvidence.Contains(evidence))
+                    return true;
+            }
+        }
+            
 
         return false;
     }

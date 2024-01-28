@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94791cbbbfa37664a84e0b930cbc732e, type: 3}
   m_Name: Bandage
   m_EditorClassIdentifier: 
-  ItemName: Bandage
-  Description: 
+  ItemName: Pile of Bandages
+  Description: Upon closer inspection, it is not just toilet paper, but bandage for
+    some ancient corpse.
   Icon: {fileID: 21300000, guid: 617c46b2f9beb204db1f57c6e8964263, type: 3}

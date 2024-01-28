@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94791cbbbfa37664a84e0b930cbc732e, type: 3}
   m_Name: Mummy's Curse
   m_EditorClassIdentifier: 
-  ItemName: Mummy's Curse
+  ItemName: Curse of the Mummy
   Description: 
   Icon: {fileID: 21300000, guid: 10d1a97c9c25a594e9075bcb3114d21c, type: 3}

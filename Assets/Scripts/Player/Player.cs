@@ -40,6 +40,17 @@ public class Player : MonoBehaviour
         _interactUI.SetInteractable(null);
     }
 
+    public void DeactivateControls()
+    {
+        _input.Disable();
+    }
+
+
+    public void ReactivateControls()
+    {
+        _input.Enable();
+    }
+
     void OnInteractChange(Interactable item)
     {
         _currentInteractable = item;
