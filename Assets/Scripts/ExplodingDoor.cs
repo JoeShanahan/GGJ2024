@@ -16,6 +16,9 @@ public class ExplodingDoor : Interactable
     [SerializeField]
     private float _explodeRadius;
 
+    [SerializeField]
+    private MuseumRoom _room;
+
     public override bool IsInteractable => _isInteractable;
 
     private bool _isInteractable = true;
@@ -33,5 +36,10 @@ public class ExplodingDoor : Interactable
         Destroy(this);
         Destroy(GetComponent<Collider>());
         _isInteractable = false;
+
+        if (_room != null)
+        {
+            _room.gameObject.SetActive(true);
+        }
     }
 }
