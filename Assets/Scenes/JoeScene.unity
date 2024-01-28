@@ -15436,8 +15436,11 @@ MonoBehaviour:
   - {fileID: 428460129}
   - {fileID: 1015964061}
   - {fileID: 1636468376}
+  _detectivePortrait: {fileID: 0}
+  _otherSpeaker: {fileID: 0}
   _typer: {fileID: 1542819861}
   _overlord: {fileID: 1967224388}
+  _evidence: {fileID: 237325396}
 --- !u!224 &798505845
 RectTransform:
   m_ObjectHideFlags: 0
@@ -41668,12 +41671,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TestNode: {fileID: 0}
-  convoText: {fileID: 0}
   isConvoActive: 0
-  lineNumber: 0
   _ui: {fileID: 798505844}
-  choiceNumber: 0
-  answerButtons: []
 --- !u!1 &1971644130
 GameObject:
   m_ObjectHideFlags: 0

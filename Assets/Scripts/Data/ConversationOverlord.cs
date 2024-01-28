@@ -12,17 +12,10 @@ public class ConversationOverlord : MonoBehaviour
     [SerializeField] 
     public ConversationNode TestNode;
 
-    [Header("ConversationBox")]
-    [SerializeField] TextMeshProUGUI convoText;
     public bool isConvoActive;
-    public int lineNumber;
 
     [SerializeField]
     private ConversationUI _ui;
-
-    [Header("DialogueResponses")]
-    public int choiceNumber;
-    [SerializeField] GameObject[] answerButtons;
 
     public void Start()
     {
@@ -48,6 +41,7 @@ public class ConversationOverlord : MonoBehaviour
 
     private void Update()
     {
+        // TODO remove this
         if (Input.GetKeyDown(KeyCode.T))
         {
             if (!isConvoActive)

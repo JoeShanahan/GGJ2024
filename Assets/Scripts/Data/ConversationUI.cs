@@ -4,6 +4,7 @@ using RedBlueGames.Tools.TextTyper;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 /// <summary>
 /// This class handles the UI for the conversation, including moving through the text
@@ -29,21 +30,22 @@ public class ConversationUI : MonoBehaviour
     [SerializeField]
     private ConversationOverlord _overlord;
 
+    [SerializeField]
+    private EvidenceManager _evidence;
+
     
     private int _lineNumber;
     private ConversationNode _currentNode;
 
-    private bool HasGotItem(ItemData data) 
-    {
-        return false;
-    }
     public void ShowUI()
     {
+        // TODO Animation
         gameObject.SetActive(true);
     }
 
     public void HideUI()
     {
+        // TODO Animation
         gameObject.SetActive(false);
     }
 
@@ -80,7 +82,8 @@ public class ConversationUI : MonoBehaviour
             if (i < node.Choices.Count)
              {
                 ConversationChoice currentChoice = node.Choices[i];
-                if (currentChoice.RequiredItem != null && HasGotItem (currentChoice.RequiredItem) == false)
+
+                if (_evidence.CanShowThisChoice(currentChoice))
                 {
                     _choiceButtons[i].gameObject.SetActive(false);
 
@@ -139,12 +142,16 @@ public class ConversationUI : MonoBehaviour
     public void ButtonPress(int buttonIndex)
     {
         ConversationChoice playerSelection = _currentNode.Choices[buttonIndex];
+        FindObjectOfType<ProgressionManager>().MakeChoice(playerSelection);
 
-        // TODO if player selection has node, SetNewNode
-        // TODO else, end conversation 
-
-        Debug.Log($"You pressed {buttonIndex}");
-        _overlord.EndConversation();
+        if (playerSelection.NextNode != null)
+        {
+            SetNewNode(playerSelection.NextNode);
+        }
+        else
+        {
+            _overlord.EndConversation();
+        }
     }
 
 

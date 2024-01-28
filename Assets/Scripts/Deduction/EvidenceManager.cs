@@ -17,6 +17,22 @@ public class EvidenceManager : MonoBehaviour
         return _foundEvidence.Contains(data);
     }
 
+    public bool CanShowThisChoice(ConversationChoice choice)
+    {
+        // If we don't need an item, then we're good to show
+        if (choice.RequiredItem == null)
+            return true;
+
+        foreach (ItemData evidence in choice.RequiredItemList)
+        {
+            // If we have any one of those items, then we can show the option
+            if (_foundEvidence.Contains(evidence))
+                return true;
+        }
+
+        return false;
+    }
+
     public void AddEvidence(ItemData data)
     {
         if (_foundEvidence.Contains(data) == false)
