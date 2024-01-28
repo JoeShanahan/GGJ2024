@@ -6,6 +6,7 @@ public class EvidenceItem : Interactable
 {
     [SerializeField]
     private ItemData _data;
+    [SerializeField] private GameObject particles;
 
     public override bool IsInteractable => _isInteractable;
 
@@ -15,5 +16,6 @@ public class EvidenceItem : Interactable
     {
         FindObjectOfType<EvidenceManager>().AddEvidence(_data);
         _isInteractable = false;
+        Destroy(particles);
     }
 }
