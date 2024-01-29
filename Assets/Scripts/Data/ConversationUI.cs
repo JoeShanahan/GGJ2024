@@ -88,13 +88,14 @@ public class ConversationUI : MonoBehaviour
                 if (_evidence.CanShowThisChoice(currentChoice))
                 {
                     Debug.Log("creating responses1");
-                    _choiceButtons[i].gameObject.SetActive(false);
+                    buttonText.text = node.Choices[i].ChoiceText;
+                    _choiceButtons[i].gameObject.SetActive(true);
 
                 } else
                 {
                     Debug.Log("creatingresponses2");
                     buttonText.text = node.Choices[i].ChoiceText;
-                    _choiceButtons[i].gameObject.SetActive(true);
+                    _choiceButtons[i].gameObject.SetActive(false);
                 }
                 
             }
@@ -129,11 +130,6 @@ public class ConversationUI : MonoBehaviour
         {
             Debug.Log("failure");
             CreateDialogueResponses(node);
-        }
-        else if (isFinalLine)
-        {
-            Debug.Log("whatever");
-            _overlord.EndConversation();
         }
         else
         {
@@ -179,6 +175,7 @@ public class ConversationUI : MonoBehaviour
 
     public void ButtonPress(int buttonIndex)
     {
+        Debug.Log("Pressing button" + buttonIndex);
         ConversationChoice playerSelection = _currentNode.Choices[buttonIndex];
         FindObjectOfType<ProgressionManager>().MakeChoice(playerSelection);
 
@@ -188,6 +185,7 @@ public class ConversationUI : MonoBehaviour
         }
         else
         {
+            Debug.Log("Ending conversation");
             _overlord.EndConversation();
         }
     }
