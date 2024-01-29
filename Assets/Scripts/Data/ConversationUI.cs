@@ -35,6 +35,7 @@ public class ConversationUI : MonoBehaviour
 
     PlayerInputActions _input;
 
+    private bool _makingAChoice;
     private int _lineNumber;
     private ConversationNode _currentNode;
 
@@ -76,7 +77,7 @@ public class ConversationUI : MonoBehaviour
 
     public void CreateDialogueResponses(ConversationNode node) 
     {
-        
+        _makingAChoice = true;
         for (int i = 0; i < _choiceButtons.Count; i++)
         {
             TextMeshProUGUI buttonText = _choiceButtons[i].GetComponentInChildren<TextMeshProUGUI>();
@@ -169,7 +170,15 @@ public class ConversationUI : MonoBehaviour
         } 
         else
         {
-            ContinueConversation(_currentNode);
+            if (!_makingAChoice)
+            {
+                ContinueConversation(_currentNode);
+            } else
+            {
+                ButtonPress(0);
+                _makingAChoice = false;
+            }
+            
         }
     }
 
