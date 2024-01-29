@@ -41456,20 +41456,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _phases:
   - MinimumRequiredEvidence: 3
-    RoomsToUnlock: {fileID: 0}
-    RoomCoverMat: {fileID: 0}
-    BlockersToHide: {fileID: 0}
+    ObjectsToHide: []
+    ObjectsToShow: []
     Evidence: []
+    Title: Means
+    SubTitle: How was the crime committed?
   - MinimumRequiredEvidence: 4
-    RoomsToUnlock: {fileID: 0}
-    RoomCoverMat: {fileID: 2100000, guid: cb78bd651aeeb2d4b92256d159210474, type: 2}
-    BlockersToHide: {fileID: 0}
+    ObjectsToHide: []
+    ObjectsToShow: []
     Evidence: []
+    Title: Motive
+    SubTitle: Why was the crime committed?
   - MinimumRequiredEvidence: 5
-    RoomsToUnlock: {fileID: 0}
-    RoomCoverMat: {fileID: 2100000, guid: 31cf6ee1c06f869469d3c5d6981d3bab, type: 2}
-    BlockersToHide: {fileID: 0}
+    ObjectsToHide: []
+    ObjectsToShow: []
     Evidence: []
+    Title: Monster
+    SubTitle: Who committed this horrible crime?
   _instructionText: {fileID: 1557449765}
   _instructionBox: {fileID: 194454549}
 --- !u!1 &1283150902
@@ -70723,7 +70726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactText: Talk to Inspector
-  _myConversationNode: {fileID: 11400000, guid: a230ed65acd7ae847ae33a0e3c8ebdf0, type: 2}
+  _myConversationNode: {fileID: 11400000, guid: 72d622abe474d1542b31783d14574643, type: 2}
   _convoOverlord: {fileID: 1967224388}
 --- !u!4 &8384162377289275378
 Transform:

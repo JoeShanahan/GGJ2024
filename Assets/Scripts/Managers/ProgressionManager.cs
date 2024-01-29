@@ -25,7 +25,7 @@ public class ProgressionManager : MonoBehaviour
         { EndingType.SelfIncriminate, 0 },
     };
 
-    private int _currentPhase;
+    private int _currentPhase = -1;
 
     private HashSet<ConversationChoice> _previousAnswers = new();
 
@@ -57,9 +57,15 @@ public class ProgressionManager : MonoBehaviour
             return;
         }
 
-        foreach (Transform t in _phases[_currentPhase].BlockersToHide)
+        foreach (Transform t in _phases[_currentPhase].ObjectsToHide)
         {
             t.gameObject.SetActive(false);
+        }
+
+        
+        foreach (Transform t in _phases[_currentPhase].ObjectsToShow)
+        {
+            t.gameObject.SetActive(true);
         }
 
         _numCluesRemain = _phases[_currentPhase].MinimumRequiredEvidence;
@@ -87,8 +93,9 @@ public class ProgressionManager : MonoBehaviour
 public class PhaseInfo
 {
     public int MinimumRequiredEvidence;
-    public Transform RoomsToUnlock;
-    public Material RoomCoverMat;
-    public Transform BlockersToHide;
+    public Transform[] ObjectsToHide;
+    public Transform[] ObjectsToShow;
     public List<EvidenceItem> Evidence;
+    public string Title;
+    public string SubTitle;
 }

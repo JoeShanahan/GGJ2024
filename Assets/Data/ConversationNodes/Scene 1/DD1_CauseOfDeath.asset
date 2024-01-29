@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25dc17d2e25f5fd42be02f3d6852308e, type: 3}
+  m_Name: DD1_CauseOfDeath
+  m_EditorClassIdentifier: 
+  DialogueLines:
+  - LineText: Yes, after careful examinaton of the crime scene I can say with 100%
+      certainty that the victim died from...
+    PersonName: Clownumbo
+    PersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
+    TalkSound: {fileID: 0}
+    Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 0
+  Choices:
+  - ChoiceText: Being Stabbed
+    NextNode: {fileID: 11400000, guid: 4649975eff36d1f44894f59ad0e35e4e, type: 2}
+    RequiredItemList: []
+    needAll: 0
+    EndingPoints: 0
+    endingType: 0
+  - ChoiceText: Poison
+    NextNode: {fileID: 11400000, guid: 79e74010f3625d149adc77a083638864, type: 2}
+    RequiredItemList: []
+    needAll: 0
+    EndingPoints: 0
+    endingType: 0
+  - ChoiceText: Natural Causes
+    NextNode: {fileID: 11400000, guid: 79e74010f3625d149adc77a083638864, type: 2}
+    RequiredItemList: []
+    needAll: 0
+    EndingPoints: 0
+    endingType: 0
+  InitialLeftPersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
+  InitialRightPersonIcon: {fileID: 21300000, guid: 11cb7cba3bf899a429427f53e042d221, type: 3}
+  InitialLeftPerson: {fileID: 0}
+  InitialRightPerson: {fileID: 0}
+  DoesAdvanceProgression: 0
