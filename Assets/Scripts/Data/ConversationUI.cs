@@ -145,18 +145,18 @@ public class ConversationUI : MonoBehaviour
     {
         if (_lineNumber == 0)
         {
-            _leftPersonPortrait.sprite = _currentNode.InitialLeftPersonIcon;
-            _rightPersonPortrait.sprite = _currentNode.InitialRightPersonIcon;
+            _leftPersonPortrait.sprite = _currentNode.InitialLeftPerson.Sprite;
+            _rightPersonPortrait.sprite = _currentNode.InitialRightPerson.Sprite;
         } 
         else
         { 
         if (_currentNode.DialogueLines[_lineNumber].isPersonOnLeftTalking)
             {
-                _leftPersonPortrait.sprite = _currentNode.DialogueLines[_lineNumber].PersonIcon;
+                _leftPersonPortrait.sprite = _currentNode.DialogueLines[_lineNumber].Person.Sprite;
             } 
             else
             {
-                _rightPersonPortrait.sprite = _currentNode.DialogueLines[_lineNumber].PersonIcon;
+                _rightPersonPortrait.sprite = _currentNode.DialogueLines[_lineNumber].Person.Sprite;
             }
         }
         

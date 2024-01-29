@@ -17,42 +17,41 @@ MonoBehaviour:
     PersonName: Inspector Edartsel
     PersonIcon: {fileID: 21300000, guid: 11cb7cba3bf899a429427f53e042d221, type: 3}
     TalkSound: {fileID: 0}
+    Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
+    ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 0
   Choices:
   - ChoiceText: "The victim is Cory, the \u201Cemployee of the month\u201D. He was
       murdered by another staff member because they are jealous. I will investigate
       the rest of the museum and then confront the suspects."
-    RequiredItem: {fileID: 0}
     NextNode: {fileID: 11400000, guid: 79040759a9babd74595a94731925cb70, type: 2}
     RequiredItemList:
     - {fileID: 11400000, guid: 894eabb5176b93c469301672397e8d01, type: 2}
     needAll: 0
-    unlockedEvidence: {fileID: 0}
     EndingPoints: 0
     endingType: 0
   - ChoiceText: A mummy murdered Cory, one of the museum staff. I will need to ask
       the staff about the curse.
-    RequiredItem: {fileID: 0}
     NextNode: {fileID: 11400000, guid: 79040759a9babd74595a94731925cb70, type: 2}
     RequiredItemList:
     - {fileID: 11400000, guid: 894eabb5176b93c469301672397e8d01, type: 2}
     - {fileID: 11400000, guid: ab2c182634e26914692148a847d0e57e, type: 2}
     - {fileID: 11400000, guid: c774fee82effabd44a6bb8f2092cdfaf, type: 2}
     needAll: 0
-    unlockedEvidence: {fileID: 11400000, guid: 88f4cc00cec4be8478c4b214e579facc, type: 2}
     EndingPoints: 0
     endingType: 0
   - ChoiceText: "All evidence points to the murder being an act of jealousy committed
       by a staff member, but something doesn\u2019t add up. I will investigate the
       rest of the museum and then confront the suspects. "
-    RequiredItem: {fileID: 0}
     NextNode: {fileID: 11400000, guid: 79040759a9babd74595a94731925cb70, type: 2}
     RequiredItemList:
     - {fileID: 11400000, guid: 7a75145be462a9d48acba74c13d134d5, type: 2}
     - {fileID: 11400000, guid: 6545330b3368f1c428807e04dc593af3, type: 2}
     needAll: 0
-    unlockedEvidence: {fileID: 0}
     EndingPoints: 0
     endingType: 0
   InitialLeftPersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
   InitialRightPersonIcon: {fileID: 21300000, guid: 11cb7cba3bf899a429427f53e042d221, type: 3}
+  InitialLeftPerson: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
+  InitialRightPerson: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
+  DoesAdvanceProgression: 0

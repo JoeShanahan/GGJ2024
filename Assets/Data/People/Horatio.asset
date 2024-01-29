@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43e751469b26da840800a479d417eeb7, type: 3}
-  m_Name: Hopratio
+  m_Name: Horatio
   m_EditorClassIdentifier: 
   CharacterName: Hopratio
   Sprite: {fileID: 21300000, guid: 9801f3646e6e2034c8714d10afc8e674, type: 3}

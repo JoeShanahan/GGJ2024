@@ -17,20 +17,26 @@ MonoBehaviour:
     PersonName: Inspector Horatio
     PersonIcon: {fileID: 21300000, guid: 9801f3646e6e2034c8714d10afc8e674, type: 3}
     TalkSound: {fileID: 0}
+    Person: {fileID: 11400000, guid: 2413da7263e30c644a2c2510549ce527, type: 2}
+    ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 0
   - LineText: 'Patience, Horatio. We would start gathering the staff so you can question
       them. '
     PersonName: Inspector Edartsel
     PersonIcon: {fileID: 21300000, guid: 11cb7cba3bf899a429427f53e042d221, type: 3}
     TalkSound: {fileID: 0}
+    Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
+    ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
   Choices:
   - ChoiceText: Do nothing
-    RequiredItem: {fileID: 0}
     NextNode: {fileID: 0}
     RequiredItemList: []
+    needAll: 0
     EndingPoints: 0
     endingType: 0
-  unlockedEvidence: {fileID: 0}
   InitialLeftPersonIcon: {fileID: 21300000, guid: 11cb7cba3bf899a429427f53e042d221, type: 3}
   InitialRightPersonIcon: {fileID: 21300000, guid: 9801f3646e6e2034c8714d10afc8e674, type: 3}
+  InitialLeftPerson: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
+  InitialRightPerson: {fileID: 11400000, guid: 2413da7263e30c644a2c2510549ce527, type: 2}
+  DoesAdvanceProgression: 0

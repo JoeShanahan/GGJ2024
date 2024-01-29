@@ -9,3 +9,4 @@ Fix hitbox
 dead body
 redo clown FBX
 NPC FBX
+Options should appear on text finish
