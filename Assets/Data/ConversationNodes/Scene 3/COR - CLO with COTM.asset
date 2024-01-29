@@ -34,7 +34,7 @@ MonoBehaviour:
     NextNode: {fileID: 0}
     RequiredItemList: []
     needAll: 0
-    unlockedEvidence: {fileID: 0}
+    unlockedEvidence: {fileID: 11400000, guid: 88f4cc00cec4be8478c4b214e579facc, type: 2}
     EndingPoints: 0
     endingType: 0
   InitialLeftPersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}

@@ -23,14 +23,17 @@ MonoBehaviour:
     RequiredItem: {fileID: 0}
     NextNode: {fileID: 0}
     RequiredItemList: []
+    needAll: 0
+    unlockedEvidence: {fileID: 0}
     EndingPoints: 0
     endingType: 0
   - ChoiceText: Proceed with investigation
     RequiredItem: {fileID: 0}
-    NextNode: {fileID: 0}
+    NextNode: {fileID: 11400000, guid: 035fabe332bee8e4590c213745e15658, type: 2}
     RequiredItemList: []
+    needAll: 0
+    unlockedEvidence: {fileID: 0}
     EndingPoints: 0
     endingType: 0
-  unlockedEvidence: {fileID: 0}
   InitialLeftPersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
   InitialRightPersonIcon: {fileID: 21300000, guid: 9801f3646e6e2034c8714d10afc8e674, type: 3}

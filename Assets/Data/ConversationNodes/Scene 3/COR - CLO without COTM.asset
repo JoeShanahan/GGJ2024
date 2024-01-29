@@ -37,7 +37,8 @@ MonoBehaviour:
   - ChoiceText: "*This guy\u2019s boots match the size of the boot prints.*"
     RequiredItem: {fileID: 0}
     NextNode: {fileID: 0}
-    RequiredItemList: []
+    RequiredItemList:
+    - {fileID: 11400000, guid: 07b35592ffc383b48aad36f33b74e85e, type: 2}
     needAll: 0
     unlockedEvidence: {fileID: 11400000, guid: a4b8639b16404c64fba90b0871914aee, type: 2}
     EndingPoints: 0

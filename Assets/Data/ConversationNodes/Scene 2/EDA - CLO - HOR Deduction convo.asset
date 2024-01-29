@@ -50,7 +50,7 @@ MonoBehaviour:
     RequiredItemList:
     - {fileID: 11400000, guid: 7a75145be462a9d48acba74c13d134d5, type: 2}
     - {fileID: 11400000, guid: 6545330b3368f1c428807e04dc593af3, type: 2}
-    needAll: 0
+    needAll: 1
     unlockedEvidence: {fileID: 0}
     EndingPoints: 0
     endingType: 0
