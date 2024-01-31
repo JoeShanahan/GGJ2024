@@ -634,11 +634,11 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""17d38de7-cfe6-4992-9706-05d4bc41b005"",
-                    ""path"": ""*/{Submit}"",
+                    ""id"": ""aefe7ae0-8b9f-4935-b614-62ee7322adc4"",
+                    ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse;Gamepad;Touch;Joystick;XR"",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""Submit"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false

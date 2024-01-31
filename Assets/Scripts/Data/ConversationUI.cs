@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.EventSystems;
 
 /// <summary>
 /// This class handles the UI for the conversation, including moving through the text
@@ -65,6 +66,29 @@ public class ConversationUI : MonoBehaviour
         HideAllButtons();
         ContinueConversation(node);
     }
+    
+    private void Start()
+    {
+        _typer.PrintCompleted.AddListener(() => OnTyperFinish());
+    }
+
+    private void OnTyperFinish()
+    {
+        bool isFinalLine = _lineNumber >= _currentNode.DialogueLines.Count - 1;
+        
+        if (isFinalLine)
+        {
+            StartCoroutine(CreateResponsesWithDelay());
+        }
+    }
+
+    private IEnumerator CreateResponsesWithDelay()
+    {
+        // We need a delay to stop the button press to advance the conversation also choose an option
+        yield return new WaitForSeconds(0.1f);
+
+        CreateDialogueResponses(_currentNode);
+    }
 
     private void HideAllButtons()
     {
@@ -76,7 +100,8 @@ public class ConversationUI : MonoBehaviour
 
     public void CreateDialogueResponses(ConversationNode node) 
     {
-        
+        bool haveSelectedSomething = false;
+
         for (int i = 0; i < _choiceButtons.Count; i++)
         {
             TextMeshProUGUI buttonText = _choiceButtons[i].GetComponentInChildren<TextMeshProUGUI>();
@@ -90,6 +115,11 @@ public class ConversationUI : MonoBehaviour
                     buttonText.text = node.Choices[i].ChoiceText;
                     _choiceButtons[i].gameObject.SetActive(true);
 
+                    if (haveSelectedSomething == false)
+                    {
+                        haveSelectedSomething = true;
+                        EventSystem.current.SetSelectedGameObject(_choiceButtons[i].gameObject);
+                    }
                 }
                 else
                 {
@@ -121,15 +151,12 @@ public class ConversationUI : MonoBehaviour
     public void ContinueConversation(ConversationNode node)
     {
         bool isFinalLine = _lineNumber >= node.DialogueLines.Count - 1;
-        Debug.Log(isFinalLine);
         if (isFinalLine && DoHaveChoices(node))
         {
-            Debug.Log("failure");
-            CreateDialogueResponses(node);
+            // Do nothing, we're waiting on a choice to be made
         }
         else if (isFinalLine)
         {
-            Debug.Log("whatever");
             _overlord.EndConversation();
         }
         else
