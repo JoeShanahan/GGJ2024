@@ -6,7 +6,6 @@ Progression
 Endings
 Title Screen
 Proper doors
-Fix hitbox
 Place clues
 Earn clues for deductions (for endings)
 Clear up clues on progression advance
