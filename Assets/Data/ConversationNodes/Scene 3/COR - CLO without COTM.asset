@@ -14,37 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueLines:
   - LineText: A murder happened? I have only just come in.
-    PersonName: Guy
-    PersonIcon: {fileID: 21300000, guid: 3b1ea7aeec196ac4f853e95b13f9089d, type: 3}
-    TalkSound: {fileID: 0}
     Person: {fileID: 11400000, guid: f258bb9b53fa11145ab426705494384b, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 0
   - LineText: Where were you last night? Do you have an alibi?
-    PersonName: Clownumbo
-    PersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
-    TalkSound: {fileID: 0}
     Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
   - LineText: I was sleeping at home, and I live alone.
-    PersonName: Guy
-    PersonIcon: {fileID: 21300000, guid: 3b1ea7aeec196ac4f853e95b13f9089d, type: 3}
-    TalkSound: {fileID: 0}
     Person: {fileID: 11400000, guid: f258bb9b53fa11145ab426705494384b, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 0
   - LineText: Thanks for answering.
-    PersonName: Clownumbo
-    PersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
-    TalkSound: {fileID: 0}
     Person: {fileID: 0}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
   Choices:
   - ChoiceText: "*This guy\u2019s boots match the size of the boot prints.*"
     NextNode: {fileID: 0}
-    RequiredItemList: []
+    RequiredItemList:
+    - {fileID: 11400000, guid: 07b35592ffc383b48aad36f33b74e85e, type: 2}
     needAll: 0
     EndingPoints: 0
     endingType: 0
@@ -54,8 +43,6 @@ MonoBehaviour:
     needAll: 0
     EndingPoints: 0
     endingType: 0
-  InitialLeftPersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
-  InitialRightPersonIcon: {fileID: 21300000, guid: 3b1ea7aeec196ac4f853e95b13f9089d, type: 3}
   InitialLeftPerson: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
   InitialRightPerson: {fileID: 11400000, guid: f258bb9b53fa11145ab426705494384b, type: 2}
   DoesAdvanceProgression: 0
