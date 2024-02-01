@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.EventSystems;
 
 /// <summary>
 /// This class handles the UI for the conversation, including moving through the text
@@ -65,6 +66,29 @@ public class ConversationUI : MonoBehaviour
         HideAllButtons();
         ContinueConversation(node);
     }
+    
+    private void Start()
+    {
+        _typer.PrintCompleted.AddListener(() => OnTyperFinish());
+    }
+
+    private void OnTyperFinish()
+    {
+        bool isFinalLine = _lineNumber >= _currentNode.DialogueLines.Count - 1;
+        
+        if (isFinalLine)
+        {
+            StartCoroutine(CreateResponsesWithDelay());
+        }
+    }
+
+    private IEnumerator CreateResponsesWithDelay()
+    {
+        // We need a delay to stop the button press to advance the conversation also choose an option
+        yield return new WaitForSeconds(0.1f);
+
+        CreateDialogueResponses(_currentNode);
+    }
 
     private void HideAllButtons()
     {
@@ -76,7 +100,8 @@ public class ConversationUI : MonoBehaviour
 
     public void CreateDialogueResponses(ConversationNode node) 
     {
-        
+        bool haveSelectedSomething = false;
+
         for (int i = 0; i < _choiceButtons.Count; i++)
         {
             TextMeshProUGUI buttonText = _choiceButtons[i].GetComponentInChildren<TextMeshProUGUI>();
@@ -87,16 +112,19 @@ public class ConversationUI : MonoBehaviour
                
                 if (_evidence.CanShowThisChoice(currentChoice))
                 {
-                    Debug.Log("creating responses1");
-                    _choiceButtons[i].gameObject.SetActive(false);
-
-                } else
-                {
-                    Debug.Log("creatingresponses2");
                     buttonText.text = node.Choices[i].ChoiceText;
                     _choiceButtons[i].gameObject.SetActive(true);
+
+                    if (haveSelectedSomething == false)
+                    {
+                        haveSelectedSomething = true;
+                        EventSystem.current.SetSelectedGameObject(_choiceButtons[i].gameObject);
+                    }
                 }
-                
+                else
+                {
+                    _choiceButtons[i].gameObject.SetActive(false);
+                }
             }
             else
             {
@@ -123,15 +151,12 @@ public class ConversationUI : MonoBehaviour
     public void ContinueConversation(ConversationNode node)
     {
         bool isFinalLine = _lineNumber >= node.DialogueLines.Count - 1;
-        Debug.Log(isFinalLine);
         if (isFinalLine && DoHaveChoices(node))
         {
-            Debug.Log("failure");
-            CreateDialogueResponses(node);
+            // Do nothing, we're waiting on a choice to be made
         }
         else if (isFinalLine)
         {
-            Debug.Log("whatever");
             _overlord.EndConversation();
         }
         else
@@ -147,18 +172,18 @@ public class ConversationUI : MonoBehaviour
     {
         if (_lineNumber == 0)
         {
-            _leftPersonPortrait.sprite = _currentNode.InitialLeftPersonIcon;
-            _rightPersonPortrait.sprite = _currentNode.InitialRightPersonIcon;
+            _leftPersonPortrait.sprite = _currentNode.InitialLeftPerson.Sprite;
+            _rightPersonPortrait.sprite = _currentNode.InitialRightPerson.Sprite;
         } 
         else
         { 
         if (_currentNode.DialogueLines[_lineNumber].isPersonOnLeftTalking)
             {
-                _leftPersonPortrait.sprite = _currentNode.DialogueLines[_lineNumber].PersonIcon;
+                _leftPersonPortrait.sprite = _currentNode.DialogueLines[_lineNumber].Person.Sprite;
             } 
             else
             {
-                _rightPersonPortrait.sprite = _currentNode.DialogueLines[_lineNumber].PersonIcon;
+                _rightPersonPortrait.sprite = _currentNode.DialogueLines[_lineNumber].Person.Sprite;
             }
         }
         

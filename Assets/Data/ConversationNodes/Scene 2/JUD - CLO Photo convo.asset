@@ -18,22 +18,30 @@ MonoBehaviour:
     PersonName: Judith
     PersonIcon: {fileID: 21300000, guid: aed146b7529f3594ba02314d2188bded, type: 3}
     TalkSound: {fileID: 0}
+    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
+    ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 0
   - LineText: What was he like?
     PersonName: Clownumbo
     PersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
     TalkSound: {fileID: 0}
+    Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
+    ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
   - LineText: He is a gym bro, always talking about exercise, eating healthy and
       keeping his body in tip-top shape.
     PersonName: Judith
     PersonIcon: {fileID: 21300000, guid: aed146b7529f3594ba02314d2188bded, type: 3}
     TalkSound: {fileID: 0}
+    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
+    ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 0
   - LineText: Does anyone have a grudge against him?
     PersonName: Clownumbo
     PersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
     TalkSound: {fileID: 0}
+    Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
+    ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
   - LineText: "To be honest, he is not very popular among the staff members. He\u2019s
       the nephew of the director, and the nepotism is plain to see. I don\u2019t
@@ -41,14 +49,18 @@ MonoBehaviour:
     PersonName: Judith
     PersonIcon: {fileID: 21300000, guid: aed146b7529f3594ba02314d2188bded, type: 3}
     TalkSound: {fileID: 0}
+    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
+    ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 0
   Choices:
   - ChoiceText: You now know about Cory
-    RequiredItem: {fileID: 0}
     NextNode: {fileID: 0}
     RequiredItemList: []
-    unlockedEvidence: {fileID: 11400000, guid: 894eabb5176b93c469301672397e8d01, type: 2}
+    needAll: 0
     EndingPoints: 0
     endingType: 0
   InitialLeftPersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
   InitialRightPersonIcon: {fileID: 21300000, guid: aed146b7529f3594ba02314d2188bded, type: 3}
+  InitialLeftPerson: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
+  InitialRightPerson: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
+  DoesAdvanceProgression: 0
