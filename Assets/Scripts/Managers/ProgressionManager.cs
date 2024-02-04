@@ -15,6 +15,9 @@ public class ProgressionManager : MonoBehaviour
     [SerializeField]
     private RectTransform _instructionBox;
 
+    [SerializeField]
+    private PhaseChangeUI _phaseUI;
+
     private int _numCluesRemain;
     
     private Dictionary<EndingType, int> _endingPoints = new()
@@ -69,6 +72,7 @@ public class ProgressionManager : MonoBehaviour
     public void AdvanceToNextPhase()
     {
         _currentPhase ++;
+        _phaseUI.StartNewPhase(_phases[_currentPhase], _currentPhase + 1);
         
         if (_currentPhase >= _phases.Count)
         {

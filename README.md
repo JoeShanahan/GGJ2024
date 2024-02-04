@@ -1,10 +1,7 @@
 # GGJ2024
 
 ## Needed
-Means, Motive, Monster UI
-Progression
 Endings
-Title Screen
 Proper doors
 Place clues
 Earn clues for deductions (for endings)
@@ -16,3 +13,4 @@ hide blockers on progression
 dead body
 redo clown FBX
 NPC FBX
+Title Screen
