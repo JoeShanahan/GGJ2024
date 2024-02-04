@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TalkingPerson : Interactable
+public class PoliceInspector : Interactable
 {
     [SerializeField]
     private ConversationNode[] _conversationNodes;
+
+    [SerializeField]
+    private Transform[] _standPositions;
 
     [SerializeField]
     ConversationOverlord _convoOverlord;

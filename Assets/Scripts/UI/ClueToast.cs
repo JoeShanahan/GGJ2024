@@ -60,7 +60,7 @@ public class ClueToast : MonoBehaviour
         _isBusy = true;
         _icon.sprite = data.Icon;
         _titleText.text = data.ItemName;
-        _bodyText.text = data.Description;
+        _bodyText.text = data.ShortDescription;
 
         _thisGroup.alpha = 0;
         _thisRect.DOAnchorPosX(0, _transitionTime);

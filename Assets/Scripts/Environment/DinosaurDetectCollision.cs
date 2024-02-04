@@ -8,9 +8,9 @@ public class DinosaurDetectCollision : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (dinoYeet == null) { return; }
         if (dinoYeet.HasYeeted()) { return; }
         if (collision.rigidbody.velocity.magnitude < 1f) { return; }
-        Debug.Log(collision.rigidbody.velocity.magnitude);
         dinoYeet.YeetBones();
     }
 }

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94791cbbbfa37664a84e0b930cbc732e, type: 3}
   m_Name: Knows Cory
   m_EditorClassIdentifier: 
-  ItemName: Knows about Cory
+  ItemName: Missing Employee
+  ShortDescription: Cory hasn't been seen since the murder
   Description: Cory is missing
   Icon: {fileID: 21300000, guid: 775c6ba85ae28cb4896bcfa7ffee1067, type: 3}

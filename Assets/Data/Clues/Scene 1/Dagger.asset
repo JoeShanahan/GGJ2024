@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Dagger
   m_EditorClassIdentifier: 
   ItemName: Dagger
+  ShortDescription: Found in the victim
   Description: What appears to be the murder weapon. Interestingly, there is not
     much blood on the dagger.
   Icon: {fileID: 21300000, guid: 8d54202196a95a441b11df3638667e96, type: 3}

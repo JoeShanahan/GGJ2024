@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94791cbbbfa37664a84e0b930cbc732e, type: 3}
   m_Name: Thunderstorm
   m_EditorClassIdentifier: 
-  ItemName: Thunderstorm
+  ItemName: Storm Painting
+  ShortDescription: Looks just like tonight
   Description: 
   Icon: {fileID: 0}

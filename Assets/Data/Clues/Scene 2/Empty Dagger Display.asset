@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94791cbbbfa37664a84e0b930cbc732e, type: 3}
   m_Name: Empty Dagger Display
   m_EditorClassIdentifier: 
-  ItemName: "Empty display case of \u201CAntique Ceremonial Dagger\u201D"
+  ItemName: Display Case
+  ShortDescription: It's empty, missing a dagger
   Description: 'The display case is intact. It was not stolen by some amateur thief.
     It was either broken open by an expert, or by someone with a key. '
   Icon: {fileID: 21300000, guid: 2a2819ec32dc81046a095b591769300f, type: 3}

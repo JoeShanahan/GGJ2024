@@ -27,6 +27,8 @@ public class ProgressionManager : MonoBehaviour
 
     private int _currentPhase = -1;
 
+    public int CurrentPhase => _currentPhase;
+
     private HashSet<ConversationChoice> _previousAnswers = new();
 
     public void MakeChoice(ConversationChoice choice)
@@ -45,6 +47,23 @@ public class ProgressionManager : MonoBehaviour
     private void Start()
     {
         _instructionText.text = "Talk to the inspector";
+
+        
+        foreach (PhaseInfo pInfo in _phases)
+        {
+            foreach (Transform t in pInfo.ObjectsToShow)
+            {
+                t.gameObject.SetActive(false);
+            }
+        }
+
+        foreach (PhaseInfo pInfo in _phases)
+        {
+            foreach (Transform t in pInfo.ObjectsToHide)
+            {
+                t.gameObject.SetActive(true);
+            }
+        }
     }
 
     public void AdvanceToNextPhase()

@@ -157,7 +157,7 @@ public class ConversationUI : MonoBehaviour
         }
         else if (isFinalLine)
         {
-            _overlord.EndConversation();
+            _overlord.EndConversation(_currentNode);
         }
         else
         {
@@ -212,7 +212,7 @@ public class ConversationUI : MonoBehaviour
         }
         else
         {
-            _overlord.EndConversation();
+            _overlord.EndConversation(_currentNode);
         }
     }
 

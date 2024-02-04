@@ -20,6 +20,9 @@ public class ConversationOverlord : MonoBehaviour
     [SerializeField]
     private Player _player;
 
+    [SerializeField]
+    private ProgressionManager _progress;
+
     public void Start()
     {
         _ui.gameObject.SetActive(false);
@@ -32,17 +35,19 @@ public class ConversationOverlord : MonoBehaviour
         _player.DeactivateControls();
         
         isConvoActive = true;
-        // TODO disable player controls
     }
 
-    public void EndConversation()
+    public void EndConversation(ConversationNode node)
     {
         _ui.HideUI();
         _player.ReactivateControls();
+
+        if (node.DoesAdvanceProgression)
+        {
+            _progress.AdvanceToNextPhase();
+        }
     
-        //ShowConversationCanvas(false);
         isConvoActive = false;
-        // TODO enable the player controls
     }
 
     private void Update()
