@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Thunderstorm
   m_EditorClassIdentifier: 
   ItemName: Storm Painting
-  ShortDescription: Looks just like tonight
+  ShortDescription: Reminds me of the storm tonight
   Description: 
   Icon: {fileID: 0}
