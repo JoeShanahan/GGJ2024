@@ -11,6 +11,7 @@ public class DinosaurDetectCollision : MonoBehaviour
         if (dinoYeet == null) { return; }
         if (dinoYeet.HasYeeted()) { return; }
         if (collision.rigidbody.velocity.magnitude < 1f) { return; }
+        if (collision.rigidbody.mass < 5) { return; }
         dinoYeet.YeetBones();
     }
 }
