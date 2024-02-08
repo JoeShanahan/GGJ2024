@@ -45,17 +45,7 @@ public class ConversationOverlord : MonoBehaviour
         // TODO enable the player controls
     }
 
-    private void Update()
-    {
-        // TODO remove this
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            if (!isConvoActive)
-            {
-                StartConversation(TestNode);
-            } 
-        }
-    }
+    
 
     
 }

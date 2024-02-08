@@ -15,6 +15,18 @@ public class InventoryManager : MonoBehaviour
     [SerializeField]
     public TextMeshProUGUI _itemText;
 
+
+    public void ShowUI()
+    {
+        // TODO Animation
+        gameObject.SetActive(true);
+    }
+
+    public void HideUI()
+    {
+        // TODO Animation
+        gameObject.SetActive(false);
+    }
     public void MakeItemShowInInventory (ItemData data)
     {
         Debug.Log(_foundEvidence.Count - 1);
