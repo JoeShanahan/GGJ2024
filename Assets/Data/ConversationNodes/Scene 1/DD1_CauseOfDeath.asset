@@ -21,19 +21,22 @@ MonoBehaviour:
   Choices:
   - ChoiceText: Being Stabbed
     NextNode: {fileID: 11400000, guid: 4649975eff36d1f44894f59ad0e35e4e, type: 2}
-    RequiredItemList: []
+    RequiredItemList:
+    - {fileID: 11400000, guid: 009bd559bdbf8a64993bd1cef591a43a, type: 2}
     needAll: 0
     EndingPoints: 0
     endingType: 0
   - ChoiceText: Poison
-    NextNode: {fileID: 11400000, guid: 79e74010f3625d149adc77a083638864, type: 2}
-    RequiredItemList: []
+    NextNode: {fileID: 11400000, guid: 41ea3264caabb4d4fbec0452702ff3d8, type: 2}
+    RequiredItemList:
+    - {fileID: 11400000, guid: 5e3cf2675ada3fc42a996f1134bc4e4a, type: 2}
     needAll: 0
     EndingPoints: 0
     endingType: 0
   - ChoiceText: Natural Causes
-    NextNode: {fileID: 11400000, guid: 79e74010f3625d149adc77a083638864, type: 2}
-    RequiredItemList: []
+    NextNode: {fileID: 11400000, guid: 80cb9f97b4a3429489e1aed1eef5ad2f, type: 2}
+    RequiredItemList:
+    - {fileID: 11400000, guid: 10b27569d1ee8864ab18160df806eb87, type: 2}
     needAll: 0
     EndingPoints: 0
     endingType: 0

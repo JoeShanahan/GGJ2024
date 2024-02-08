@@ -10,47 +10,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25dc17d2e25f5fd42be02f3d6852308e, type: 3}
-  m_Name: DD1_CauseOfDeath_Stabbing_Balloon
+  m_Name: DD1_CauseOfDeath_Natural_Storm
   m_EditorClassIdentifier: 
   DialogueLines:
-  - LineText: ...a balloon
+  - LineText: Surely the terrible storm occuring tonight didn't slip your notice?
     Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
-  - LineText: What?! That's impossible!
+  - LineText: The thing about lightning is it can be very very frightening
+    Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 1
+  - LineText: Our poor friend on the floor there would seem to agree, as their heart
+      has given out
+    Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 1
+  - LineText: You can tell all that just by looking at them?!
     Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 0
-  - LineText: I can see why someone who doesn't have my advanced intellect might
-      think that
+  - LineText: Of course, it was his own fault for not maintaining proper fitness
+      and health
     Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
-  - LineText: But if you had studied the ancient art of balloon folding you would
-      know that it's not just for animals
-    Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
-    ClueMentioned: {fileID: 0}
-    isPersonOnLeftTalking: 1
-  - LineText: Some clowns break the sacred oath and make dangerous weapons
-    Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
-    ClueMentioned: {fileID: 0}
-    isPersonOnLeftTalking: 1
-  - LineText: What's more, once the crime is committed, the air can be released and
-      the evidence concealed.
-    Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
-    ClueMentioned: {fileID: 0}
-    isPersonOnLeftTalking: 1
-  - LineText: Wow, your reasoning is truly incredible. That's why you're the best
-      ma'am.
-    Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
-    ClueMentioned: {fileID: 0}
-    isPersonOnLeftTalking: 0
-  - LineText: My officers have been investigating other parts of the museum to try
-      and find out why this murder happened
-    Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
-    ClueMentioned: {fileID: 0}
-    isPersonOnLeftTalking: 0
-  - LineText: Would you be able to give them a hand?
+  - LineText: Incredible deduction Ma'am, some of the staff are still around if you'd
+      like to ask them any questions
     Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 0

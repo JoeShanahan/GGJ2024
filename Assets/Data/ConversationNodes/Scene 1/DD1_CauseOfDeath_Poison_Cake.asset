@@ -10,50 +10,45 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25dc17d2e25f5fd42be02f3d6852308e, type: 3}
-  m_Name: DD1_CauseOfDeath_Stabbing_Balloon
+  m_Name: DD1_CauseOfDeath_Poison_Cake
   m_EditorClassIdentifier: 
   DialogueLines:
-  - LineText: ...a balloon
+  - LineText: A cake laced with cyanide. The murderer obviously thought they could
+      hide the distinctive smell of almonds inside an almond cake
     Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
-  - LineText: What?! That's impossible!
+  - LineText: But to my highly trained detective nose, I smell both the delicious
+      and the deadly
+    Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 1
+  - LineText: Oh my, I almost had some of that cake myself!
     Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 0
-  - LineText: I can see why someone who doesn't have my advanced intellect might
-      think that
+  - LineText: I'm not surprised, the police are famously bad at self restraint
     Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
-  - LineText: But if you had studied the ancient art of balloon folding you would
-      know that it's not just for animals
+  - LineText: You're lucky I turned up when I did, otherwise I'd be explaining this
+      now to your corpse
     Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
-  - LineText: Some clowns break the sacred oath and make dangerous weapons
-    Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
-    ClueMentioned: {fileID: 0}
-    isPersonOnLeftTalking: 1
-  - LineText: What's more, once the crime is committed, the air can be released and
-      the evidence concealed.
-    Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
-    ClueMentioned: {fileID: 0}
-    isPersonOnLeftTalking: 1
-  - LineText: Wow, your reasoning is truly incredible. That's why you're the best
-      ma'am.
+  - LineText: 'We are once again in your debt! '
     Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 0
-  - LineText: My officers have been investigating other parts of the museum to try
-      and find out why this murder happened
+  - LineText: Why would someone go to such lengths?
     Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 0
-  - LineText: Would you be able to give them a hand?
-    Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
+  - LineText: That is what I intend to find out, I'm going to need to talk to the
+      people who were around tonight
+    Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
-    isPersonOnLeftTalking: 0
+    isPersonOnLeftTalking: 1
   Choices: []
   InitialLeftPerson: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
   InitialRightPerson: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}

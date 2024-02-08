@@ -20,7 +20,10 @@ MonoBehaviour:
   Choices:
   - ChoiceText: Yes
     NextNode: {fileID: 11400000, guid: f94f6127888e1cf40877019e2c4a9ffb, type: 2}
-    RequiredItemList: []
+    RequiredItemList:
+    - {fileID: 11400000, guid: 009bd559bdbf8a64993bd1cef591a43a, type: 2}
+    - {fileID: 11400000, guid: 10b27569d1ee8864ab18160df806eb87, type: 2}
+    - {fileID: 11400000, guid: 5e3cf2675ada3fc42a996f1134bc4e4a, type: 2}
     needAll: 0
     EndingPoints: 0
     endingType: 0

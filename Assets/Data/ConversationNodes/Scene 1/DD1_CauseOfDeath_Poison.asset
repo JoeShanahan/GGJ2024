@@ -10,26 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25dc17d2e25f5fd42be02f3d6852308e, type: 3}
-  m_Name: DD1_CauseOfDeath_Stabbing
+  m_Name: DD1_CauseOfDeath_Poison
   m_EditorClassIdentifier: 
   DialogueLines:
-  - LineText: They were stabbed. The weapon was...
+  - LineText: They were poisoned, by...
     Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
   Choices:
-  - ChoiceText: A Dagger
-    NextNode: {fileID: 11400000, guid: 2f28258671439e6429dbd0db92cb6102, type: 2}
+  - ChoiceText: Almond Cake
+    NextNode: {fileID: 11400000, guid: 83b52832be381dd4583ab4fa72bb4634, type: 2}
+    RequiredItemList:
+    - {fileID: 11400000, guid: 5e3cf2675ada3fc42a996f1134bc4e4a, type: 2}
+    needAll: 0
+    EndingPoints: 8
+    endingType: 3
+  - ChoiceText: Microplastics
+    NextNode: {fileID: 11400000, guid: bc3b7657c4cd3ae4b944ee78f73a37dd, type: 2}
     RequiredItemList: []
     needAll: 0
-    EndingPoints: 7
-    endingType: 1
-  - ChoiceText: A Balloon
-    NextNode: {fileID: 11400000, guid: b572987692f41f14388c4952dd11fdf0, type: 2}
-    RequiredItemList: []
-    needAll: 0
-    EndingPoints: 10
-    endingType: 4
+    EndingPoints: 3
+    endingType: 2
   InitialLeftPerson: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
   InitialRightPerson: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
   DoesAdvanceProgression: 0
