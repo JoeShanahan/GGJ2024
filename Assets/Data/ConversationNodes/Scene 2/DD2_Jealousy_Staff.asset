@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25dc17d2e25f5fd42be02f3d6852308e, type: 3}
+  m_Name: DD2_Jealousy_Staff
+  m_EditorClassIdentifier: 
+  DialogueLines:
+  - LineText: It was a member of the Museum staff
+    Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 1
+  - LineText: Astounding deduction skills, once again! Which member of staff did
+      it?
+    Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 0
+  - LineText: Of that I'm not yet certain, I need to check a few more things...
+    Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 1
+  Choices: []
+  InitialLeftPerson: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
+  InitialRightPerson: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
+  DoesAdvanceProgression: 0

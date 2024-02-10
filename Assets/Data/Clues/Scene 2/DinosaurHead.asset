@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 94791cbbbfa37664a84e0b930cbc732e, type: 3}
-  m_Name: Employee Photo
+  m_Name: DinosaurHead
   m_EditorClassIdentifier: 
-  ItemName: Employee of the Month
-  ShortDescription: It's just the same guy every month
-  Description: The same employee seems to be the employee of every Month. Maybe I
-    should ask what other staff know about him.
-  Icon: {fileID: 21300000, guid: 04d4f48b1245ead498f7510116c66b73, type: 3}
+  ItemName: Dinosaur Head
+  ShortDescription: That's one cool looking skull
+  Description: 
+  Icon: {fileID: 21300000, guid: 775c6ba85ae28cb4896bcfa7ffee1067, type: 3}

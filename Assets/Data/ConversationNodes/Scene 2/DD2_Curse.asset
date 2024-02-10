@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25dc17d2e25f5fd42be02f3d6852308e, type: 3}
+  m_Name: DD2_Curse
+  m_EditorClassIdentifier: 
+  DialogueLines:
+  - LineText: It was a curse
+    Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 1
+  - LineText: A curse?!
+    Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 0
+  - LineText: A curse!
+    Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 1
+  - LineText: And not just any curse...
+    Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 1
+  Choices:
+  - ChoiceText: a Dinosaur Curse
+    NextNode: {fileID: 11400000, guid: 52d0d0380662e614c8abca2f6ad3158a, type: 2}
+    RequiredItemList: []
+    needAll: 0
+    EndingPoints: 11
+    endingType: 3
+  - ChoiceText: a Mummy's Curse
+    NextNode: {fileID: 11400000, guid: fed567a7794c5f74aad59f3d97935940, type: 2}
+    RequiredItemList: []
+    needAll: 0
+    EndingPoints: 11
+    endingType: 2
+  InitialLeftPerson: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
+  InitialRightPerson: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
+  DoesAdvanceProgression: 0

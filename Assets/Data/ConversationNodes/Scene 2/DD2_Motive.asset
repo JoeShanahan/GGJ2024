@@ -10,25 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25dc17d2e25f5fd42be02f3d6852308e, type: 3}
-  m_Name: PAG - CLO Subsequent convo
+  m_Name: DD2_Motive
   m_EditorClassIdentifier: 
   DialogueLines:
-  - LineText: Do I know the victim? I have no idea who they are, sorry.
-    PersonName: Paggy
-    PersonIcon: {fileID: 21300000, guid: 02f1b743478a106438d321071306f6cf, type: 3}
-    TalkSound: {fileID: 0}
-    Person: {fileID: 11400000, guid: 75857c9da550de842a9b2c320fc38776, type: 2}
+  - LineText: Yes, I believe I've worked out the reason behind this poor souls demise
+    Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 0
   Choices:
-  - ChoiceText: Do Nothing
-    NextNode: {fileID: 0}
+  - ChoiceText: Jealousy
+    NextNode: {fileID: 11400000, guid: e8ad982811ff83e47ba3c71f8d1fb931, type: 2}
     RequiredItemList: []
     needAll: 0
     EndingPoints: 0
     endingType: 0
-  InitialLeftPersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
-  InitialRightPersonIcon: {fileID: 21300000, guid: 02f1b743478a106438d321071306f6cf, type: 3}
+  - ChoiceText: A Curse
+    NextNode: {fileID: 11400000, guid: 0a8a99e765588a542ab1b4dc96c1f0e6, type: 2}
+    RequiredItemList: []
+    needAll: 0
+    EndingPoints: 0
+    endingType: 0
   InitialLeftPerson: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
-  InitialRightPerson: {fileID: 11400000, guid: 75857c9da550de842a9b2c320fc38776, type: 2}
+  InitialRightPerson: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
   DoesAdvanceProgression: 0

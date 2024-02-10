@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e751469b26da840800a479d417eeb7, type: 3}
   m_Name: Cory
   m_EditorClassIdentifier: 
-  CharacterName: Cory
+  CharacterName: Guy
   Sprite: {fileID: 21300000, guid: 3b1ea7aeec196ac4f853e95b13f9089d, type: 3}
   TalkingSound: {fileID: 0}

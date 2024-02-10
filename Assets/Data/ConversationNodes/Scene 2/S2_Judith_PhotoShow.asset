@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25dc17d2e25f5fd42be02f3d6852308e, type: 3}
+  m_Name: S2_Judith_PhotoShow
+  m_EditorClassIdentifier: 
+  DialogueLines:
+  - LineText: He looked exactly like the employee on all the Employee of the Month
+      awards
+    Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 1
+  - LineText: Oh my goodness, you're saying it was Cory?!
+    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 0
+  - LineText: Now that you mention it, I haven't seen him all day
+    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
+    ClueMentioned: {fileID: 11400000, guid: 894eabb5176b93c469301672397e8d01, type: 2}
+    isPersonOnLeftTalking: 0
+  - LineText: What was he like?
+    Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 1
+  - LineText: Oh he's insufferable. A gym bro who doesn't stop talking about how
+      great his body is, and how healthy his diet is.
+    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 0
+  - LineText: ...well he <i>was</i> those things I guess
+    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 0
+  - LineText: Did anyone have a grudge against him?
+    Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 1
+  - LineText: He was never particularly popular, didn't work that hard, mostly just
+      got the job thanks to nepotism.
+    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 0
+  - LineText: His uncle is the director of the museum, that's why he could get away
+      with it
+    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 0
+  - LineText: But I couldn't imagine any of the staff hating him enough to kill him...
+    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 0
+  - LineText: Thank you for the information, that's very helpful
+    Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 1
+  Choices: []
+  InitialLeftPerson: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
+  InitialRightPerson: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
+  DoesAdvanceProgression: 0

@@ -10,26 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25dc17d2e25f5fd42be02f3d6852308e, type: 3}
-  m_Name: JUD - CLO First convo
+  m_Name: DD2_Begin
   m_EditorClassIdentifier: 
   DialogueLines:
-  - LineText: 'When I was young, I wanted to be either a museum curator or a clown.
-      The world is too serious sometimes. '
-    PersonName: Judith
-    PersonIcon: {fileID: 21300000, guid: aed146b7529f3594ba02314d2188bded, type: 3}
-    TalkSound: {fileID: 0}
-    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
+  - LineText: Did you find out anything new?
+    Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 0
   Choices:
-  - ChoiceText: Do nothing
+  - ChoiceText: Yes
+    NextNode: {fileID: 11400000, guid: d8f5b7df08545114a9ff9639820bffaf, type: 2}
+    RequiredItemList: []
+    needAll: 0
+    EndingPoints: 0
+    endingType: 0
+  - ChoiceText: Not yet
     NextNode: {fileID: 0}
     RequiredItemList: []
     needAll: 0
     EndingPoints: 0
     endingType: 0
-  InitialLeftPersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
-  InitialRightPersonIcon: {fileID: 21300000, guid: aed146b7529f3594ba02314d2188bded, type: 3}
   InitialLeftPerson: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
-  InitialRightPerson: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
+  InitialRightPerson: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
   DoesAdvanceProgression: 0
