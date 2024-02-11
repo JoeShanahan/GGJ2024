@@ -71,6 +71,14 @@ public class ProgressionManager : MonoBehaviour
 
     public void AdvanceToNextPhase()
     {
+        if (_currentPhase >= 0)
+        {
+            foreach (EvidenceItem i in _phases[_currentPhase].Evidence)
+            {
+                i.CleanUp();
+            }
+        }
+        
         _currentPhase ++;
         _phaseUI.StartNewPhase(_phases[_currentPhase], _currentPhase + 1);
         

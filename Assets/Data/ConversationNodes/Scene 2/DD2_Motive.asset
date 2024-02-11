@@ -20,13 +20,17 @@ MonoBehaviour:
   Choices:
   - ChoiceText: Jealousy
     NextNode: {fileID: 11400000, guid: e8ad982811ff83e47ba3c71f8d1fb931, type: 2}
-    RequiredItemList: []
+    RequiredItemList:
+    - {fileID: 11400000, guid: 920f6052ecf071644b006cb515c7490c, type: 2}
+    - {fileID: 11400000, guid: 894eabb5176b93c469301672397e8d01, type: 2}
     needAll: 0
     EndingPoints: 0
     endingType: 0
   - ChoiceText: A Curse
     NextNode: {fileID: 11400000, guid: 0a8a99e765588a542ab1b4dc96c1f0e6, type: 2}
-    RequiredItemList: []
+    RequiredItemList:
+    - {fileID: 11400000, guid: 318f177719fd7934ab228234dfe08e60, type: 2}
+    - {fileID: 11400000, guid: f275c600d46948e4dab7d4fe4168a779, type: 2}
     needAll: 0
     EndingPoints: 0
     endingType: 0

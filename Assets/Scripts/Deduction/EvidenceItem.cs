@@ -16,6 +16,16 @@ public class EvidenceItem : Interactable
     {
         FindObjectOfType<EvidenceManager>().AddEvidence(_data);
         _isInteractable = false;
-        Destroy(particles);
+    
+        if (particles != null)
+            Destroy(particles);
+    }
+
+    public void CleanUp()
+    {
+        if (particles != null)
+            Destroy(particles);
+
+        Destroy(this);
     }
 }

@@ -10,6 +10,8 @@ discover evidence while talking
 store deductions on progression manager
 require certain deductions for answers
 fix clue hint text
+lightning clue icon
+discarded letter in bin clue
 
 ## Nice to have
 dead body

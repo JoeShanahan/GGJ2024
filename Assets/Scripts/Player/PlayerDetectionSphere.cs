@@ -32,6 +32,18 @@ public class PlayerDetectionSphere : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (_inRange.Count > 0)
+        {
+            if (_inRange.Last().gameObject.activeSelf == false)
+            {
+                _inRange.RemoveAt(_inRange.Count - 1);
+                RefreshCurrentFocus();
+            }
+        }
+    }
+
     public void RefreshCurrentFocus()
     {
         if (_inRange.Count == 0)
@@ -40,7 +52,7 @@ public class PlayerDetectionSphere : MonoBehaviour
         }
         else
         {
-            if (_inRange.Last() == null || _inRange.Last().IsInteractable == false)
+            if (_inRange.Last() == null || _inRange.Last().IsInteractable == false || _inRange.Last().gameObject.activeSelf == false)
             {
                 _inRange.RemoveAt(_inRange.Count - 1);
                 RefreshCurrentFocus();

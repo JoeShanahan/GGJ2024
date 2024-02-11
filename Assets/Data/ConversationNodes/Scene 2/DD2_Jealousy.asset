@@ -21,16 +21,14 @@ MonoBehaviour:
   Choices:
   - ChoiceText: It was a member of staff
     NextNode: {fileID: 11400000, guid: dfbb42bf634620845b4db284cda63a24, type: 2}
-    RequiredItemList:
-    - {fileID: 11400000, guid: 009bd559bdbf8a64993bd1cef591a43a, type: 2}
-    - {fileID: 11400000, guid: 10b27569d1ee8864ab18160df806eb87, type: 2}
-    - {fileID: 11400000, guid: 5e3cf2675ada3fc42a996f1134bc4e4a, type: 2}
+    RequiredItemList: []
     needAll: 0
     EndingPoints: 11
     endingType: 1
   - ChoiceText: It was someone else
     NextNode: {fileID: 11400000, guid: 6cbb055e8e4f8a84ab2dedf398939d7a, type: 2}
-    RequiredItemList: []
+    RequiredItemList:
+    - {fileID: 11400000, guid: 894eabb5176b93c469301672397e8d01, type: 2}
     needAll: 0
     EndingPoints: 11
     endingType: 3

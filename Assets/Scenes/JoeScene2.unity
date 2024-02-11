@@ -36197,7 +36197,7 @@ MonoBehaviour:
   _conversationNodes:
   - {fileID: 11400000, guid: a230ed65acd7ae847ae33a0e3c8ebdf0, type: 2}
   - {fileID: 11400000, guid: 72d622abe474d1542b31783d14574643, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: ffc6f6b66437c2446a99ab8569d0e8ac, type: 2}
   - {fileID: 0}
   _convoOverlord: {fileID: 1967224388}
   _progression: {fileID: 1280247029}

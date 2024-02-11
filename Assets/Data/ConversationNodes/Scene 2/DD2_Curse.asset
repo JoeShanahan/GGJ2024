@@ -32,13 +32,15 @@ MonoBehaviour:
   Choices:
   - ChoiceText: a Dinosaur Curse
     NextNode: {fileID: 11400000, guid: 52d0d0380662e614c8abca2f6ad3158a, type: 2}
-    RequiredItemList: []
+    RequiredItemList:
+    - {fileID: 11400000, guid: f275c600d46948e4dab7d4fe4168a779, type: 2}
     needAll: 0
     EndingPoints: 11
     endingType: 3
   - ChoiceText: a Mummy's Curse
     NextNode: {fileID: 11400000, guid: fed567a7794c5f74aad59f3d97935940, type: 2}
-    RequiredItemList: []
+    RequiredItemList:
+    - {fileID: 11400000, guid: 318f177719fd7934ab228234dfe08e60, type: 2}
     needAll: 0
     EndingPoints: 11
     endingType: 2
