@@ -2,16 +2,13 @@
 
 ## Needed
 Endings
-Place clues
-Clear up clues on progression advance
 fix facing direction
 Show name during conversation
 discover evidence while talking
 store deductions on progression manager
 require certain deductions for answers
 fix clue hint text
-lightning clue icon
-discarded letter in bin clue
+dynamic final deduction node
 
 ## Nice to have
 dead body

@@ -15,4 +15,4 @@ MonoBehaviour:
   ItemName: Storm Painting
   ShortDescription: Reminds me of the storm tonight
   Description: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 5d4ce03fc44e73a468393750b9f21d58, type: 3}

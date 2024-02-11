@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94791cbbbfa37664a84e0b930cbc732e, type: 3}
   m_Name: Email
   m_EditorClassIdentifier: 
-  ItemName: Email
-  ShortDescription: "Found on the director\u2019s computer"
+  ItemName: Discarded Letter
+  ShortDescription: Inspector Horatio was asking about museum security
   Description: "Inspector Horatio has been corresponding with the director about
     the museum\u2019s security "
-  Icon: {fileID: 21300000, guid: 9b89983fa3e1ee1499ab23ebd86c0848, type: 3}
+  Icon: {fileID: 21300000, guid: 3dd53320be70c8c4a89816546d554dff, type: 3}
