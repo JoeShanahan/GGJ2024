@@ -24,9 +24,9 @@ MonoBehaviour:
     isPersonOnLeftTalking: 0
   - LineText: Indeed it is, and nothing is more serious than murder. Did you know
       the victim?
-    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
+    Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
-    isPersonOnLeftTalking: 0
+    isPersonOnLeftTalking: 1
   - LineText: I haven't been told who it is yet, nobody has been allowed into that
       room since the police arrived
     Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}

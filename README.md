@@ -3,11 +3,13 @@
 ## Needed
 Endings
 Place clues
-Earn clues for deductions (for endings)
 Clear up clues on progression advance
-unhide doors on progression
 fix facing direction
 Show name during conversation
+discover evidence while talking
+store deductions on progression manager
+require certain deductions for answers
+fix clue hint text
 
 ## Nice to have
 dead body
