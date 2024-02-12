@@ -10,6 +10,9 @@ public class EvidenceManager : MonoBehaviour
     [SerializeField]
     private ClueToast _clueToast;
 
+    [SerializeField]
+    private ProgressionManager _progress;
+
     public int EvidenceCount => _foundEvidence.Count;
 
     public bool HasFoundItem(ItemData data)
@@ -53,6 +56,7 @@ public class EvidenceManager : MonoBehaviour
         {
             _foundEvidence.Add(data);
             _clueToast.ShowFoundClue(data);
+            _progress.OnClueFound();
         }
     }
 }

@@ -57,6 +57,9 @@ public class ClueToast : MonoBehaviour
 
     private IEnumerator ToastRoutine(ItemData data)
     {
+        if (data == null)
+            Debug.LogError("Null item data!");
+            
         _isBusy = true;
         _icon.sprite = data.Icon;
         _titleText.text = data.ItemName;

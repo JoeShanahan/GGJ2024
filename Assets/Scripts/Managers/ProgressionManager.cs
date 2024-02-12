@@ -18,7 +18,8 @@ public class ProgressionManager : MonoBehaviour
     [SerializeField]
     private PhaseChangeUI _phaseUI;
 
-    private int _numCluesRemain;
+    private int _cluesFoundThisPhase;
+    private int _totalCluesThisPhase;
     
     private Dictionary<EndingType, int> _endingPoints = new()
     {
@@ -78,7 +79,7 @@ public class ProgressionManager : MonoBehaviour
                 i.CleanUp();
             }
         }
-        
+
         _currentPhase ++;
         _phaseUI.StartNewPhase(_phases[_currentPhase], _currentPhase + 1);
         
@@ -99,18 +100,25 @@ public class ProgressionManager : MonoBehaviour
             t.gameObject.SetActive(true);
         }
 
-        _numCluesRemain = _phases[_currentPhase].MinimumRequiredEvidence;
+        _cluesFoundThisPhase = 0;
+        _totalCluesThisPhase = _phases[_currentPhase].Evidence.Count;
+        RefreshInstructions();
+    }
+
+    public void OnClueFound()
+    {
+        _cluesFoundThisPhase ++;
         RefreshInstructions();
     }
     
-    private void RefreshInstructions()
+    public void RefreshInstructions()
     {
-        if (_numCluesRemain > 1)
-            _instructionText.text = $"Find at least {_numCluesRemain} more clues";
-        else if (_numCluesRemain == 1)
-            _instructionText.text = $"Find at least 1 more clue";
-        else
+        if (_cluesFoundThisPhase == 0)
+            _instructionText.text = $"Look for clues";
+        else if (_cluesFoundThisPhase < _totalCluesThisPhase)
             _instructionText.text = $"Keep searching or talk to the inspector";
+        else
+            _instructionText.text = $"Talk to the inspector";
             
     }
 

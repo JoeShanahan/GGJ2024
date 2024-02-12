@@ -15,7 +15,7 @@ MonoBehaviour:
   DialogueLines:
   - LineText: Clownumbo! Thank goodness you're here!
     Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
-    ClueMentioned: {fileID: 11400000, guid: 5e3cf2675ada3fc42a996f1134bc4e4a, type: 2}
+    ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 0
   - LineText: We need you to lend your superior intellect to the police once again.
       There is no way we can figure out who committed this heinous murder.
