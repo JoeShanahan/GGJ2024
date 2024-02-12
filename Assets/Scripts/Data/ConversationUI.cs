@@ -75,6 +75,11 @@ public class ConversationUI : MonoBehaviour
     private void OnTyperFinish()
     {
         bool isFinalLine = _lineNumber >= _currentNode.DialogueLines.Count - 1;
+
+        if (_currentNode.DialogueLines[_lineNumber].ClueMentioned != null)
+        {
+            _evidence.AddEvidence(_currentNode.DialogueLines[_lineNumber].ClueMentioned);
+        }
         
         if (isFinalLine)
         {

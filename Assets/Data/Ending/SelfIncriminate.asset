@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89363f22bf186d044adf03edb533c8d9, type: 3}
+  m_Name: SelfIncriminate
+  m_EditorClassIdentifier: 
+  EndingText:
+  - "You struggle to remember the sequence of events that lead you to where you are.
+    You remember talking to the suspects, and before that examining the body, and
+    before that\u2026nothing? You cannot recall how you got here, there\u2019s a
+    gap where the journey should\u2019ve been. "
+  - "There\u2019s been a lot of gaps lately. All the pieces fit, it must be you.
+    As you open your mouth to confess, your vocal cords freeze. \u201CI\u2019ll get
+    us out of this, again\u201D says a voice in your head. Your voice is no longer
+    your own. "
+  - "Your memories stop here. As you drift off to sleep at home in bed, you wonder
+    for the second time today - \u201Chow did I get here?\u201D\r"

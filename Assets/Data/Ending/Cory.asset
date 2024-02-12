@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89363f22bf186d044adf03edb533c8d9, type: 3}
+  m_Name: Cory
+  m_EditorClassIdentifier: 
+  EndingText:
+  - Cory Donnely is arrested for the murder of Cory Donnely. Nobody is quite sure
+    what to charge him with, but since the body looked exactly like him, the police
+    figured it must have something to do with him, and they were just happy to have
+    the case closed.
+  - "When you read in the news a few weeks later that Cory mysteriously disappeared
+    from prison, you can\u2019t help but think there was maybe more to that man than
+    you\u2019d originally seen."

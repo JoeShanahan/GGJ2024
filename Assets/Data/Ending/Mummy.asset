@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89363f22bf186d044adf03edb533c8d9, type: 3}
+  m_Name: Mummy
+  m_EditorClassIdentifier: 
+  EndingText:
+  - The man that appeared to be Cory pulled off a mask to reveal bandages underneath.
+    This monster had killed Cory and then disguised itself as him to try and escape.
+  - Cornered with nowhere left to run, it breathes out a toxic cloud of ancient fog.
+    Your vision starts to fade, and you wonder - is this really the end that was
+    meant for you?

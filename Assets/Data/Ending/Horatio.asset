@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89363f22bf186d044adf03edb533c8d9, type: 3}
+  m_Name: Horatio
+  m_EditorClassIdentifier: 
+  EndingText:
+  - Horatio attempts to stop you from leaving, he puts his hand firmly on your shoulder.
+    That was a mistake.
+  - "You grab him by the wrist and throw him to the floor. It\u2019s satisfying to
+    see him on the floor, confused and upset, but you feel the need to have the final
+    word before you walk away."
+  - "\u201CGet Clowned On\u201D\r"

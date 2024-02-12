@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89363f22bf186d044adf03edb533c8d9, type: 3}
+  m_Name: Capitalism
+  m_EditorClassIdentifier: 
+  EndingText:
+  - Everyone finds the conclusion to the case a bit anticlimactic, but capitalism
+    is the obvious culprit. They all agree to purchase reusable items from now on,
+    and stop feeding the never satisfied beast that controls their lives
+  - "But they know it\u2019s only a matter of  days before they give in, after all,
+    they like the convenience of it. Even if it will kill them all eventually.\r"

@@ -10,33 +10,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25dc17d2e25f5fd42be02f3d6852308e, type: 3}
-  m_Name: JUD - CLO First convo scene 3
+  m_Name: S3_Judith
   m_EditorClassIdentifier: 
   DialogueLines:
-  - LineText: "Am I the murderer? Is it because I told you that Cory is unpopular?
-      I wouldn\u2019t have told you that if I was the murderer, would I?"
-    PersonName: Judith
-    PersonIcon: {fileID: 21300000, guid: aed146b7529f3594ba02314d2188bded, type: 3}
-    TalkSound: {fileID: 0}
+  - LineText: Did I murder Cory? No of course not!
+    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 0
+  - LineText: But you did say you didn't like him?
+    Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 1
+  - LineText: I said <i>everyone</i> disliked him, but you don't go and kill people
+      just because they're a bit obnoxious.
+    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 0
+  - LineText: Well I don't, anyway
     Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 0
   - LineText: I guess not.
-    PersonName: Clownumbo
-    PersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
-    TalkSound: {fileID: 0}
     Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
-  Choices:
-  - ChoiceText: Do Nothing
-    NextNode: {fileID: 0}
-    RequiredItemList: []
-    needAll: 0
-    EndingPoints: 0
-    endingType: 0
-  InitialLeftPersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
-  InitialRightPersonIcon: {fileID: 21300000, guid: aed146b7529f3594ba02314d2188bded, type: 3}
+  Choices: []
   InitialLeftPerson: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
   InitialRightPerson: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
   DoesAdvanceProgression: 0

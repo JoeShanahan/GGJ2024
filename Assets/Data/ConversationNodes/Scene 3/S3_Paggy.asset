@@ -10,48 +10,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25dc17d2e25f5fd42be02f3d6852308e, type: 3}
-  m_Name: PAG - CLO First convo scene 3
+  m_Name: S3_Paggy
   m_EditorClassIdentifier: 
   DialogueLines:
   - LineText: Am I the murderer? No! I was the one who called the police.
-    PersonName: Paggy
-    PersonIcon: {fileID: 21300000, guid: 02f1b743478a106438d321071306f6cf, type: 3}
-    TalkSound: {fileID: 0}
     Person: {fileID: 11400000, guid: 75857c9da550de842a9b2c320fc38776, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 0
-  - LineText: What do you think of Cory?
-    PersonName: Clownumbo
-    PersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
-    TalkSound: {fileID: 0}
+  - LineText: What did you think of Cory?
     Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
   - LineText: "He is the director\u2019s nephew, right? I only joined the museum
-      last month, so I don\u2019t know much about him, and I definitely don\u2019t
-      have a reason to murder him."
-    PersonName: Paggy
-    PersonIcon: {fileID: 21300000, guid: 02f1b743478a106438d321071306f6cf, type: 3}
-    TalkSound: {fileID: 0}
+      last month, so I don\u2019t know much about him"
     Person: {fileID: 11400000, guid: 75857c9da550de842a9b2c320fc38776, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 0
-  - LineText: Thank you.
-    PersonName: Clownumbo
-    PersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
-    TalkSound: {fileID: 0}
+  - LineText: "I definitely don\u2019t have a reason to murder him"
+    Person: {fileID: 11400000, guid: 75857c9da550de842a9b2c320fc38776, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 0
+  - LineText: If you say so...
     Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
-  Choices:
-  - ChoiceText: Do Nothing
-    NextNode: {fileID: 0}
-    RequiredItemList: []
-    needAll: 0
-    EndingPoints: 0
-    endingType: 0
-  InitialLeftPersonIcon: {fileID: 21300000, guid: 1c43e265024ff364995b27d2283dd0b4, type: 3}
-  InitialRightPersonIcon: {fileID: 21300000, guid: 02f1b743478a106438d321071306f6cf, type: 3}
+  Choices: []
   InitialLeftPerson: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
   InitialRightPerson: {fileID: 11400000, guid: 75857c9da550de842a9b2c320fc38776, type: 2}
   DoesAdvanceProgression: 0

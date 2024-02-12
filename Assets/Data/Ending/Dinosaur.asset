@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89363f22bf186d044adf03edb533c8d9, type: 3}
+  m_Name: Dinosaur
+  m_EditorClassIdentifier: 
+  EndingText:
+  - The mass of bones behind you start to stir, and then stretch out as if waking
+    from a very long slumber. The newly formed creature turns towards the group of
+    people who had kept it captive for so long, and put it on display as a novelty.
+  - "You hear a booming noise, from all around you. \u201CNow it\u2019s time for
+    <i>your</i> corpses to be put on display for all eternity\u201D"
