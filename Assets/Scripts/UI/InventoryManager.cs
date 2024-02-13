@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class InventoryManager : MonoBehaviour
 {
     [SerializeField]
-    private List<Image> _itemIcons;
+    public List<Image> _itemIcons;
 
     [SerializeField]
     public List<ItemData> _foundEvidence;

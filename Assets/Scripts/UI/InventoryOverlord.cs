@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class InventoryOverlord : MonoBehaviour
 {
@@ -10,10 +11,18 @@ public class InventoryOverlord : MonoBehaviour
     public void ShowInventory()
     {
         _inventory.ShowUI();
+        bool haveSelectedSomething = false;
+
+        if (haveSelectedSomething == false)
+        {
+            haveSelectedSomething = true;
+            EventSystem.current.SetSelectedGameObject(_inventory._itemIcons[0].gameObject);
+        }
     }
 
     public void HideInventory()
     {
+
         _inventory.HideUI();
     }
 
