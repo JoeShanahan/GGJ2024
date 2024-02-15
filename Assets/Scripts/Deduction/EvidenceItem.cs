@@ -15,6 +15,7 @@ public class EvidenceItem : Interactable
     public override void Interact(Vector3 fromPos)
     {
         FindObjectOfType<EvidenceManager>().AddEvidence(_data);
+        Debug.Log(_data);
         _isInteractable = false;
     
         if (particles != null)

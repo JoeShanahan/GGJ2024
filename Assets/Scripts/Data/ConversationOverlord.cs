@@ -50,17 +50,7 @@ public class ConversationOverlord : MonoBehaviour
         isConvoActive = false;
     }
 
-    private void Update()
-    {
-        // TODO remove this
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            if (!isConvoActive)
-            {
-                StartConversation(TestNode);
-            } 
-        }
-    }
+    
 
     
 }

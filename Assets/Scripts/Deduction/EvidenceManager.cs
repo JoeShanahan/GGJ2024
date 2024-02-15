@@ -5,13 +5,17 @@ using UnityEngine;
 public class EvidenceManager : MonoBehaviour
 {
     [SerializeField]
-    private List<ItemData> _foundEvidence;
+    public List<ItemData> _foundEvidence;
 
     [SerializeField]
     private ClueToast _clueToast;
 
     [SerializeField]
     private ProgressionManager _progress;
+
+    [SerializeField]
+    private InventoryManager _inventoryManager;
+
 
     public int EvidenceCount => _foundEvidence.Count;
 
@@ -55,8 +59,11 @@ public class EvidenceManager : MonoBehaviour
         if (_foundEvidence.Contains(data) == false)
         {
             _foundEvidence.Add(data);
+            _inventoryManager._foundEvidence.Add(data);
             _clueToast.ShowFoundClue(data);
             _progress.OnClueFound();
+            _inventoryManager.MakeItemShowInInventory(data);
+
         }
     }
 }
