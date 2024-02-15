@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Thunderstorm
   m_EditorClassIdentifier: 
   ItemName: Thunderstorm
-  Description: 
+  Description: There is a thunderstorm raging outside.
   Icon: {fileID: 0}

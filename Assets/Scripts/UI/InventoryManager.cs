@@ -16,11 +16,16 @@ public class InventoryManager : MonoBehaviour
     [SerializeField]
     public TextMeshProUGUI _itemText;
 
+    [SerializeField]
+    private Animator _animInventory;
+
+    
 
     public void ShowUI()
     {
         // TODO Animation
         gameObject.SetActive(true);
+        EnterTheInventory();
     }
 
     public void HideUI()
@@ -31,7 +36,7 @@ public class InventoryManager : MonoBehaviour
     public void MakeItemShowInInventory (ItemData data)
     {
         Debug.Log(_foundEvidence.Count - 1);
-        
+        _itemIcons[(_foundEvidence.Count - 1)].gameObject.SetActive(true);
         _itemIcons[(_foundEvidence.Count - 1)].sprite = data.Icon;
         var tempColor = _itemIcons[_foundEvidence.Count - 1].color;
         tempColor.a = 1f;
@@ -43,5 +48,20 @@ public class InventoryManager : MonoBehaviour
         Debug.Log(index);
         Debug.Log(_foundEvidence[index].Description);
         _itemText.text = _foundEvidence[index].Description;
+    }
+
+    public void HideItemDescription()
+    {
+        _itemText.text = " ";
+    }
+
+    public void EnterTheInventory()
+    {
+        _animInventory.SetTrigger("_openInventory");
+    }
+
+    public void ExitTheInventory()
+    {
+        _animInventory.SetTrigger("_closeInventory");
     }
 }

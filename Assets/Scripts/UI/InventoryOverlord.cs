@@ -8,6 +8,8 @@ public class InventoryOverlord : MonoBehaviour
     [SerializeField]
     private InventoryManager _inventory;
 
+    
+
     public void ShowInventory()
     {
         _inventory.ShowUI();
@@ -20,10 +22,11 @@ public class InventoryOverlord : MonoBehaviour
         }
     }
 
+   
     public void HideInventory()
     {
-
-        _inventory.HideUI();
+        _inventory.ExitTheInventory();
+        
     }
 
     private void Update()
