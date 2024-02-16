@@ -24,14 +24,12 @@ MonoBehaviour:
     RequiredItemList:
     - {fileID: 11400000, guid: 10b27569d1ee8864ab18160df806eb87, type: 2}
     needAll: 0
-    EndingPoints: 5
-    endingType: 2
+    DeductionFlags: 16
   - ChoiceText: Old Age
     NextNode: {fileID: 11400000, guid: cdbb7c23eeda74e488c281ba27021a40, type: 2}
     RequiredItemList: []
     needAll: 0
-    EndingPoints: 5
-    endingType: 0
+    DeductionFlags: 32
   InitialLeftPerson: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
   InitialRightPerson: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
   DoesAdvanceProgression: 0

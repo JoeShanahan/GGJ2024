@@ -14,6 +14,7 @@ Properties {
 	_OutlineWidth		("Outline Thickness", Range(0, 1)) = 0
 	_OutlineSoftness	("Outline Softness", Range(0,1)) = 0
 
+
 	_Bevel				("Bevel", Range(0,1)) = 0.5
 	_BevelOffset		("Bevel Offset", Range(-0.5,0.5)) = 0
 	_BevelWidth			("Bevel Width", Range(-.5,0.5)) = 0

@@ -35,15 +35,13 @@ MonoBehaviour:
     RequiredItemList:
     - {fileID: 11400000, guid: f275c600d46948e4dab7d4fe4168a779, type: 2}
     needAll: 0
-    EndingPoints: 11
-    endingType: 3
+    DeductionFlags: 64
   - ChoiceText: a Mummy's Curse
     NextNode: {fileID: 11400000, guid: fed567a7794c5f74aad59f3d97935940, type: 2}
     RequiredItemList:
     - {fileID: 11400000, guid: 318f177719fd7934ab228234dfe08e60, type: 2}
     needAll: 0
-    EndingPoints: 11
-    endingType: 2
+    DeductionFlags: 128
   InitialLeftPerson: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
   InitialRightPerson: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
   DoesAdvanceProgression: 0

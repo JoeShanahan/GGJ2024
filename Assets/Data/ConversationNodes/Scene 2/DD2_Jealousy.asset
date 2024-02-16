@@ -23,15 +23,13 @@ MonoBehaviour:
     NextNode: {fileID: 11400000, guid: dfbb42bf634620845b4db284cda63a24, type: 2}
     RequiredItemList: []
     needAll: 0
-    EndingPoints: 11
-    endingType: 1
+    DeductionFlags: 256
   - ChoiceText: It was someone else
     NextNode: {fileID: 11400000, guid: 6cbb055e8e4f8a84ab2dedf398939d7a, type: 2}
     RequiredItemList:
     - {fileID: 11400000, guid: 894eabb5176b93c469301672397e8d01, type: 2}
     needAll: 0
-    EndingPoints: 11
-    endingType: 3
+    DeductionFlags: 512
   InitialLeftPerson: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
   InitialRightPerson: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
   DoesAdvanceProgression: 0

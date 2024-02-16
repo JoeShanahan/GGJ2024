@@ -48730,6 +48730,7 @@ MonoBehaviour:
   _instructionText: {fileID: 1557449765}
   _instructionBox: {fileID: 194454549}
   _phaseUI: {fileID: 991326045}
+  _ending: {fileID: 1622767097}
 --- !u!1 &1283150902
 GameObject:
   m_ObjectHideFlags: 0
@@ -66409,6 +66410,103 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3615053052769937909, guid: dc2cbdccdeeff154bb078ce3548b5155, type: 3}
   m_PrefabInstance: {fileID: 1620252847}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1622767096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1622767098}
+  - component: {fileID: 1622767097}
+  m_Layer: 0
+  m_Name: EndingOverlord
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1622767097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622767096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a40001991d1bb4f8abacdb1d40477d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Deductions: 0
+  Ending: {fileID: 0}
+  _dynamicEndNode: {fileID: 11400000, guid: cf6bbb44af25e024f922e278bac9ba01, type: 2}
+  _endings:
+  - Description: Mummy Curse
+    ChoiceText: 
+    RequiredDeductions: 80000000
+    RequiredEvidence:
+    - {fileID: 11400000, guid: 318f177719fd7934ab228234dfe08e60, type: 2}
+    ConvNode: {fileID: 0}
+    Ending: {fileID: 11400000, guid: 0782d421c261e4340bbf15342047354d, type: 2}
+  - Description: Dinosaur Curse
+    ChoiceText: 
+    RequiredDeductions: 40000000
+    RequiredEvidence:
+    - {fileID: 11400000, guid: f275c600d46948e4dab7d4fe4168a779, type: 2}
+    ConvNode: {fileID: 0}
+    Ending: {fileID: 11400000, guid: f21b1a33babe8f847aa7f115c02ccedc, type: 2}
+  - Description: Arrest Cory
+    ChoiceText: The Suspicious guy!
+    RequiredDeductions: 00010000
+    RequiredEvidence:
+    - {fileID: 11400000, guid: a4b8639b16404c64fba90b0871914aee, type: 2}
+    ConvNode: {fileID: 0}
+    Ending: {fileID: 11400000, guid: d403cffc02130634aa92ee98c2f9f26b, type: 2}
+  - Description: Arrest Horatio
+    ChoiceText: Officer Horatio!
+    RequiredDeductions: 0400000000020000
+    RequiredEvidence:
+    - {fileID: 11400000, guid: 7a75145be462a9d48acba74c13d134d5, type: 2}
+    ConvNode: {fileID: 11400000, guid: 148ba6d4cbd4cc64d9ba467731793218, type: 2}
+    Ending: {fileID: 11400000, guid: cdcaece97df52b54eb82439c1b28f91a, type: 2}
+  - Description: Capitalism
+    ChoiceText: Capitalism
+    RequiredDeductions: 08000000
+    RequiredEvidence: []
+    ConvNode: {fileID: 0}
+    Ending: {fileID: 11400000, guid: d9a6d227098847e4b88a8b3b5d00374a, type: 2}
+  - Description: Arrest Judith
+    ChoiceText: Judith!
+    RequiredDeductions: 0100000000010000
+    RequiredEvidence:
+    - {fileID: 11400000, guid: 894eabb5176b93c469301672397e8d01, type: 2}
+    ConvNode: {fileID: 0}
+    Ending: {fileID: 11400000, guid: fd54b48b57b263c49bd1ea2247f7fc72, type: 2}
+  - Description: Self incriminate
+    ChoiceText: ...me?
+    RequiredDeductions: 0100000000020000
+    RequiredEvidence: []
+    ConvNode: {fileID: 0}
+    Ending: {fileID: 11400000, guid: 6706eab464730b14d889311fab4004ae, type: 2}
+  _defaultNode: {fileID: 11400000, guid: 686a21985139e3a459cc455d4c97da49, type: 2}
+  _defaultEnding: {fileID: 11400000, guid: fb3ce00f15053fc4487c8ed6ae3cd64a, type: 2}
+--- !u!4 &1622767098
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622767096}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1971644131}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1623015742
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72322,8 +72420,8 @@ MonoBehaviour:
   _conversationNodes:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 11400000, guid: 650828d94334ecc43b7c44a4cbedd211, type: 2}
-  - {fileID: 11400000, guid: 56cf8fecb8622734b863c7a00a3d4faa, type: 2}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: a002d7dfcd2c6f744af7a5ef1fcb5bd8, type: 2}
   _convoOverlord: {fileID: 1967224388}
   _progression: {fileID: 1280247029}
 --- !u!4 &1948114807 stripped
@@ -72778,6 +72876,7 @@ Transform:
   - {fileID: 1967224387}
   - {fileID: 237325395}
   - {fileID: 1280247028}
+  - {fileID: 1622767098}
   - {fileID: 423972511}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

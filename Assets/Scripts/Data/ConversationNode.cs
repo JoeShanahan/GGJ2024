@@ -32,8 +32,7 @@ public class ConversationChoice
     public bool needAll;
 
     [Header("Only for deductions")]
-    public int EndingPoints;
-    public EndingType endingType;
+    public Deduction DeductionFlags;
 }
 
 public enum EndingType

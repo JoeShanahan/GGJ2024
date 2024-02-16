@@ -18,6 +18,9 @@ public class ProgressionManager : MonoBehaviour
     [SerializeField]
     private PhaseChangeUI _phaseUI;
 
+    [SerializeField]
+    private EndingManager _ending;
+
     private int _cluesFoundThisPhase;
     private int _totalCluesThisPhase;
     
@@ -41,11 +44,7 @@ public class ProgressionManager : MonoBehaviour
         if (_previousAnswers.Contains(choice))
             return;
 
-        if (choice.EndingPoints == 0 || choice.endingType == EndingType.None)
-            return;
-
-        _endingPoints[choice.endingType] += choice.EndingPoints;
-        Debug.Log($"Earned {choice.EndingPoints} points towards the {choice.endingType} ending - now on {_endingPoints[choice.endingType]}");
+        _ending.Deductions |= choice.DeductionFlags;
     }
 
     private void Start()

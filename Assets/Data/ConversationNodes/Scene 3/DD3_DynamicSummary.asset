@@ -10,26 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25dc17d2e25f5fd42be02f3d6852308e, type: 3}
-  m_Name: DD3_Begin
+  m_Name: DD3_DynamicSummary
   m_EditorClassIdentifier: 
-  DialogueLines:
-  - LineText: Are you ready to close the case?
-    Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
-    ClueMentioned: {fileID: 0}
-    isPersonOnLeftTalking: 0
-  Choices:
-  - ChoiceText: Yes
-    NextNode: {fileID: 11400000, guid: f94f6127888e1cf40877019e2c4a9ffb, type: 2}
-    RequiredItemList: []
-    needAll: 0
-    EndingPoints: 0
-    endingType: 0
-  - ChoiceText: Not yet
-    NextNode: {fileID: 0}
-    RequiredItemList: []
-    needAll: 0
-    EndingPoints: 0
-    endingType: 0
+  DialogueLines: []
+  Choices: []
   InitialLeftPerson: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
   InitialRightPerson: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
   DoesAdvanceProgression: 0

@@ -23,14 +23,12 @@ MonoBehaviour:
     RequiredItemList:
     - {fileID: 11400000, guid: 5e3cf2675ada3fc42a996f1134bc4e4a, type: 2}
     needAll: 0
-    EndingPoints: 8
-    endingType: 3
+    DeductionFlags: 4
   - ChoiceText: Microplastics
     NextNode: {fileID: 11400000, guid: bc3b7657c4cd3ae4b944ee78f73a37dd, type: 2}
     RequiredItemList: []
     needAll: 0
-    EndingPoints: 3
-    endingType: 2
+    DeductionFlags: 8
   InitialLeftPerson: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
   InitialRightPerson: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
   DoesAdvanceProgression: 0

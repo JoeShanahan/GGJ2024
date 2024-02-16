@@ -22,14 +22,12 @@ MonoBehaviour:
     NextNode: {fileID: 11400000, guid: 2f28258671439e6429dbd0db92cb6102, type: 2}
     RequiredItemList: []
     needAll: 0
-    EndingPoints: 7
-    endingType: 1
+    DeductionFlags: 2
   - ChoiceText: A Balloon
     NextNode: {fileID: 11400000, guid: b572987692f41f14388c4952dd11fdf0, type: 2}
     RequiredItemList: []
     needAll: 0
-    EndingPoints: 10
-    endingType: 4
+    DeductionFlags: 1
   InitialLeftPerson: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
   InitialRightPerson: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
   DoesAdvanceProgression: 0
