@@ -69,6 +69,12 @@ public class ProgressionManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) && Application.platform != RuntimePlatform.WebGLPlayer)
+            Application.Quit();
+    }
+
     public void AdvanceToNextPhase()
     {
         if (_currentPhase >= 0)

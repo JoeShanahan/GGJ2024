@@ -39,7 +39,7 @@ MonoBehaviour:
   - LineText: ...so when did they die?
     Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
     ClueMentioned: {fileID: 0}
-    isPersonOnLeftTalking: 1
+    isPersonOnLeftTalking: 0
   - LineText: Approximately 5000 years ago
     Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
@@ -63,12 +63,12 @@ MonoBehaviour:
     isPersonOnLeftTalking: 1
   - LineText: Could it be the very people who already have a vastly inflated budget
       for investigating such crimes?
-    Person: {fileID: 0}
+    Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
   - LineText: Could it be someone who has intracate knowledge of the security systems
       of the whole museum?
-    Person: {fileID: 0}
+    Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
   - LineText: Officer Horatio, have you got something you'd like to share with the
