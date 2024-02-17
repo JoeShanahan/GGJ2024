@@ -80,13 +80,13 @@ public class ProgressionManager : MonoBehaviour
         }
 
         _currentPhase ++;
-        _phaseUI.StartNewPhase(_phases[_currentPhase], _currentPhase + 1);
         
         if (_currentPhase >= _phases.Count)
         {
-            GoToConclusion();
             return;
         }
+
+        _phaseUI.StartNewPhase(_phases[_currentPhase], _currentPhase + 1);
 
         foreach (Transform t in _phases[_currentPhase].ObjectsToHide)
         {
@@ -119,11 +119,6 @@ public class ProgressionManager : MonoBehaviour
         else
             _instructionText.text = $"Talk to the inspector";
             
-    }
-
-    private void GoToConclusion()
-    {
-
     }
 }
 

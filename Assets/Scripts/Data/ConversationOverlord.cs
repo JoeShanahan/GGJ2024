@@ -23,6 +23,9 @@ public class ConversationOverlord : MonoBehaviour
     [SerializeField]
     private ProgressionManager _progress;
 
+    [SerializeField]
+    private EndingManager _ending;
+
     public void Start()
     {
         _ui.gameObject.SetActive(false);
@@ -39,6 +42,12 @@ public class ConversationOverlord : MonoBehaviour
 
     public void EndConversation(ConversationNode node)
     {
+        if (node.Ending != null)
+        {
+            _ending.ShowEnding(node.Ending);
+            return;
+        }
+
         _ui.HideUI();
         _player.ReactivateControls();
 

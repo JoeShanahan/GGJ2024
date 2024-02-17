@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EndingText:
   - Everyone finds the conclusion to the case a bit anticlimactic, but capitalism
-    is the obvious culprit. They all agree to purchase reusable items from now on,
-    and stop feeding the never satisfied beast that controls their lives
-  - "But they know it\u2019s only a matter of  days before they give in, after all,
-    they like the convenience of it. Even if it will kill them all eventually.\r"
+    is the obvious culprit
+  - They all agree to purchase reusable items from now on, and stop feeding the never
+    satisfied beast that controls their lives

@@ -10,6 +10,7 @@ public class ConversationNode : ScriptableObject
     public CharacterData InitialLeftPerson;
     public CharacterData InitialRightPerson;
     public bool DoesAdvanceProgression;
+    public EndingData Ending;
 }
 
 [System.Serializable]

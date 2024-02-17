@@ -4,8 +4,6 @@
 Endings
 fix facing direction
 Show name during conversation
-store deductions on progression manager
-require certain deductions for answers
 dynamic final deduction node
 
 ## Nice to have
