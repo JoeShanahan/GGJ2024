@@ -29,6 +29,9 @@ public class ConversationUI : MonoBehaviour
     private TextTyper _typer;
 
     [SerializeField]
+    private TMP_Text _nameText;
+
+    [SerializeField]
     private ConversationOverlord _overlord;
 
     [SerializeField]
@@ -170,6 +173,7 @@ public class ConversationUI : MonoBehaviour
             SetTalkerPortraits();
             LightUpTalker(node);
             _typer.TypeText(node.DialogueLines[_lineNumber].LineText);
+            _nameText.text = node.DialogueLines[_lineNumber].Person.CharacterName + ":";
         }
     }
     
