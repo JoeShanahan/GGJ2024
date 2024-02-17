@@ -10,31 +10,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25dc17d2e25f5fd42be02f3d6852308e, type: 3}
-  m_Name: Talk_Arrival
+  m_Name: EndingJudtih
   m_EditorClassIdentifier: 
   DialogueLines:
-  - LineText: Clownumbo! Thank goodness you're here!
-    Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
-    ClueMentioned: {fileID: 0}
-    isPersonOnLeftTalking: 0
-  - LineText: We need you to lend your superior intellect to the police once again.
-      There is no way we can figure out who committed this heinous murder.
-    Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
-    ClueMentioned: {fileID: 0}
-    isPersonOnLeftTalking: 0
-  - LineText: Has anyone inspected the body?
+  - LineText: Judith, did you not say you wanted to be a clown?
     Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
-  - LineText: Not yet, we have left everything untouched for you.
-    Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
+  - LineText: w-well yes, but that was just an off-hand comment
+    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 0
-  - LineText: The victim is in the painting gallery next door
-    Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
+  - LineText: Everyone wants to be something silly when they're younger, it doesn't
+      mean anything
+    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 0
-  - LineText: Thanks inspector
+  - LineText: Oh, so now being a clown is silly?
+    Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 1
+  - LineText: N-no that's not what I meant!
+    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 0
+  - LineText: You're awfully nervous for an innocent person! The evidence is clear,
+      it was you
     Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
@@ -42,4 +43,4 @@ MonoBehaviour:
   InitialLeftPerson: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
   InitialRightPerson: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
   DoesAdvanceProgression: 1
-  Ending: {fileID: 0}
+  Ending: {fileID: 11400000, guid: fd54b48b57b263c49bd1ea2247f7fc72, type: 2}

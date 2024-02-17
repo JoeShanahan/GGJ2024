@@ -16,6 +16,11 @@ public class EndingScreen : MonoBehaviour
     [SerializeField]
     private CanvasGroup _group;
 
+    private void Start()
+    {
+        _group.alpha = 0;
+    }
+    
     public void ShowEnding(EndingData ending)
     {
         StartCoroutine(AnimateRoutine(ending));

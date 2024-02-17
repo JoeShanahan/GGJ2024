@@ -481,7 +481,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 10385632}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4537,7 +4537,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198549419}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -9049,7 +9049,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 379651044}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -66222,7 +66222,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1551217875}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
@@ -67138,18 +67138,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Deductions: 0
-  Ending: {fileID: 11400000, guid: cdcaece97df52b54eb82439c1b28f91a, type: 2}
   _evidence: {fileID: 237325396}
   _dynamicEndNode: {fileID: 11400000, guid: cf6bbb44af25e024f922e278bac9ba01, type: 2}
   _endings:
   - Description: Mummy Curse
-    ChoiceText: 
+    ChoiceText: The Mummy!
     RequiredDeductions: 80000000
     RequiredEvidence:
     - {fileID: 11400000, guid: 318f177719fd7934ab228234dfe08e60, type: 2}
     ConvNode: {fileID: 0}
   - Description: Dinosaur Curse
-    ChoiceText: 
+    ChoiceText: The Dinosaur!
     RequiredDeductions: 40000000
     RequiredEvidence:
     - {fileID: 11400000, guid: f275c600d46948e4dab7d4fe4168a779, type: 2}
@@ -73501,6 +73500,7 @@ MonoBehaviour:
   _player: {fileID: 460752672}
   _progress: {fileID: 1280247029}
   _ending: {fileID: 1622767097}
+  _finalDeductionNode: {fileID: 11400000, guid: a002d7dfcd2c6f744af7a5ef1fcb5bd8, type: 2}
 --- !u!1001 &1967687537
 PrefabInstance:
   m_ObjectHideFlags: 0

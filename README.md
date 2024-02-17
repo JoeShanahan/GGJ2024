@@ -4,7 +4,7 @@
 Endings
 fix facing direction
 Show name during conversation
-dynamic final deduction node
+dinosaur icon
 
 ## Nice to have
 dead body

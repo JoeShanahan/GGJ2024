@@ -29,7 +29,7 @@ public class ConversationChoice
     public ConversationNode NextNode;
 
     [Header("Required to see choice")]
-    public ItemData[] RequiredItemList;
+    public ItemData[] RequiredItemList = new ItemData[0];
     public bool needAll;
 
     [Header("Only for deductions")]

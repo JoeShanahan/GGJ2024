@@ -9,9 +9,6 @@ using RedBlueGames.Tools.TextTyper;
 /// </summary>
 public class ConversationOverlord : MonoBehaviour
 {
-    [SerializeField] 
-    public ConversationNode TestNode;
-
     public bool isConvoActive;
 
     [SerializeField]
@@ -26,13 +23,19 @@ public class ConversationOverlord : MonoBehaviour
     [SerializeField]
     private EndingManager _ending;
 
+    [SerializeField]
+    private ConversationNode _finalDeductionNode;
+
     public void Start()
     {
         _ui.gameObject.SetActive(false);
     }
 
     public void StartConversation(ConversationNode node)
-    {
+    {    
+        if (node == _finalDeductionNode)
+            _ending.ConstructDynamicNode();
+
         _ui.ShowUI();
         _ui.SetNewNode(node);
         _player.DeactivateControls();
