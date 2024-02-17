@@ -77,3 +77,4 @@ Executable/*
 .vscode/*
 .vsconfig
 exe/*
+WebGL/*
