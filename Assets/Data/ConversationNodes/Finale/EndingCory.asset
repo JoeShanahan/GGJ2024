@@ -10,37 +10,37 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25dc17d2e25f5fd42be02f3d6852308e, type: 3}
-  m_Name: EndingJudtih
+  m_Name: EndingCory
   m_EditorClassIdentifier: 
   DialogueLines:
-  - LineText: Judith, did you not say you wanted to be a clown?
+  - LineText: I don't know if anyone else noticed this extremely suspicious guy who
+      is here in this room with us?
     Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
-  - LineText: w-well yes, but that was just an off-hand comment
-    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
-    ClueMentioned: {fileID: 0}
-    isPersonOnLeftTalking: 0
-  - LineText: Everyone wants to be something silly when they're younger, it doesn't
-      mean anything
-    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
-    ClueMentioned: {fileID: 0}
-    isPersonOnLeftTalking: 0
-  - LineText: Oh, so now being a clown is silly?
+  - LineText: He claims to have only just got here, but I found his boot prints moving
+      away from the crime scene
     Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
-  - LineText: N-no that's not what I meant!
-    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
-    ClueMentioned: {fileID: 0}
-    isPersonOnLeftTalking: 0
-  - LineText: You're awfully nervous for an innocent person! The evidence is clear,
-      it was you
+  - LineText: All of the evidence points to him
     Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
+  - LineText: I see
+    Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 0
+  - LineText: In which case, you are under arrest for the murder of Cory Donnelly!
+    Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 0
+  - LineText: But officer... I am Cory Donnelly
+    Person: {fileID: 11400000, guid: f258bb9b53fa11145ab426705494384b, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 0
   Choices: []
   InitialLeftPerson: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
   InitialRightPerson: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
   DoesAdvanceProgression: 0
-  Ending: {fileID: 11400000, guid: fd54b48b57b263c49bd1ea2247f7fc72, type: 2}
+  Ending: {fileID: 11400000, guid: d403cffc02130634aa92ee98c2f9f26b, type: 2}

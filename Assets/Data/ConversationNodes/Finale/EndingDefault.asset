@@ -24,5 +24,5 @@ MonoBehaviour:
   Choices: []
   InitialLeftPerson: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
   InitialRightPerson: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
-  DoesAdvanceProgression: 1
+  DoesAdvanceProgression: 0
   Ending: {fileID: 11400000, guid: fb3ce00f15053fc4487c8ed6ae3cd64a, type: 2}

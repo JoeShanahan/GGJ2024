@@ -122,18 +122,7 @@ public class PersonMovement : MonoBehaviour
         if (_isLocked)
             return;
 
-        if (IsGrounded && _move.velocity.magnitude > 0.1f)
-        {
-            Vector3 desiredDirection = _move.velocity;
-            desiredDirection.y = 0;
-            desiredDirection.Normalize();
-
-            if (desiredDirection.magnitude > 0.1f)
-            {
-                transform.rotation = Quaternion.LookRotation(desiredDirection, Vector3.up);
-            }
-        }
-        else if (_move.desiredVelocity.magnitude > 0.1f)
+        if (_move.desiredVelocity.magnitude > 0.1f)
         {
             Vector3 desiredDirection = _move.desiredVelocity;
             desiredDirection.y = 0;

@@ -10,37 +10,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25dc17d2e25f5fd42be02f3d6852308e, type: 3}
-  m_Name: EndingJudtih
+  m_Name: EndingDino
   m_EditorClassIdentifier: 
   DialogueLines:
-  - LineText: Judith, did you not say you wanted to be a clown?
+  - LineText: May I draw your attention to the Dinosaur on display in the room behind
+      us
     Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
-  - LineText: w-well yes, but that was just an off-hand comment
-    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
+  - LineText: The one you kicked around the floor?
+    Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 0
-  - LineText: Everyone wants to be something silly when they're younger, it doesn't
-      mean anything
-    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
-    ClueMentioned: {fileID: 0}
-    isPersonOnLeftTalking: 0
-  - LineText: Oh, so now being a clown is silly?
+  - LineText: Quiet! I'm solving the case right now!
     Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
-  - LineText: N-no that's not what I meant!
-    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
-    ClueMentioned: {fileID: 0}
-    isPersonOnLeftTalking: 0
-  - LineText: You're awfully nervous for an innocent person! The evidence is clear,
-      it was you
+  - LineText: Those bones have been held here for many years now, and definitely
+      don't appreciate it
     Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
+  - LineText: Well what exactly is a bunch of bones going to do about it?
+    Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 0
   Choices: []
   InitialLeftPerson: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
   InitialRightPerson: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
   DoesAdvanceProgression: 0
-  Ending: {fileID: 11400000, guid: fd54b48b57b263c49bd1ea2247f7fc72, type: 2}
+  Ending: {fileID: 11400000, guid: f21b1a33babe8f847aa7f115c02ccedc, type: 2}

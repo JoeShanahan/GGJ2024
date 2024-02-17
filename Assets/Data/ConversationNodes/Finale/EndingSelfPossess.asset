@@ -10,37 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25dc17d2e25f5fd42be02f3d6852308e, type: 3}
-  m_Name: EndingJudtih
+  m_Name: EndingSelfPossess
   m_EditorClassIdentifier: 
   DialogueLines:
-  - LineText: Judith, did you not say you wanted to be a clown?
+  - LineText: The curse definitely is the culprit, but it needed a person to use
+      as its tool
     Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
-  - LineText: w-well yes, but that was just an off-hand comment
-    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
-    ClueMentioned: {fileID: 0}
-    isPersonOnLeftTalking: 0
-  - LineText: Everyone wants to be something silly when they're younger, it doesn't
-      mean anything
-    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
-    ClueMentioned: {fileID: 0}
-    isPersonOnLeftTalking: 0
-  - LineText: Oh, so now being a clown is silly?
+  - LineText: And the poor person whose mind was hijacked was-
     Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
-  - LineText: N-no that's not what I meant!
-    Person: {fileID: 11400000, guid: 464d47d12f46ba3429337bbc92373f39, type: 2}
-    ClueMentioned: {fileID: 0}
-    isPersonOnLeftTalking: 0
-  - LineText: You're awfully nervous for an innocent person! The evidence is clear,
-      it was you
+  - LineText: ugh- it was...
     Person: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
     ClueMentioned: {fileID: 0}
     isPersonOnLeftTalking: 1
+  - LineText: Madam, are you okay?
+    Person: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
+    ClueMentioned: {fileID: 0}
+    isPersonOnLeftTalking: 0
   Choices: []
   InitialLeftPerson: {fileID: 11400000, guid: 95ec8b43586dd0f46b6ef38a25788949, type: 2}
   InitialRightPerson: {fileID: 11400000, guid: 1598f57dd812f6740a784bdd9c2250e1, type: 2}
   DoesAdvanceProgression: 0
-  Ending: {fileID: 11400000, guid: fd54b48b57b263c49bd1ea2247f7fc72, type: 2}
+  Ending: {fileID: 11400000, guid: 369e7c738a7a2d94c8124e8f4c0a69c6, type: 2}

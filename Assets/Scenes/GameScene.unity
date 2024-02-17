@@ -65612,19 +65612,19 @@ MonoBehaviour:
     RequiredDeductions: 80000000
     RequiredEvidence:
     - {fileID: 11400000, guid: 318f177719fd7934ab228234dfe08e60, type: 2}
-    ConvNode: {fileID: 0}
+    ConvNode: {fileID: 11400000, guid: 9ab991481ea39344eaacc38ea4e95d00, type: 2}
   - Description: Dinosaur Curse
     ChoiceText: The Dinosaur!
     RequiredDeductions: 40000000
     RequiredEvidence:
     - {fileID: 11400000, guid: f275c600d46948e4dab7d4fe4168a779, type: 2}
-    ConvNode: {fileID: 0}
+    ConvNode: {fileID: 11400000, guid: e423838fc9abdd141b7fe85c5fd854dd, type: 2}
   - Description: Arrest Cory
     ChoiceText: The Suspicious guy!
     RequiredDeductions: 00010000
     RequiredEvidence:
     - {fileID: 11400000, guid: a4b8639b16404c64fba90b0871914aee, type: 2}
-    ConvNode: {fileID: 0}
+    ConvNode: {fileID: 11400000, guid: 0a792301f7610fe4ea2807d474b9e019, type: 2}
   - Description: Arrest Horatio
     ChoiceText: Officer Horatio!
     RequiredDeductions: 0400000000020000
@@ -65635,18 +65635,28 @@ MonoBehaviour:
     ChoiceText: Capitalism
     RequiredDeductions: 08000000
     RequiredEvidence: []
-    ConvNode: {fileID: 0}
+    ConvNode: {fileID: 11400000, guid: 02722abd837f4f8459a16345a1eff22a, type: 2}
   - Description: Arrest Judith
     ChoiceText: Judith!
     RequiredDeductions: 0100000000010000
     RequiredEvidence:
     - {fileID: 11400000, guid: 894eabb5176b93c469301672397e8d01, type: 2}
-    ConvNode: {fileID: 0}
+    ConvNode: {fileID: 11400000, guid: 1d57e2bff383ee14bad7dc8ea0b11310, type: 2}
   - Description: Self incriminate
     ChoiceText: ...me?
     RequiredDeductions: 0100000000020000
     RequiredEvidence: []
-    ConvNode: {fileID: 0}
+    ConvNode: {fileID: 11400000, guid: ffea5cb5e11d197408fd761f4a0bf826, type: 2}
+  - Description: Self (dino curse)
+    ChoiceText: ...me?
+    RequiredDeductions: 0100000040000000
+    RequiredEvidence: []
+    ConvNode: {fileID: 11400000, guid: 5c53f83a26158b04199916a0872a44b7, type: 2}
+  - Description: Self (mummy curse)
+    ChoiceText: ...me?
+    RequiredDeductions: 0100000080000000
+    RequiredEvidence: []
+    ConvNode: {fileID: 11400000, guid: 5c53f83a26158b04199916a0872a44b7, type: 2}
   _defaultNode: {fileID: 11400000, guid: 686a21985139e3a459cc455d4c97da49, type: 2}
   _screen: {fileID: 1551217877}
 --- !u!4 &1622767098

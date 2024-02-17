@@ -15,11 +15,9 @@ MonoBehaviour:
   EndingText:
   - "You struggle to remember the sequence of events that lead you to where you are.
     You remember talking to the suspects, and before that examining the body, and
-    before that\u2026nothing? You cannot recall how you got here, there\u2019s a
-    gap where the journey should\u2019ve been. "
-  - "There\u2019s been a lot of gaps lately. All the pieces fit, it must be you.
-    As you open your mouth to confess, your vocal cords freeze. \u201CI\u2019ll get
-    us out of this, again\u201D says a voice in your head. Your voice is no longer
-    your own. "
-  - "Your memories stop here. As you drift off to sleep at home in bed, you wonder
-    for the second time today - \u201Chow did I get here?\u201D\r"
+    before that\u2026nothing? "
+  - "You cannot recall how you got here, there\u2019s a gap where the journey should\u2019ve
+    been. There\u2019s been a lot of gaps lately. All the pieces fit, it must be
+    you. As you open your mouth to confess, your vocal cords freeze. "
+  - "\u201CI\u2019ll get us out of this, again\u201D says a voice in your head. Your
+    voice is no longer your own. "
