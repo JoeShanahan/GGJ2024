@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [System.Flags]
 public enum Deduction
@@ -48,9 +49,21 @@ public class EndingManager : MonoBehaviour
     [SerializeField]
     private EndingScreen _screen;
 
+    private bool _isEndingShowing;
+
     public void ShowEnding(EndingData ending)
     {
+        if (_isEndingShowing)
+            return;
+
+        _isEndingShowing = true;
         _screen.ShowEnding(ending);
+    }
+
+    private void Update()
+    {
+        if (_isEndingShowing && Input.GetKeyDown(KeyCode.R))
+            SceneManager.LoadScene(0);
     }
 
     // This might be the single worst function I've ever written in my life (-Joe)

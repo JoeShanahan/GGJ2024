@@ -40,6 +40,13 @@ public class Player : MonoBehaviour
         _interactUI.SetInteractable(null);
     }
 
+    void OnDestroy()
+    {
+        _input.Movement.Jump.performed -= JumpPressed;
+        _input.Movement.Item.performed -= ItemPressed;
+        _detector.OnFocusChange -= OnInteractChange;
+    }
+
     public void DeactivateControls()
     {
         _input.Disable();

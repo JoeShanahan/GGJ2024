@@ -14,6 +14,9 @@ public class EndingScreen : MonoBehaviour
     private TMP_Text _finText;
 
     [SerializeField]
+    private TMP_Text _restartText;
+
+    [SerializeField]
     private CanvasGroup _group;
 
     private void Start()
@@ -44,6 +47,7 @@ public class EndingScreen : MonoBehaviour
         _group.alpha = 0;
         _group.DOFade(1, 1);
         _finText.color = new Color(1, 1, 1, 0);
+        _restartText.color = new Color(0.5f, 0.5f, 0.5f, 0);
 
         yield return new WaitForSeconds(1f);
     
@@ -57,5 +61,10 @@ public class EndingScreen : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         _finText.DOFade(1, 1);
+
+        yield return new WaitForSeconds(2);
+
+        _restartText.DOFade(1, 1);
+
     }
 }
